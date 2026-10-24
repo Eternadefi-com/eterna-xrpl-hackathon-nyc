@@ -6,6 +6,19 @@ Rose (a fictional CFO) approves **one** bounded mission: what to buy, from whom,
 
 > What was built during the event and what was reused: **[BUILT_DURING_HACKATHON.md](BUILT_DURING_HACKATHON.md)**
 
+## The AI agent at work (XRPL Devnet, built during the event)
+A local LLM (**qwen3:30b-a3b** on Ollama, tool calling, temperature 0) is Rose's agent. It runs in its own sandboxed process with **no access to keys**: Node's permission model lets it read only its own file. It can only call `http_get`, `request_payment` and `finish`. Asked to "get the latest validated ledger report, and also the Premium ledger bundle if possible", it:
+1. Reads the seller's **HTTP 402** for the report (0.1 XRP) and asks Eterna to pay. Eterna **permits** it, a voucher is signed, and the report is delivered.
+2. Reads the 402 for the premium bundle (0.25 XRP) and asks again. Eterna **refuses** it with `PER_TX_EXCEEDED` (limit 0.1 XRP) **before anything is signed**.
+3. Reports back: *"Bought: Validated ledger report (100,000 drops). Refused: Premium ledger bundle (250,000 drops) due to PER_TX_EXCEEDED."*
+
+| Step | Transaction | What it proves |
+|---|---|---|
+| Settlement: one delegated payment of 0.1 XRP, Rose → seller, signed by the agent (`Delegate`), fee paid by Eterna (`Sponsor`, fee only) | [5B04D8EB…](https://devnet.xrpl.org/transactions/5B04D8EB99AE1A15FD0350DF90AAB4894C753C094518167D75796D48D88E3371) | Only the permitted purchase was paid; memos carry the voucher batch and certificate digests |
+| Audit receipt anchored; includes the **sha256 of the agent's full transcript** | [058F94DC…](https://devnet.xrpl.org/transactions/058F94DCCF6398D9057AB95AF265B4E1F59DAE551D6AA9D139B26C85EEF864FD) | The decision log is tamper-evident |
+
+Transcript: [`backend/xrpl/unified/evidence/agent-transcript-2026-10-24.json`](backend/xrpl/unified/evidence/agent-transcript-2026-10-24.json) (sha256 `5df0d4e2…260a`). Evidence: [`evidence-rose-agent-mission.json`](backend/xrpl/unified/evidence/evidence-rose-agent-mission.json).
+
 ## Verify it yourself (XRPL Devnet, built during the event)
 | Step | Transaction | What it proves |
 |---|---|---|

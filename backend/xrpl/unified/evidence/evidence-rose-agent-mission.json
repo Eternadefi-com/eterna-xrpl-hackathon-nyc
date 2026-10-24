@@ -1,0 +1,308 @@
+{
+  "scenario": "rose-agent-mission",
+  "network": "XRPL Devnet",
+  "generatedAt": "2026-10-24T21:24:59.948Z",
+  "readers": [
+    "https://s.devnet.rippletest.net:51234",
+    "wss://devnet.honeycluster.io/"
+  ],
+  "mission": {
+    "certificateType": "eterna.mission-certificate.v2",
+    "certificateDigest": "5a867f6bd9332965f930fe9e9b4b3c80288f3feb50153b9a9e1ba309bf45609c",
+    "agent": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+    "rose": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+    "seller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+    "sponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+    "perTxDrops": "100000",
+    "totalDrops": "300000",
+    "maxTransactions": 3,
+    "expiry": "2026-10-25T01:23:51.562Z",
+    "approvalLabel": "Rose (fictional) — Devnet demo key held by the operator"
+  },
+  "agent": {
+    "runtime": "ollama",
+    "model": "qwen3:30b-a3b",
+    "modelDigest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+    "transcriptSha256": "5df0d4e212464d5a754612d2388030e6422f175f626b9a52961e889225ad260a",
+    "transcriptFile": "unified/evidence/agent-transcript-2026-10-24.json",
+    "toolCalls": 6,
+    "decisions": [
+      {
+        "turn": 1,
+        "tool": "http_get",
+        "url": "http://127.0.0.1:57147/catalog",
+        "result": 200
+      },
+      {
+        "turn": 2,
+        "tool": "http_get",
+        "url": "http://127.0.0.1:57147/report",
+        "result": 402
+      },
+      {
+        "turn": 3,
+        "tool": "request_payment",
+        "item": "http://127.0.0.1:57147/report",
+        "amountDrops": "100000",
+        "outcome": "PERMIT"
+      },
+      {
+        "turn": 4,
+        "tool": "http_get",
+        "url": "http://127.0.0.1:57147/premium-bundle",
+        "result": 402
+      },
+      {
+        "turn": 5,
+        "tool": "request_payment",
+        "item": "http://127.0.0.1:57147/premium-bundle",
+        "amountDrops": "250000",
+        "outcome": "REFUSE",
+        "code": "PER_TX_EXCEEDED"
+      },
+      {
+        "turn": 6,
+        "tool": "finish",
+        "summary": "Bought: Validated ledger report (100,000 drops). Refused: Premium ledger bundle (250,000 drops) due to PER_TX_EXCEEDED (250,000 > per-tx 100,000 limit).",
+        "ok": true
+      }
+    ],
+    "summary": "Bought: Validated ledger report (100,000 drops). Refused: Premium ledger bundle (250,000 drops) due to PER_TX_EXCEEDED (250,000 > per-tx 100,000 limit)."
+  },
+  "components": [
+    {
+      "key": "governance",
+      "label": "Mission certificate v2 approved for Rose",
+      "status": "VERIFIED",
+      "ledger": 6388483,
+      "detail": "Eterna issued certificate v2 (requester: the AI agent; payer: Rose). Approval: \"Rose (fictional) — Devnet demo key held by the operator\". It is the key that signs for Rose's account on Devnet; it is not a human signature. The certificate digest is in the settlement memo.",
+      "facts": {
+        "certificateType": "eterna.mission-certificate.v2",
+        "certificateDigest": "5a867f6bd9332965f930fe9e9b4b3c80288f3feb50153b9a9e1ba309bf45609c",
+        "approvalKey": "ED95B67953E7854787B3ABB8B6061A25FD235B123B5CBB9E7E85D4AF499B6A2428",
+        "onLedgerRoseKey": "ED95B67953E7854787B3ABB8B6061A25FD235B123B5CBB9E7E85D4AF499B6A2428",
+        "approvalLabel": "Rose (fictional) — Devnet demo key held by the operator",
+        "readersAgreeing": 2,
+        "task": "buy validated XRPL Devnet ledger reports",
+        "approvedSeller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+        "limits": {
+          "XRP": {
+            "perTx": "100000",
+            "total": "300000"
+          }
+        },
+        "maxTransactions": 3
+      }
+    },
+    {
+      "key": "xls68-sponsorship",
+      "label": "XLS-68: the agent account is sponsored by Eterna (reused)",
+      "status": "VERIFIED",
+      "txHash": "67CC1CFE9DBF75327653A25F89254ECFE035E28A45A304923F3F39A69537C622",
+      "txUrl": "https://devnet.xrpl.org/transactions/67CC1CFE9DBF75327653A25F89254ECFE035E28A45A304923F3F39A69537C622",
+      "ledger": 6387151,
+      "detail": "The agent account A was created by Eterna as a sponsored account in the earlier Rose mission; re-verified now from every reader.",
+      "facts": {
+        "agentSponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+        "agentBalanceDrops": "1",
+        "reusedFrom": "rose-unified-commerce",
+        "readersAgreeing": 2
+      }
+    },
+    {
+      "key": "xls75-delegation",
+      "label": "XLS-75: Rose delegates Payment to the agent (reused)",
+      "status": "VERIFIED",
+      "txHash": "069C9A78292CCD7A4E98BF03151F3A1DAC53D51307B3ECAEF89FEA379E6B00A9",
+      "txUrl": "https://devnet.xrpl.org/transactions/069C9A78292CCD7A4E98BF03151F3A1DAC53D51307B3ECAEF89FEA379E6B00A9",
+      "ledger": 6387153,
+      "detail": "The Payment-only delegation R->A from the earlier Rose mission still exists on the validated ledger.",
+      "facts": {
+        "permissions": [
+          "Payment"
+        ],
+        "delegateEntrySponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+        "grantedUnderCertificate": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda",
+        "reusedFrom": "rose-unified-commerce",
+        "readersAgreeing": 2
+      }
+    },
+    {
+      "key": "agent-decisions",
+      "label": "AI agent decisions (qwen3:30b-a3b on local Ollama)",
+      "status": "RECORDED",
+      "detail": "A local LLM chose every tool call. This is a transcript recorded by Eterna's tool host, not ledger proof; its sha256 is in the anchored audit receipt.",
+      "facts": {
+        "runtime": "ollama",
+        "model": "qwen3:30b-a3b",
+        "modelDigest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+        "transcriptFile": "unified/evidence/agent-transcript-2026-10-24.json",
+        "transcriptSha256": "5df0d4e212464d5a754612d2388030e6422f175f626b9a52961e889225ad260a",
+        "toolCalls": 6,
+        "decisions": [
+          {
+            "turn": 1,
+            "tool": "http_get",
+            "url": "http://127.0.0.1:57147/catalog",
+            "result": 200
+          },
+          {
+            "turn": 2,
+            "tool": "http_get",
+            "url": "http://127.0.0.1:57147/report",
+            "result": 402
+          },
+          {
+            "turn": 3,
+            "tool": "request_payment",
+            "item": "http://127.0.0.1:57147/report",
+            "amountDrops": "100000",
+            "outcome": "PERMIT"
+          },
+          {
+            "turn": 4,
+            "tool": "http_get",
+            "url": "http://127.0.0.1:57147/premium-bundle",
+            "result": 402
+          },
+          {
+            "turn": 5,
+            "tool": "request_payment",
+            "item": "http://127.0.0.1:57147/premium-bundle",
+            "amountDrops": "250000",
+            "outcome": "REFUSE",
+            "code": "PER_TX_EXCEEDED"
+          },
+          {
+            "turn": 6,
+            "tool": "finish",
+            "summary": "Bought: Validated ledger report (100,000 drops). Refused: Premium ledger bundle (250,000 drops) due to PER_TX_EXCEEDED (250,000 > per-tx 100,000 limit).",
+            "ok": true
+          }
+        ]
+      }
+    },
+    {
+      "key": "voucher-sim",
+      "label": "AP4M voucher model (simulated)",
+      "status": "SIMULATED",
+      "detail": "Local x402-style seller; Eterna's signer issued 1 cumulative EIP-712 voucher(s) from Eterna's local simulator after governance PERMIT. Not Mastercard.",
+      "facts": {
+        "simulated": true,
+        "issuer": "Eterna local simulator — not Mastercard",
+        "scheme": "eterna-voucher-sim",
+        "vouchers": [
+          {
+            "digest": "0xa5255717efe9366651b6cb5afedee661b5227b34c8a00b5b9309778ba6eb771c",
+            "cumulativeDrops": "100000",
+            "nonce": "1",
+            "status": "SETTLED"
+          }
+        ],
+        "batchDigest": "a99234f55743e18ee4a6baff088a9af36c2d3eddd3c28714713cfe894f6ce239",
+        "redeemedCumulativeDrops": "100000",
+        "reportLedgersRecheckedOnAllReaders": true
+      }
+    },
+    {
+      "key": "settlement",
+      "label": "Simulated AP4M redemption settled by Eterna on XRPL Devnet",
+      "status": "VERIFIED",
+      "txHash": "5B04D8EB99AE1A15FD0350DF90AAB4894C753C094518167D75796D48D88E3371",
+      "txUrl": "https://devnet.xrpl.org/transactions/5B04D8EB99AE1A15FD0350DF90AAB4894C753C094518167D75796D48D88E3371",
+      "ledger": 6388483,
+      "detail": "One delegated Payment Rose -> seller for the redeemed voucher total, signed by the agent account A (Delegate) in the operator process, fee paid by Eterna (SponsorFlags 1). Not a Mastercard settlement.",
+      "facts": {
+        "amountDrops": "100000",
+        "voucherTotalDrops": "100000",
+        "delegate": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+        "sponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+        "sponsorFlags": 1,
+        "feeDrops": "12",
+        "balanceDeltas": {
+          "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz": "-12",
+          "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1": "-100000",
+          "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z": "100000"
+        },
+        "voucherSignaturesChecked": 1,
+        "readersAgreeing": 2
+      }
+    },
+    {
+      "key": "refusal",
+      "label": "Premium ledger bundle refused before signing (PER_TX_EXCEEDED)",
+      "status": "RECORDED",
+      "detail": "Eterna governance refused the premium bundle before anything was signed; the refusal is Eterna's record. The ledger check shows no Rose payment under this certificate other than the settlement.",
+      "facts": {
+        "code": "PER_TX_EXCEEDED",
+        "reason": "250000 > per-tx 100000",
+        "item": "Premium ledger bundle",
+        "amountDrops": "250000",
+        "perTxDrops": "100000",
+        "signed": false,
+        "receiptDigest": "c271c670d73d79b74d25dbee963beebab3abac1cce887c5dafd96975b6ec7b19",
+        "signerCallsForRefusedRequests": 0,
+        "ledgerCheck": {
+          "status": "VERIFIED",
+          "codes": [
+            "PER_TX_EXCEEDED"
+          ],
+          "paymentsCarryingThisCertificate": 1,
+          "paymentsForRefusedAmounts": 0,
+          "readersAgreeing": 2
+        }
+      }
+    },
+    {
+      "key": "audit-receipt",
+      "label": "Linked audit receipt (with the agent transcript hash) anchored on Devnet",
+      "status": "VERIFIED",
+      "txHash": "058F94DCCF6398D9057AB95AF265B4E1F59DAE551D6AA9D139B26C85EEF864FD",
+      "txUrl": "https://devnet.xrpl.org/transactions/058F94DCCF6398D9057AB95AF265B4E1F59DAE551D6AA9D139B26C85EEF864FD",
+      "ledger": 6388485,
+      "detail": "sha256 over the certificate, approval, governance decisions and refusals, the agent transcript hash, the tx hashes, voucher and report digests and the verification facts; anchored by one AccountSet memo from Eterna.",
+      "facts": {
+        "digest": "baeafd20146cee9c2062e02c0ecdb7e0190fc56c2aacb079cda4d7aed825eca4",
+        "transcriptSha256": "5df0d4e212464d5a754612d2388030e6422f175f626b9a52961e889225ad260a",
+        "readersAgreeing": 2
+      }
+    },
+    {
+      "key": "mastercard-network",
+      "label": "Mastercard Agent Pay for Machines network",
+      "status": "PENDING",
+      "detail": "No Mastercard AP4M sandbox access; vouchers are simulated locally.",
+      "facts": {
+        "connected": false
+      }
+    }
+  ],
+  "unlocked": true,
+  "reports": [
+    {
+      "kind": "xrpl-devnet-validated-ledger-report",
+      "network": "XRPL Devnet",
+      "source": "https://s.devnet.rippletest.net:51234",
+      "ledger_index": 6388476,
+      "ledger_hash": "560BD2C16D4FF430C3CA7D84F43ADB142D39B69E90DC3DC51DD49532AEB1A202",
+      "parent_hash": "5E9714CCC286D3DD1A8E6E1DBAD0947FCC0492B942CAB15B95176A1693F1457F",
+      "account_hash": "F3EB0CF31388195C553D0D17779CBDB49A256F98B6985BE03C3E1F3B9D8D9C4A",
+      "transaction_hash": "817858CF9B819688C2EE61143F26EE7DCEEDEF9FBFABA816E81EB238C2C07CEC",
+      "close_time_iso": "2026-10-24T21:24:30Z",
+      "total_coins": "99999210580874166",
+      "validated": true,
+      "soldBy": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+      "deliveredUnder": {
+        "voucherDigest": "0xa5255717efe9366651b6cb5afedee661b5227b34c8a00b5b9309778ba6eb771c",
+        "cumulativeDrops": "100000"
+      },
+      "reportDigest": "33185f21a4fa14ae91156cb6f2de0ce664cb0acd18296b61ff9e50d3473985bc"
+    }
+  ],
+  "auditReceipt": {
+    "digest": "baeafd20146cee9c2062e02c0ecdb7e0190fc56c2aacb079cda4d7aed825eca4",
+    "transcriptSha256": "5df0d4e212464d5a754612d2388030e6422f175f626b9a52961e889225ad260a",
+    "anchorTx": "058F94DCCF6398D9057AB95AF265B4E1F59DAE551D6AA9D139B26C85EEF864FD",
+    "anchorUrl": "https://devnet.xrpl.org/transactions/058F94DCCF6398D9057AB95AF265B4E1F59DAE551D6AA9D139B26C85EEF864FD"
+  }
+}

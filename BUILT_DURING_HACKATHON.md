@@ -7,6 +7,7 @@ The AI & Fintech XRP Ledger Hackathon (NYC) build window opened **Sat 24 Oct 202
 |---|---|---|
 | XLS-68 Sponsored Fees and Reserves builder | `backend/xrpl/xls68/` | Encodes and co-signs sponsored transactions against Devnet's own `server_definitions`; preflight rules ported from rippled 3.4.1 |
 | Rose's governed Devnet mission | `backend/xrpl/unified/` | Sponsored agent account (XLS-68), sponsored delegation (XLS-75), HTTP 402 seller, **simulated** AP4M-style EIP-712 vouchers, delegated fee-sponsored settlement, two-reader verification, anchored audit receipt |
+| AI agent mission | `backend/xrpl/unified/agent-*.mjs` | Local LLM (Ollama qwen3:30b-a3b) decides via tools in a key-less sandbox; Eterna permits or refuses; transcript hash anchored on Devnet |
 | Governance engine and payment adapters | `backend/xrpl/commerce/` | One certificate check, budgets, 15 refusal codes and audit receipts for four rails (XRP payment channel, RLUSD, XLS-68 sponsored, AP4M simulator) |
 | Agent purchase experience | `backend/xrpl/apps/agent-purchase/` | Storefront unlock after verified settlement, receipts, the master presentation and video system, one design system, Rose's mission UI, proof buttons (Bithomp and XRPL explorer) |
 

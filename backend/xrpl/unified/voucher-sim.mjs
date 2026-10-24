@@ -153,7 +153,8 @@ export function verifyBatch(batch, { sellerId, buyer, certificateDigest, perVouc
 // ---- local x402-style seller (127.0.0.1 only) -------------------------------------------------------------------
 const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64');
 const unb64 = (s) => JSON.parse(Buffer.from(s, 'base64').toString('utf8'));
-/** routes: { '/report': { priceDrops, description, produce: async (voucher) => reportObject } } */
+/** routes: { '/report': { priceDrops, description, produce: async (voucher) => reportObject } }; a route with `free: true`
+ *  (e.g. a catalog) answers 200 with produce() and never asks for payment. */
 /** The x402 v2-shaped 402 body (also sent base64 in the PAYMENT-REQUIRED header). */
 export const paymentRequired = ({ url, description, priceDrops, sellerId, error }) => ({ x402Version: 2, error: error ?? 'PAYMENT-REQUIRED', ...SIM,
   resource: { url, description, mimeType: 'application/json' },
@@ -165,6 +166,7 @@ export function startSellerServer({ seller, routes, port = 0 }) {
     const path = new URL(req.url, 'http://x').pathname, r = routes[path];
     const send = (code, body, headers = {}) => { res.writeHead(code, { 'content-type': 'application/json', ...headers }); res.end(JSON.stringify(body)); };
     if (req.method !== 'GET' || !r) return send(404, { error: 'not found' });
+    if (r.free) return send(200, await r.produce());
     const host = req.headers.host;
     const sig = req.headers['payment-signature'];
     if (!sig) { const pr = requirements(path, r, host); return send(402, pr, { 'PAYMENT-REQUIRED': b64(pr) }); }

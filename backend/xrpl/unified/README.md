@@ -137,6 +137,40 @@ These rules held on Devnet: every mission transaction returned `tesSUCCESS` on t
 - **The budget counts issued vouchers.** A voucher the seller rejected still counts against the budget, because it is
   signed and cumulative.
 
+## AI agent mission (`run-agent-mission.mjs`)
+
+In this mission a real local LLM makes the decisions instead of a fixed script. It ran on 2026-10-24 with `qwen3:30b-a3b` on the host's Metal Ollama (digest `ad815644…6cb37226`).
+
+```
+node unified/run-agent-mission.mjs [--model qwen3:30b-a3b]   # Devnet writes; resumable (agent-mission-state.json)
+node --test unified/agent.test.mjs                           # offline
+```
+
+- **Process split.**
+  - The agent (`agent-process.mjs`) runs as a forked child process. It is limited by the Node permission model: it can read only its own file, cannot write files, cannot spawn processes and gets an empty environment. It talks only to the local Ollama.
+  - It can only call tools: `http_get`, `request_payment` and `finish`. They run in the operator process (`agent-tools.mjs`).
+  - The transcript records a probe: the agent process tried to list the key directory and got `ERR_ACCESS_DENIED`.
+- **Governance.**
+  - `request_payment` goes to the commerce engine (`commerce/governance.mjs`, certificate v2: perTx 0.1 XRP, total 0.3 XRP, maxTransactions 3, 4 h expiry).
+  - The voucher signer is a closure. It signs only for an AUTHORIZED decision whose seller, session, nonce and exact increment match the voucher.
+  - The tool pays only a 402 response it received itself. If the amount or seller the model typed differs from that 402, the payment is refused.
+- **Rose's approval** is labelled "Rose (fictional) — Devnet demo key held by the operator". It is not a human signature.
+- **As run:**
+  - the agent read the catalog;
+  - it bought the 0.1 XRP report (PERMIT);
+  - it asked for the 0.25 XRP premium bundle, which Eterna refused with `PER_TX_EXCEEDED` before anything was signed (0 signer calls);
+  - it reported the refusal.
+- **Settlement, verification and receipt.**
+  - Settlement: one delegated, fee-sponsored Payment R→S of 100000 drops, `5B04D8EB…3371`.
+  - Every component is re-verified from two readers. The report is unlocked through `governance.unlock` (ap4m evidence plus xls68 settlement evidence).
+  - The receipt (`eterna.audit-receipt.v2`) carries the transcript sha256 and is anchored by AccountSet `058F94DC…64FD`.
+- **Evidence.**
+  - Files: `evidence/evidence-rose-agent-mission.json` and `evidence/agent-transcript-2026-10-24.json`.
+  - The agent decisions are RECORDED: a transcript, not ledger proof.
+  - The refusal is RECORDED, with a ledger check that is VERIFIED.
+  - The vouchers are SIMULATED. Mastercard is PENDING.
+- **Reuse.** The agent mission reuses accounts E, R, S and A, the XLS-68 agent account and the R→A delegation from the mission above. The delegation was granted under the v1 certificate; the v2 digest is in the settlement memo and the receipt.
+
 ## Honest limits
 
 - **Readers.** There are two readers.

@@ -40,13 +40,13 @@ export const balanceDeltas = (meta) => {
 const accountInfo = async (r, account) => (await r.request('account_info', { account, ledger_index: 'validated' }))?.account_data ?? null;
 
 /** Run a check function against every reader; the component is proved only if every reader passes, and readers agree. */
-async function onAll(readers, fn) {
+export async function onAll(readers, fn) {
   const per = [];
   for (const r of readers) { try { per.push({ reader: r.url, ...(await fn(r)) }); } catch (e) { per.push({ reader: r.url, ok: false, problems: [e.message] }); } }
   const agree = per.every((p) => p.ledger_hash === per[0].ledger_hash);
   return { ok: per.every((p) => p.ok) && agree, per, agree };
 }
-const checks = (list) => { const problems = list.filter(([ok]) => !ok).map(([, why]) => why); return { ok: problems.length === 0, problems }; };
+export const checks = (list) => { const problems = list.filter(([ok]) => !ok).map(([, why]) => why); return { ok: problems.length === 0, problems }; };
 
 /** Verify the on-ledger part of the mission. `m` = saved mission state. Returns component results keyed by component. */
 export async function verifyMission(readers, m) {
