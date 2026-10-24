@@ -185,7 +185,9 @@ export function createToolHost({ governance, signer, certificate, certificateDig
  *  workers), empty environment (no .env, no HOME, no tokens). */
 export function agentSpawnOptions() {
   const flag = process.allowedNodeEnvironmentFlags.has('--permission') ? '--permission' : '--experimental-permission';
-  return { execArgv: [flag, `--allow-fs-read=${AGENT_PROCESS}`], env: { NODE_NO_WARNINGS: '1' }, stdio: ['ignore', 'ignore', 'pipe', 'ipc'] };
+  // Node ≥ 25 also gates network under the permission model: allow it there (the agent must reach Ollama); still no fs, env or children.
+  const net = process.allowedNodeEnvironmentFlags.has('--allow-net') ? ['--allow-net'] : [];
+  return { execArgv: [flag, `--allow-fs-read=${AGENT_PROCESS}`, ...net], env: { NODE_NO_WARNINGS: '1' }, stdio: ['ignore', 'ignore', 'pipe', 'ipc'] };
 }
 
 /** Run the agent to completion. Returns the transcript object (the caller writes it and hashes the file bytes). */
