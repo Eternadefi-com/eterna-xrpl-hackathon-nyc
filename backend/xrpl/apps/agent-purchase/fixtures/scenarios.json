@@ -1,0 +1,255 @@
+{
+ "scenarios": [
+  {
+   "provenance": {
+    "kind": "FIXTURE",
+    "label": "Settled on the ledger, not yet independently verified",
+    "note": "Illustrative state for design work. Not a real purchase."
+   },
+   "requesterView": {
+    "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+    "state": "EXECUTING",
+    "revision": 1,
+    "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+    "requester": {
+     "id": "preq_d16540d63d604947afaa5488f7d20e32",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "0",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 1,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "redeemTx": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+     "claimDrops": "100000",
+     "claimCommitted": true,
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+    },
+    "receiptDigest": null,
+    "anchor": null,
+    "updatedAt": "2026-10-22T06:54:02.73119+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SUBMITTED_UNKNOWN",
+     "delivery": "PENDING",
+     "receipt": "PENDING"
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SUBMITTED_UNKNOWN",
+    "delivery": "PENDING",
+    "receipt": "PENDING"
+   }
+  },
+  {
+   "provenance": {
+    "kind": "FIXTURE",
+    "label": "Outcome uncertain — reconciling from the ledger",
+    "note": "Illustrative state for design work. Not a real purchase."
+   },
+   "requesterView": {
+    "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+    "state": "UNCERTAIN",
+    "revision": 1,
+    "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+    "requester": {
+     "id": "preq_d16540d63d604947afaa5488f7d20e32",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "0",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 1,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "claimCommitted": true,
+     "afterRestart": {
+      "action": "PAID_BEFORE_RESTART"
+     },
+     "redeemExplorerUrl": null
+    },
+    "receiptDigest": null,
+    "anchor": null,
+    "updatedAt": "2026-10-22T06:54:02.73119+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SUBMITTED_UNKNOWN",
+     "delivery": "NOT_STARTED",
+     "receipt": "PENDING"
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SUBMITTED_UNKNOWN",
+    "delivery": "NOT_STARTED",
+    "receipt": "PENDING"
+   }
+  },
+  {
+   "provenance": {
+    "kind": "FIXTURE",
+    "label": "Authorized, waiting to execute",
+    "note": "Illustrative state for design work. Not a real purchase."
+   },
+   "requesterView": {
+    "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+    "state": "CONFIRMED",
+    "revision": 1,
+    "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+    "requester": {
+     "id": "preq_d16540d63d604947afaa5488f7d20e32",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "0",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 1,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": null,
+    "receiptDigest": null,
+    "anchor": null,
+    "updatedAt": "2026-10-22T06:54:02.73119+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "RESERVED",
+     "delivery": "NOT_STARTED",
+     "receipt": "PENDING"
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "RESERVED",
+    "delivery": "NOT_STARTED",
+    "receipt": "PENDING"
+   }
+  }
+ ]
+}

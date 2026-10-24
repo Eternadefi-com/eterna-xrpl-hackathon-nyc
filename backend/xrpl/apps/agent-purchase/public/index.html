@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agent Purchase · Eterna.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/components.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="brand__mark" aria-hidden="true"></span>ETERNA<span class="brand__dot">.AI</span></div>
+    <nav class="nav" aria-label="Screens">
+      <a href="#/store" data-route="store">Storefront</a>
+      <a href="#/console" data-route="console">Payment console</a>
+      <a href="#/purchase" data-route="purchase">Journey</a>
+      <a href="#/receipt" data-route="receipt">Receipt</a>
+      <a href="#/reports" data-route="reports">Reports</a>
+      <a href="#/present" data-route="present">Present</a>
+    </nav>
+    <button id="theme" class="btn btn--ghost btn--small" type="button">Switch theme</button>
+  </header>
+  <nav class="products" id="products" aria-label="Products"></nav>
+
+  <main class="page">
+    <aside class="picker" aria-label="Purchase states">
+      <p class="picker__mode" id="mode">Loading…</p>
+      <nav id="states"></nav>
+    </aside>
+    <section class="content">
+      <p class="provenance" id="provenance" aria-live="polite"></p>
+      <div class="stage" id="stage"></div>
+      <p class="live-msg" id="live-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

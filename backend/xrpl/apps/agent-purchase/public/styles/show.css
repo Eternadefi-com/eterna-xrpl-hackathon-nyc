@@ -1,0 +1,78 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   MASTER PRESENTATION — motion + composition system. The designer owns this file.
+   One 16:9 (or 9:16) frame; every size is in container units (cqw/cqh) so the live presenter view and the 1920×1080 /
+   1080×1920 captured frames are identical. Colours and type come from tokens.css (the same as the app).
+   Motion: elements carry --in (0..1, computed from the timeline). Never use CSS animations/transitions here — the video
+   is captured frame by frame and must be deterministic.
+   ───────────────────────────────────────────────────────────────────────────── */
+html, body.show { margin: 0; height: 100%; background: #000; }
+body.show { display: grid; place-items: center; overflow: hidden; font-family: var(--font-ui); color: var(--ink); }
+.show__frame {
+  position: relative; container-type: size; overflow: hidden; background: var(--ground);
+  width: min(100vw, calc(100vh * 16 / 9)); aspect-ratio: 16 / 9;
+}
+.show--vertical .show__frame { width: min(100vw, calc(100vh * 9 / 16)); aspect-ratio: 9 / 16; }
+.show__loading { padding: 4cqw; color: var(--soft); }
+
+/* the app's own entry animations would restart on every captured frame — the timeline drives all motion here */
+.show__frame *, .show__frame *::before, .show__frame *::after { animation: none !important; transition: none !important; }
+[style*="--in"] { opacity: var(--in); transform: translateY(calc((1 - var(--in)) * 2.2cqh)); }
+
+.show__scene { position: absolute; inset: 0; display: grid; grid-template-rows: auto 1fr auto; padding: 3.2cqh 4.4cqw; box-sizing: border-box;
+  background: radial-gradient(120cqw 90cqh at 85% -10%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%), var(--ground); }
+.show__chrome { display: flex; gap: 1.6cqw; align-items: center; font-size: max(11px, 1.15cqw); color: var(--soft); letter-spacing: .08em; text-transform: uppercase; }
+.show__brand { font-weight: 700; color: var(--ink); letter-spacing: .12em; margin-right: auto; }
+.show__brand span { color: var(--accent); }
+.show__chrome .status, .show__chrome .net { font-size: inherit; }   /* shared pills (components.css), sized for the stage */
+
+.show__center { align-self: center; max-width: 72cqw; }
+.show__kicker { margin: 0; color: var(--accent); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: max(12px, 1.5cqw); }
+.show__title { margin: 1.6cqh 0 0; font: 700 max(28px, 4.6cqw)/1.06 var(--font-display); }
+.show__sub { margin: 2.2cqh 0 0; color: var(--soft); font-size: max(14px, 1.9cqw); }
+.show__terms { list-style: none; padding: 0; margin: 4cqh 0 0; display: flex; flex-wrap: wrap; gap: 1.2cqw; }
+.show__terms li { background: var(--raised); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1.4cqh 1.6cqw; font-size: max(13px, 1.6cqw); }
+
+.show__scene--problem { grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr auto; column-gap: 3cqw; }
+.show__scene--problem .show__chrome, .show__scene--problem .show__caption { grid-column: 1 / -1; }
+.show__hero { border-radius: var(--radius); background: center / cover no-repeat; min-height: 0; }
+.show__hero--placeholder { display: grid; place-items: end start; padding: 2cqw; box-sizing: border-box; color: var(--soft); font-size: max(11px, 1cqw); letter-spacing: .08em;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 40%, var(--raised)), color-mix(in srgb, var(--accent-2) 25%, var(--raised-2))); }
+.show__side { align-self: center; }
+.show__side .show__title { font-size: max(22px, 3.2cqw); }
+
+.show__stagewide { align-self: center; width: 100%; }
+.show__ui { margin-top: 2.4cqh; }
+.show__ui { zoom: var(--ui-zoom, 1); }                    /* the real app component, scaled with the frame (show.js) */
+.show__proof { margin: 3cqh 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4cqh 2.4cqw; }
+.show__proof div { background: var(--raised); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1.4cqh 1.4cqw; min-width: 0; }
+.show__proof dt { color: var(--soft); font-size: max(11px, 1.05cqw); text-transform: uppercase; letter-spacing: .08em; }
+.show__proof dd { margin: .5cqh 0 0; font-size: max(13px, 1.5cqw); overflow-wrap: anywhere; }
+.show__proof dd.mono { font-family: var(--font-mono); font-size: max(11px, 1.15cqw); }
+.show__proof--pending { display: block; color: var(--bad); }
+.show__link { margin: 2cqh 0 0; font-family: var(--font-mono); color: var(--soft); font-size: max(10px, 1cqw); overflow-wrap: anywhere; }
+
+.show__caption { margin: 0; justify-self: center; max-width: 80cqw; text-align: center; font-size: max(13px, 1.6cqw); color: var(--ink);
+  background: color-mix(in srgb, var(--ground) 70%, transparent); padding: 1cqh 1.6cqw; border-radius: var(--radius-sm); }
+.show--nocaptions .show__caption { visibility: hidden; }
+
+/* vertical (9:16): stack everything */
+.show--vertical .show__scene--problem { grid-template-columns: 1fr; grid-template-rows: auto 38cqh 1fr auto; }
+.show--vertical .show__center { max-width: none; }
+.show--vertical .show__title { font-size: max(24px, 8cqw); }
+.show--vertical .show__kicker, .show--vertical .show__sub, .show--vertical .show__caption { font-size: max(13px, 3.4cqw); }
+.show--vertical .show__chrome { font-size: max(10px, 2.4cqw); flex-wrap: wrap; }
+.show--vertical .show__proof { grid-template-columns: 1fr; }
+.show--vertical .show__proof dd { font-size: max(12px, 3.2cqw); }
+.show--vertical .show__proof dd.mono, .show--vertical .show__link { font-size: max(10px, 2.4cqw); }
+
+/* unified mission: one row per evidence source, each with its own status */
+.show__mission { list-style: none; padding: 0; margin: 2.6cqh 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2cqh 2cqw; }
+.show__mission li { background: var(--raised); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1.2cqh 1.3cqw; min-width: 0; }
+.show__mission-head { display: flex; gap: .8cqw; align-items: center; font-size: max(12px, 1.3cqw); }
+.show__mission p { margin: .6cqh 0 0; color: var(--soft); font-size: max(11px, 1.05cqw); overflow-wrap: anywhere; }
+.show__mission p.mono { font-family: var(--font-mono); font-size: max(10px, .85cqw); color: var(--ink); }
+.show__mission .status { font-size: max(9px, .8cqw); }
+.show--vertical .show__mission { grid-template-columns: 1fr; }
+.show--vertical .show__mission-head { font-size: max(12px, 3cqw); }
+.show--vertical .show__mission p { font-size: max(10px, 2.4cqw); }
+.show__verify { margin: 1.4cqh 0 0; } .show__verify .btn { zoom: var(--ui-zoom, 1); }

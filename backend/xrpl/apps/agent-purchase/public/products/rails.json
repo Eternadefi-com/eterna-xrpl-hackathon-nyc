@@ -1,0 +1,174 @@
+{
+  "note": "Product definitions for the four payment capabilities (UI copy). The adapters in backend/xrpl/commerce/ are the source of truth for behaviour; a test keeps these in step.",
+  "mission": {
+    "source": "PLANNED",
+    "title": "Rose’s purchasing mission",
+    "task": "Buy validated XRPL ledger reports for the finance team",
+    "requester": "Rose’s AI agent (OpenClaw)",
+    "payer": "Rose Mitchell, CFO (fictional persona; Devnet demo key held by the operator)",
+    "sellers": [
+      "Ledger Data Agent"
+    ],
+    "expiry": "End of demo day",
+    "consent": "Rose signs once. Her agent may buy only this, only from these sellers, only within these limits, until the expiry. Anything else is refused with a receipt."
+  },
+  "rails": [
+    {
+      "id": "xrp-micropayments",
+      "name": "XRP Micropayments",
+      "tag": "XRPL payment channel",
+      "route": "store",
+      "asset": "XRP",
+      "network": "XRPL Mainnet",
+      "mode": "LIVE_CAPABLE",
+      "limits": {
+        "perTx": "1 XRP",
+        "total": "1 XRP"
+      },
+      "can": [
+        "Many small payments under one signature",
+        "Instant off-ledger claims, settled on the ledger",
+        "Proven on Mainnet (Oct 20–22, before this hackathon)"
+      ],
+      "cannot": [
+        "Carry RLUSD or other tokens (XRP only)",
+        "Settle without the seller redeeming its claim"
+      ],
+      "proof": [
+        "Payment-channel claim redeemed on the ledger",
+        "Two independent ledger readers agree",
+        "Product fingerprint matches the delivery"
+      ],
+      "evidence": {
+        "status": "REHEARSAL",
+        "detail": "Real Mainnet purchases on 2026-10-22, before this hackathon. Rose’s live run during the event waits for her signature.",
+        "source": "mainnet-purchase"
+      }
+    },
+    {
+      "id": "rlusd-payments",
+      "name": "Stablecoin Payments",
+      "tag": "RLUSD",
+      "route": "rlusd",
+      "asset": "RLUSD",
+      "network": "XRPL Testnet",
+      "mode": "LIVE_CAPABLE",
+      "limits": {
+        "perTx": "1 RLUSD",
+        "total": "5 RLUSD"
+      },
+      "can": [
+        "Dollar-denominated budgets and limits",
+        "Exact-amount payments to the seller’s trust line",
+        "Network fee paid in XRP, shown separately"
+      ],
+      "cannot": [
+        "Use XRP payment channels (tokens need a direct Payment)",
+        "Pay a seller without an RLUSD trust line",
+        "Run on Devnet (no official RLUSD there)"
+      ],
+      "proof": [
+        "Validated Payment, tesSUCCESS",
+        "Delivered amount equals the exact RLUSD amount, issuer and currency",
+        "No partial payment"
+      ],
+      "evidence": {
+        "status": "PENDING",
+        "detail": "Built and tested offline. A Testnet RLUSD payment needs the owner’s approval."
+      }
+    },
+    {
+      "id": "sponsored-execution",
+      "name": "Sponsored Execution",
+      "tag": "XLS-68",
+      "route": "sponsored",
+      "asset": "XRP (fees and reserves)",
+      "network": "XRPL Devnet",
+      "mode": "LIVE_CAPABLE",
+      "limits": {
+        "perTx": "Fees and eligible reserves",
+        "total": "Per Rose’s policy"
+      },
+      "can": [
+        "Onboard an agent account with 1 drop",
+        "Eterna pays the agent’s fees and reserves",
+        "Combine with delegated authority (fee sponsorship)"
+      ],
+      "cannot": [
+        "Sponsor reserves on a delegated transaction (the ledger forbids it)",
+        "Run on Mainnet yet (amendment not enabled)"
+      ],
+      "proof": [
+        "The ledger records Eterna as sponsor",
+        "Sponsored account and object counts",
+        "Fee paid by the sponsor"
+      ],
+      "evidence": {
+        "status": "VERIFIED",
+        "detail": "Rose’s Devnet mission, run during the hackathon: sponsored agent account and sponsored delegation, re-read by two readers. Rose is fictional; her approval uses a Devnet demo key held by the operator.",
+        "source": "rose-unified-commerce",
+        "parts": [
+          "xls68-sponsorship",
+          "xls75-delegation"
+        ]
+      },
+      "eligibleNote": "Eligible · Eterna pays the agent’s fees and eligible reserves."
+    },
+    {
+      "id": "voucher-commerce",
+      "name": "Voucher Commerce",
+      "tag": "Mastercard AP4M · simulated",
+      "route": "vouchers",
+      "asset": "Voucher (settled in XRP on Devnet)",
+      "network": "Local simulator + XRPL Devnet",
+      "mode": "SIMULATED",
+      "limits": {
+        "perTx": "0.1 XRP per voucher",
+        "total": "0.5 XRP"
+      },
+      "can": [
+        "HTTP 402 → signed voucher → seller verifies",
+        "Batch many vouchers, redeem later",
+        "Replay and expiry protection"
+      ],
+      "cannot": [
+        "Treat a signed voucher as settlement",
+        "Use Mastercard’s network yet (no sandbox access; vouchers are simulated locally)"
+      ],
+      "proof": [
+        "Each voucher signature re-checked",
+        "Redemption settled by a separate, verified ledger payment",
+        "Linked audit receipt anchored"
+      ],
+      "evidence": {
+        "status": "SIMULATED",
+        "detail": "Vouchers from Eterna’s local simulator, not Mastercard. Their settlement is a verified Devnet payment.",
+        "source": "rose-unified-commerce",
+        "parts": [
+          "voucher-sim",
+          "settlement",
+          "audit-receipt",
+          "mastercard-network"
+        ]
+      }
+    }
+  ],
+  "supporting": [
+    {
+      "id": "delegated-authority",
+      "name": "Delegated Authority",
+      "tag": "XLS-75",
+      "route": "xls75",
+      "detail": "Lets the agent sign on Rose’s behalf with only the permissions she grants. Supports any rail; it is not a payment rail. On Devnet, Rose (fictional) approves with a demo key held by the operator.",
+      "evidence": {
+        "status": "VERIFIED",
+        "source": "rose-unified-commerce",
+        "parts": [
+          "governance",
+          "xls75-delegation",
+          "refusal"
+        ]
+      }
+    }
+  ]
+}

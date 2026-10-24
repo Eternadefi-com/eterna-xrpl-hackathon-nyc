@@ -1,0 +1,22 @@
+{
+  "name": "eterna-xrpl-hackathon-nyc",
+  "private": true,
+  "type": "module",
+  "description": "Eterna.AI: governed AI-agent payments on the XRP Ledger (AI & Fintech XRP Ledger Hackathon, NYC, Oct 2026).",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test \"backend/xrpl/**/*.test.mjs\"",
+    "preview": "node backend/xrpl/apps/agent-purchase/server.mjs",
+    "verify": "cd backend/xrpl && node commerce/record-evidence.mjs"
+  },
+  "dependencies": {
+    "ethers": "6.16.0",
+    "ripple-address-codec": "5.0.0",
+    "ripple-binary-codec": "2.7.0",
+    "ripple-keypairs": "2.0.0",
+    "ws": "8.19.0",
+    "xrpl": "4.6.0",
+    "zod": "4.4.3"
+  }
+}

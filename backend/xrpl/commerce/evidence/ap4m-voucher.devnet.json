@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-10-24T20:31:51.024Z",
+  "voucher": "0x34d0d707cc73888e38f873a52c767bbd259330e73a43362134a6767e172fbf3d",
+  "evidence": {
+    "adapter": "ap4m-voucher",
+    "rail": "ap4m-voucher",
+    "mode": "SIMULATED",
+    "status": "SIMULATED",
+    "facts": {
+      "simulated": true,
+      "issuer": "Eterna local simulator — not Mastercard",
+      "network": "xrpl:2",
+      "asset": "XRP",
+      "destination": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+      "amount": "100000",
+      "payer": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+      "batchDigest": "af4b144f717f4455a12ccb0c124cab8748fd4f21acc17aebef9a0fd3e6f208b0",
+      "batchValid": true,
+      "voucherSignaturesChecked": 3,
+      "voucherInBatch": true,
+      "redeemedCumulativeDrops": "300000",
+      "settlementAdapter": "xls68-sponsored",
+      "settlementStatus": "VERIFIED",
+      "settlementMode": "LIVE_CAPABLE",
+      "settlementCoversBatch": true
+    },
+    "txHash": "D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD",
+    "txUrl": "https://devnet.xrpl.org/transactions/D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD"
+  }
+}

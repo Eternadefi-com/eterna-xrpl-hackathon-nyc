@@ -1,0 +1,60 @@
+{
+  "capturedAt": "2026-10-24T20:31:51.024Z",
+  "readers": [
+    {
+      "url": "https://s1.ripple.com:51234",
+      "hostid": null
+    },
+    {
+      "url": "https://xrplcluster.com",
+      "hostid": "DORTHA",
+      "build_version": "3.4.1"
+    }
+  ],
+  "ref": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+  "evidence": {
+    "adapter": "xrp-paychan",
+    "rail": "xrp-paychan",
+    "mode": "LIVE_CAPABLE",
+    "status": "VERIFIED",
+    "facts": {
+      "network": "xrpl:0",
+      "asset": "XRP",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+      "amount": "100000",
+      "claimDrops": "100000",
+      "recordedSettled": true,
+      "recordedDelivered": true,
+      "recordedReaders": 2,
+      "deliveryDigest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231",
+      "redeemLedger": 107822136,
+      "validated": true,
+      "tesSUCCESS": true,
+      "result": "tesSUCCESS",
+      "channelMatches": true,
+      "claimCovered": true,
+      "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelBalanceDrops": "100000",
+      "paidThisTxDrops": "100000",
+      "feeDrops": "12",
+      "readersAgreeing": 2,
+      "readersAsked": 2,
+      "ledgerHashesAgree": true,
+      "readers": [
+        {
+          "reader": "https://s1.ripple.com:51234",
+          "ok": true,
+          "ledgerHash": "B003FDA5A19B1A3F1CE7244F5738411D515AEE0327B69CCCE5E4EB44377964F5"
+        },
+        {
+          "reader": "https://xrplcluster.com",
+          "ok": true,
+          "ledgerHash": "B003FDA5A19B1A3F1CE7244F5738411D515AEE0327B69CCCE5E4EB44377964F5"
+        }
+      ]
+    },
+    "txHash": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+    "ledger": 107822136,
+    "txUrl": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+  }
+}

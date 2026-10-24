@@ -1,0 +1,77 @@
+{
+  "id": "xrp-micropayments",
+  "name": "XRP micropayments",
+  "rail": "xrp-paychan",
+  "adapter": "xrp-paychan",
+  "assets": [
+    "XRP"
+  ],
+  "networks": [
+    "xrpl:0",
+    "xrpl:2"
+  ],
+  "mode": "LIVE_CAPABLE",
+  "can": [
+    "Pay per call in XRP with cumulative signed payment-channel claims (no ledger tx per call)",
+    "Let the seller verify each claim offline before serving",
+    "Redeem the best claim in one PaymentChannelClaim",
+    "Show recorded Mainnet purchases re-read from two independent Mainnet readers"
+  ],
+  "cannot": [
+    "Carry RLUSD or any token (XRP payment channels are XRP-only)",
+    "Execute from this adapter: the purchase worker executes",
+    "Spend more than the channel was funded with",
+    "Treat a signed claim as payment before the redeem tx validates"
+  ],
+  "proofConditions": {
+    "status": "VERIFIED",
+    "facts": [
+      {
+        "fact": "validated",
+        "equals": true
+      },
+      {
+        "fact": "tesSUCCESS",
+        "equals": true
+      },
+      {
+        "fact": "channelMatches",
+        "equals": true
+      },
+      {
+        "fact": "claimCovered",
+        "equals": true
+      },
+      {
+        "fact": "recordedDelivered",
+        "equals": true
+      },
+      {
+        "fact": "readersAgreeing",
+        "min": 2
+      },
+      {
+        "fact": "ledgerHashesAgree",
+        "equals": true
+      }
+    ]
+  },
+  "lifecycle": [
+    "AUTHORIZED",
+    "VOUCHER_VERIFIED",
+    "REDEEMED",
+    "SETTLED",
+    "VERIFIED",
+    "UNLOCKED"
+  ],
+  "evidence": [
+    "commerce/evidence/xrp-paychan.mainnet.json",
+    "commerce/fixtures/mainnet-paychan-purchase.json",
+    "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+  ],
+  "status": {
+    "state": "REAL",
+    "evidenceStatus": "VERIFIED",
+    "reason": "Real XRPL Mainnet purchases were executed by the existing purchase worker (codex/ny-agent-orchestration-v1). This adapter does not execute; it re-read redeem tx 7CC6078F…D971 from two Mainnet readers (read-only) and it verified."
+  }
+}

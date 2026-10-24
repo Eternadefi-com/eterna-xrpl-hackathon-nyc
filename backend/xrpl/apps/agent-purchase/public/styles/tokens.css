@@ -1,0 +1,76 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   DESIGN TOKENS — the designer owns this file.
+   Default theme = Eterna storefront ("Own Your Agent": electric purple, pink, black).
+   Alternate theme = the Eterna film ("The Speed of Trust": black, gold, restrained violet) → <html data-theme="film">.
+   Change values freely. Keep contrast ≥ 4.5:1 for text.
+   ONE DESIGN SYSTEM for all four products (Agent Governance · XLS-68 · XLS-75 · Voucher Commerce), the presentation and
+   the video: change a value here and every product follows.
+   ───────────────────────────────────────────────────────────────────────────── */
+:root {
+  --font-ui: "Space Grotesk", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: ui-monospace, Menlo, monospace;
+
+  --ground: #0b0711;      /* page background */
+  --raised: #151020;      /* cards */
+  --raised-2: #1d1630;    /* nested surfaces */
+  --line: #2a2140;        /* hairlines */
+  --ink: #f7f2ff;         /* primary text */
+  --soft: #c9bedc;        /* secondary text */
+  --accent: #a66bff;      /* brand / primary actions */
+  --accent-2: #ff3d9a;    /* highlight */
+  --on-accent: #16000c;
+
+  --ok: #4ee0b0;          /* verified / unlocked */
+  --warn: #ffb74d;        /* pending / locked */
+  --bad: #ff7a8f;         /* refused */
+
+  --radius: 22px;
+  --radius-sm: 12px;
+  --space: 16px;
+  --shadow: 0 20px 60px rgba(0, 0, 0, .45);
+
+  /* type scale — every product uses these sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 22px;
+  --text-xl: 30px;
+  --text-2xl: clamp(32px, 5vw, 56px);
+  --tracking-label: .12em;   /* eyebrows, labels, pills */
+
+  /* evidence status — the same meaning and colour in every product, app and presentation */
+  --status-verified: var(--ok);         /* proven on the ledger */
+  --status-simulated: var(--accent-2);  /* local simulator, never a real network */
+  --status-pending: var(--warn);        /* not happened yet */
+  --status-rehearsal: var(--warn);      /* real, but an earlier run */
+  --status-refused: var(--bad);         /* refused by the rulebook */
+  --net-mainnet: var(--ok);
+  --net-devnet: var(--warn);
+
+  /* layout */
+  --page-max: 1280px;
+  --gutter: 24px;
+  --gutter-sm: 16px;
+
+  /* motion — the app and the presentation/video read the same values (show.js → lib/master.js MOTION) */
+  --motion-enter: 700ms;     /* an element arriving */
+  --motion-step: 450ms;      /* stagger between items in a list */
+  --motion-exit: 400ms;
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+}
+
+[data-theme="film"] {
+  --font-ui: "Inter", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --ground: #030304;
+  --raised: #0d0d0f;
+  --raised-2: #16161a;
+  --line: #2b2733;
+  --ink: #f4f1ea;
+  --soft: #a9a49b;
+  --accent: #d4af37;
+  --accent-2: #8b5cf6;
+  --on-accent: #0b0b0d;
+  --ok: #5fe0a8;
+}

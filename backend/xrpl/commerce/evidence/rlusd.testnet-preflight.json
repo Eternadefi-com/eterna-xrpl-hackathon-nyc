@@ -1,0 +1,52 @@
+{
+  "capturedAt": "2026-10-24T20:31:51.024Z",
+  "readers": [
+    {
+      "url": "https://s.altnet.rippletest.net:51234",
+      "hostid": "CURD",
+      "build_version": "3.4.1"
+    },
+    {
+      "url": "wss://testnet.xrpl-labs.com/",
+      "hostid": "SOME",
+      "build_version": "3.4.1"
+    }
+  ],
+  "note": "Devnet mission addresses do not exist on Testnet: the trust-line checks are expected to fail until Testnet accounts are approved.",
+  "preflight": [
+    {
+      "ok": false,
+      "code": "PREFLIGHT_PAYER_TRUST_LINE_MISSING",
+      "reader": "https://s.altnet.rippletest.net:51234",
+      "issuerFlags": {
+        "requireAuthorization": false,
+        "globalFreeze": false,
+        "defaultRipple": true,
+        "clawback": true,
+        "transferRate": null
+      },
+      "checks": {
+        "issuerFound": true,
+        "issuerFlagsKnown": true,
+        "noTransferFee": true
+      }
+    },
+    {
+      "ok": false,
+      "code": "PREFLIGHT_PAYER_TRUST_LINE_MISSING",
+      "reader": "wss://testnet.xrpl-labs.com/",
+      "issuerFlags": {
+        "requireAuthorization": false,
+        "globalFreeze": false,
+        "defaultRipple": true,
+        "clawback": true,
+        "transferRate": null
+      },
+      "checks": {
+        "issuerFound": true,
+        "issuerFlagsKnown": true,
+        "noTransferFee": true
+      }
+    }
+  ]
+}

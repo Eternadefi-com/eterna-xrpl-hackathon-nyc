@@ -1,0 +1,70 @@
+{
+  "id": "devnet-xls68",
+  "version": 1,
+  "status": "DRAFT · scenario depends on the verified XLS-68 rules; narration awaiting owner review",
+  "sponsor": {
+    "name": "XRPL Sponsored Fees and Reserves (XLS-68)",
+    "audience": "Judges and sponsors evaluating new XRPL capabilities for agentic finance",
+    "confirmed": false
+  },
+  "scenario": {
+    "title": "A sponsored agent account",
+    "problem": "Every agent account needs its own XRP for fees and reserves — money she has to fund, track and recover.",
+    "summary": "Rose’s agent acts on the ledger without holding XRP for fees or reserves: Eterna sponsors them, under Rose’s policy.",
+    "merchant": "Eterna (sponsor)",
+    "priceXrp": null
+  },
+  "capability": {
+    "name": "Sponsored Fees and Reserves · XLS-68",
+    "oneLiner": "The sponsor pays the fee and reserve. The agent never needs to hold XRP.",
+    "xrplFeatures": [
+      "Sponsor amendment",
+      "Sponsored account creation (1 drop)",
+      "Sponsor co-signature on a delegated payment"
+    ]
+  },
+  "network": {
+    "label": "XRPL Devnet",
+    "realValue": false
+  },
+  "imagery": {
+    "hero": "assets/scenarios/devnet-xls68/rose-hero.jpg",
+    "context": "Rose onboarding a new team of agents; none of them should carry company XRP",
+    "palette": "default"
+  },
+  "authority": {
+    "source": "PLANNED",
+    "sponsoredBy": "Eterna",
+    "covers": "Transaction fee and owner reserve",
+    "policy": "Rose’s agents only, within her limits"
+  },
+  "evidence": {
+    "source": "unified-mission",
+    "file": "rose-unified-commerce",
+    "parts": [
+      "xls68-sponsorship",
+      "xls75-delegation",
+      "settlement"
+    ],
+    "requireVerified": [
+      "xls68-sponsorship",
+      "xls75-delegation",
+      "settlement"
+    ],
+    "note": "The sponsored transactions from Rose’s Devnet mission (run during the hackathon), re-read from two Devnet readers."
+  },
+  "messages": {
+    "opening": "What if an AI agent could work on the ledger without ever holding money for fees?",
+    "closing": "Sponsored by policy. Verified on the ledger. Eterna.AI — Own Your Agent."
+  },
+  "narration": {
+    "opening": "This is Eterna: the control layer for agents that act on the XRP Ledger.",
+    "problem": "Rose is a CFO rolling out a team of AI agents. Every agent account needs XRP for fees and reserves — idle money spread across wallets she has to fund, track and recover.",
+    "solution": "With XRPL’s new Sponsored Fees and Reserves, Eterna can pay those costs for her agents — but only under the policy Rose approved.",
+    "transaction": "Her agent submits its transaction. Eterna checks it against Rose’s policy and co-signs as sponsor. The agent holds no XRP for the fee or the reserve.",
+    "proof": "This is XRPL Devnet, with the Sponsor amendment enabled. Here is the transaction hash. The ledger records Eterna as the sponsor.",
+    "outcome": "Rose’s agent is working, her XRP stays in one place, and every sponsored cost is on the record.",
+    "closing": "Sponsored by policy. Verified on the ledger."
+  },
+  "durations": {}
+}

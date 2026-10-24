@@ -1,0 +1,67 @@
+{
+  "id": "rlusd-payments",
+  "name": "RLUSD payments",
+  "rail": "rlusd",
+  "adapter": "rlusd",
+  "assets": [
+    "RLUSD"
+  ],
+  "networks": [
+    "xrpl:0",
+    "xrpl:1"
+  ],
+  "mode": "LIVE_CAPABLE",
+  "can": [
+    "Pay an exact RLUSD amount with a direct XRPL Payment (no partial-payment flag, no paths, no SendMax)",
+    "Bind RLUSD to its issuer, currency code and network (Mainnet issuer rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De, Testnet rQhWct2fv4Vc4KRjRgMrxa8xPN9Zx9iLKV)",
+    "Preflight read-only: issuer flags, payer balance, destination trust line and headroom",
+    "Prove delivery from meta.delivered_amount on two readers, with the XRP fee reported separately",
+    "Let an agent sign through an XLS-75 delegation"
+  ],
+  "cannot": [
+    "Use a payment channel (XRP channels cannot carry tokens)",
+    "Run on Devnet (no RLUSD there)",
+    "Accept a partial or short delivery",
+    "Run live until a Testnet run is approved (status PENDING)"
+  ],
+  "proofConditions": {
+    "status": "VERIFIED",
+    "facts": [
+      {
+        "fact": "validated",
+        "equals": true
+      },
+      {
+        "fact": "tesSUCCESS",
+        "equals": true
+      },
+      {
+        "fact": "deliveredExact",
+        "equals": true
+      },
+      {
+        "fact": "readersAgreeing",
+        "min": 2
+      },
+      {
+        "fact": "ledgerHashesAgree",
+        "equals": true
+      }
+    ]
+  },
+  "lifecycle": [
+    "AUTHORIZED",
+    "SUBMITTED",
+    "SETTLED",
+    "VERIFIED",
+    "UNLOCKED"
+  ],
+  "evidence": [
+    "commerce/evidence/rlusd.testnet-preflight.json"
+  ],
+  "status": {
+    "state": "LOCAL_ONLY",
+    "evidenceStatus": "PENDING",
+    "reason": "Builder, read-only preflight and delivery verifier are tested offline. The Testnet issuer flags were read live (read-only). No RLUSD payment has been made: a real Testnet run (accounts, trust lines, test RLUSD) needs owner approval."
+  }
+}

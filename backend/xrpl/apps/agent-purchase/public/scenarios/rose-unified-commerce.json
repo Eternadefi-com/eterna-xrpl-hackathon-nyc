@@ -1,0 +1,75 @@
+{
+  "id": "rose-unified-commerce",
+  "version": 1,
+  "status": "DRAFT · narration awaiting owner review; Mastercard part is a labelled local simulator until AP4M sandbox access",
+  "sponsor": {
+    "name": "Built on XRPL XLS-68 + XLS-75 · modelled on Mastercard AP4M",
+    "audience": "Judges and sponsors evaluating governed agent commerce across networks",
+    "confirmed": false
+  },
+  "scenario": {
+    "title": "One governed purchasing mission",
+    "problem": "Her agents now pay through cards, vouchers and ledgers. Who checks that every payment stayed inside what she approved?",
+    "summary": "Rose approves one mission. Her agent buys data reports with vouchers; on the XRP Ledger, Eterna sponsors the agent’s costs and Rose delegates one permission; Eterna proves what happened.",
+    "merchant": "Ledger report seller (Devnet)",
+    "priceXrp": 0.1
+  },
+  "capability": {
+    "name": "XLS-68 sponsorship · XLS-75 delegation · AP4M-style vouchers (simulated)",
+    "oneLiner": "One authorization. Multiple payments. Verifiable proof.",
+    "xrplFeatures": [
+      "Sponsor (XLS-68)",
+      "DelegateSet (XLS-75)",
+      "Delegated Payment",
+      "Memo-anchored audit receipt"
+    ]
+  },
+  "network": {
+    "label": "XRPL Devnet",
+    "realValue": false
+  },
+  "imagery": {
+    "hero": "assets/scenarios/rose-unified-commerce/rose-hero.jpg",
+    "context": "Rose approving one purchasing mission for her agent team",
+    "palette": "default"
+  },
+  "authority": {
+    "source": "PLANNED",
+    "terms": [
+      "One mission: buy validated ledger reports",
+      "Approved seller only",
+      "Max 0.1 XRP per voucher",
+      "0.5 XRP total",
+      "Expires end of demo day"
+    ]
+  },
+  "evidence": {
+    "source": "unified-mission",
+    "file": "rose-unified-commerce",
+    "requireVerified": [
+      "governance",
+      "xls68-sponsorship",
+      "xls75-delegation",
+      "settlement",
+      "audit-receipt"
+    ],
+    "note": "Ledger parts must be VERIFIED from Devnet. Vouchers stay SIMULATED and Mastercard network access stays PENDING until a real AP4M sandbox is used."
+  },
+  "messages": {
+    "opening": "An agent that pays with vouchers, acts on the ledger with sponsored, delegated authority — and can’t exceed what its owner approved.",
+    "closing": "One authorization. Multiple payments. Verifiable proof. Eterna.AI — Own Your Agent."
+  },
+  "narration": {
+    "opening": "This is Eterna: the control layer for agents that pay across networks.",
+    "problem": "Rose is a CFO. Her agents pay with vouchers, cards and ledgers. Each system checks its own piece — nobody checks the whole mission against what she approved.",
+    "solution": "Rose approves one mission: one task, one seller, a per-payment limit, a total budget and an expiry. Eterna turns it into a signed certificate. On the XRP Ledger, delegation gives her agent only the permission it needs, and sponsorship covers its network costs.",
+    "transaction": "The seller asks for payment with an HTTP 402. Eterna checks the request against Rose's mission, and only then does the agent sign a voucher. These vouchers come from our local simulator of Mastercard's Agent Pay model — not from Mastercard. The seller verifies each voucher and serves the report.",
+    "proof": "Every part keeps its own label. The sponsorship, the delegation and the settlement are verified on XRPL Devnet. The vouchers are simulated. Eterna links all of it into one audit receipt, anchored on the ledger.",
+    "outcome": "The reports unlock only after Eterna has checked the settlement on the ledger. A request outside Rose's mission was refused before anything was signed.",
+    "closing": "One authorization. Multiple payments. Verifiable proof."
+  },
+  "durations": {
+    "transaction": 16000,
+    "proof": 14000
+  }
+}

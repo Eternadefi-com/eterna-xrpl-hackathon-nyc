@@ -1,0 +1,141 @@
+{
+ "provenance": {
+  "kind": "RECORDED_EVIDENCE",
+  "network": "XRPL Devnet",
+  "date": "2026-10-24",
+  "source": "GET /api/purchase/v1/offers (Devnet test backend)",
+  "note": "Real published offers. Test network: no real funds."
+ },
+ "offers": [
+  {
+   "offerId": "devnet-test:validated-ledger-report",
+   "revision": 1,
+   "status": "PUBLISHED",
+   "termsDigest": "7a39e54f1d5f6af882a5e5d59f914386590261b39e19b85304d977250380f9a6",
+   "seller": {
+    "id": "seller_ledger_data_agent",
+    "label": "Ledger Data Agent (Devnet test, operated by Eterna)",
+    "kind": "DEMONSTRATION_ADAPTER"
+   },
+   "title": "Validated XRPL ledger report",
+   "description": "A validated-ledger report (JSON) from XRPL Devnet",
+   "network": "XRPL Devnet",
+   "asset": {
+    "type": "XRP",
+    "currency": "XRP",
+    "issuer": null
+   },
+   "priceDrops": "100000",
+   "receivingAccount": "rHKNyZQRm4nxrNBkPoZi9tkTRJHN96ZkL7",
+   "requiredInputs": [],
+   "deliveryTerms": {
+    "deliverableDescription": "Ledger index, hash, close time and transaction count of a validated XRPL Devnet ledger, as JSON",
+    "outputType": "application/json",
+    "expectedDeliveryTime": null,
+    "acceptanceCriteria": null,
+    "deliveryOrdering": "CLAIM_THEN_DELIVER_THEN_REDEEM",
+    "refundOrDisputePolicy": "Test network: no real funds. Eterna-operated demonstration seller."
+   },
+   "settlementAdapter": "xrpl-paychan-v1",
+   "authority": "NONE",
+   "howToBuy": {
+    "mcp": "(Devnet session endpoint, retired after recording)",
+    "tool": "eterna_purchase_request",
+    "structuredPurchaseDetails": {
+     "serviceId": "validated-ledger-report"
+    }
+   }
+  },
+  {
+   "offerId": "indie:ledger-snapshots:devnet-snapshot",
+   "revision": 1,
+   "status": "PUBLISHED",
+   "termsDigest": "2a9e4dbb683e2a6d6066070959380bf3dbcf86784592e8eb42aea728ed255643",
+   "seller": {
+    "id": "indie_ledger_snapshots",
+    "label": "Ledger Snapshots (separately hosted seller)",
+    "kind": "INDEPENDENT"
+   },
+   "title": "XRPL Devnet ledger snapshot",
+   "description": "The latest validated Devnet ledger: index, hash, close time and base fee, read live when you pay.",
+   "network": "XRPL Devnet",
+   "asset": {
+    "type": "XRP",
+    "currency": "XRP",
+    "issuer": null
+   },
+   "priceDrops": "50000",
+   "receivingAccount": "rGYJbTymLj2wybs3ywVZBb2etCSsEMnLoX",
+   "requiredInputs": [],
+   "deliveryTerms": {
+    "deliverableDescription": "Latest validated XRPL Devnet ledger index, hash, close time and base fee.",
+    "outputType": "application/json",
+    "expectedDeliveryTime": "PT1M",
+    "acceptanceCriteria": {
+     "maxBytes": 4000,
+     "requiredKeys": [
+      "ledgerIndex",
+      "ledgerHash",
+      "closeTime"
+     ]
+    },
+    "deliveryOrdering": "CLAIM_THEN_DELIVER_THEN_REDEEM",
+    "refundOrDisputePolicy": "If the snapshot is missing or malformed, the seller does not redeem the claim."
+   },
+   "settlementAdapter": "xrpl-paychan-v1",
+   "authority": "NONE",
+   "howToBuy": {
+    "mcp": "(Devnet session endpoint, retired after recording)",
+    "tool": "eterna_purchase_request",
+    "structuredPurchaseDetails": {
+     "serviceId": "devnet-ledger-snapshot"
+    }
+   }
+  },
+  {
+   "offerId": "oua:demo-studio-sample-store:hackathon-starter-guide",
+   "revision": 1,
+   "status": "PUBLISHED",
+   "termsDigest": "3da204d7aea3031368c1df210da260cc2c7cdee407038ec541a57d8693800c3b",
+   "seller": {
+    "id": "oua_demo_studio_sample_store",
+    "label": "Demo Studio (sample store)",
+    "kind": "INDEPENDENT"
+   },
+   "title": "Hackathon starter guide",
+   "description": "A one-page checklist for shipping an agent demo in 24 hours",
+   "network": "XRPL Devnet",
+   "asset": {
+    "type": "XRP",
+    "currency": "XRP",
+    "issuer": null
+   },
+   "priceDrops": "100000",
+   "receivingAccount": "rnunnge8G8qWqnhgk38jYk5kaZcAwojB2X",
+   "requiredInputs": [],
+   "deliveryTerms": {
+    "deliverableDescription": "A one-page checklist for shipping an agent demo in 24 hours",
+    "outputType": "application/json",
+    "expectedDeliveryTime": "PT1M",
+    "acceptanceCriteria": {
+     "maxBytes": 20000,
+     "requiredKeys": [
+      "product",
+      "content"
+     ]
+    },
+    "deliveryOrdering": "CLAIM_THEN_DELIVER_THEN_REDEEM",
+    "refundOrDisputePolicy": "Contact me within 7 days and I'll make it right."
+   },
+   "settlementAdapter": "xrpl-paychan-v1",
+   "authority": "NONE",
+   "howToBuy": {
+    "mcp": "(Devnet session endpoint, retired after recording)",
+    "tool": "eterna_purchase_request",
+    "structuredPurchaseDetails": {
+     "serviceId": "demo-studio-sample-store-hackathon-starter-guide"
+    }
+   }
+  }
+ ]
+}

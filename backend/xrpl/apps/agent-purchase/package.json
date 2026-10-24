@@ -1,0 +1,11 @@
+{
+  "name": "eterna-agent-purchase-ui",
+  "private": true,
+  "type": "module",
+  "description": "Eterna.AI Agent Purchase Experience — UI preview over the governed-purchase API (no dependencies).",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

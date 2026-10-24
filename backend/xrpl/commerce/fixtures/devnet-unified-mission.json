@@ -1,0 +1,113 @@
+{
+ "provenance": {
+  "kind": "RECORDED_EVIDENCE",
+  "network": "XRPL Devnet",
+  "source": "unified/run-mission.mjs (commit 4c6bba5); public fields only, no keys"
+ },
+ "accounts": {
+  "E": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+  "R": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+  "S": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+  "A": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+  "rogue": "r3FugwcH18pxoXDSpeQTagonAv8QRPVYD2"
+ },
+ "certificate": {
+  "type": "eterna.mission-certificate.v1",
+  "missionId": "rose-unified-2026-10-24",
+  "issuer": "Eterna",
+  "network": "XRPL Devnet",
+  "networkId": 2,
+  "principal": {
+   "name": "Rose (fictional persona)",
+   "treasury": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1"
+  },
+  "agent": {
+   "xrpl": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+   "voucherKey": "0x7d46bcf926e5dc617b78168259188377077a03ce"
+  },
+  "task": "buy validated XRPL ledger reports",
+  "approvedSellers": [
+   "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z"
+  ],
+  "sponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+  "limits": {
+   "currency": "XRP",
+   "perVoucherDrops": "100000",
+   "capDrops": "500000"
+  },
+  "voucherScheme": "eterna-voucher-sim",
+  "issuedAt": "2026-10-24T20:08:40.218Z",
+  "expiry": "2026-10-25T20:08:40.218Z"
+ },
+ "certificateDigest": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda",
+ "approval": {
+  "certificateDigest": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda",
+  "signer": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+  "publicKey": "ED95B67953E7854787B3ABB8B6061A25FD235B123B5CBB9E7E85D4AF499B6A2428",
+  "signature": "01FA77C6D17E0FB1961411A1FF31529E6D2B75420FA747F7521EA1557F2A2C1EF86EB2057702F090A077FAD482761478EB5FA0293F8CC63386592D95220D3C08",
+  "scheme": "xrpl-keypair/ETERNA-MISSION-APPROVAL"
+ },
+ "txs": {
+  "agentCreate": "67CC1CFE9DBF75327653A25F89254ECFE035E28A45A304923F3F39A69537C622",
+  "delegateSet": "069C9A78292CCD7A4E98BF03151F3A1DAC53D51307B3ECAEF89FEA379E6B00A9",
+  "settlement": "D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD",
+  "anchor": "9E2909EFBDAFA5D6208B6ACA369435F366702379BEDFDA7B7311468CF852725B"
+ },
+ "batch": {
+  "simulated": true,
+  "issuer": "Eterna local simulator \u2014 not Mastercard",
+  "kind": "redemption-batch",
+  "scheme": "eterna-voucher-sim",
+  "network": "xrpl:2",
+  "seller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+  "sessionId": "0xc9f15d54bfdb467b2c104434e4ea0e4d561e9ad702160823e1100fdb32c240ba",
+  "buyer": "0x7d46bcf926e5dc617b78168259188377077a03ce",
+  "certificateDigest": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda",
+  "redeemedCumulativeDrops": "300000",
+  "voucherCount": 3,
+  "vouchers": [
+   {
+    "digest": "0x34d0d707cc73888e38f873a52c767bbd259330e73a43362134a6767e172fbf3d",
+    "message": {
+     "sessionId": "0xc9f15d54bfdb467b2c104434e4ea0e4d561e9ad702160823e1100fdb32c240ba",
+     "buyer": "0x7d46bcf926e5dc617b78168259188377077a03ce",
+     "seller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+     "cumulativeDrops": "100000",
+     "nonce": "1",
+     "expiry": 1792876129,
+     "certificateDigest": "0x9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda"
+    },
+    "signature": "0x7c19cd9af70e63f27ce689e27cd93e85de42185a8748b75a5e8ee7493845c67406ea12e909f8072fa26c42b7d93e20f57a71344913d8aafb98b82fdce3d3880a1c"
+   },
+   {
+    "digest": "0x6504820310ef1b5096bcf5141c18903353ceab10153e86e892483c376988e3f7",
+    "message": {
+     "sessionId": "0xc9f15d54bfdb467b2c104434e4ea0e4d561e9ad702160823e1100fdb32c240ba",
+     "buyer": "0x7d46bcf926e5dc617b78168259188377077a03ce",
+     "seller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+     "cumulativeDrops": "200000",
+     "nonce": "2",
+     "expiry": 1792876129,
+     "certificateDigest": "0x9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda"
+    },
+    "signature": "0xe5bdd7195d73c23ebe71159f9b471bf0f51af75a987911b6ef677df30cf99ceb5673f01863874624984b257c5e5b356f12ac36c7a2b8e427d85fb45377caa4451b"
+   },
+   {
+    "digest": "0x2c83dea5806751f121949f136aefa1850a08a8d8e9932cde0001f906c9242821",
+    "message": {
+     "sessionId": "0xc9f15d54bfdb467b2c104434e4ea0e4d561e9ad702160823e1100fdb32c240ba",
+     "buyer": "0x7d46bcf926e5dc617b78168259188377077a03ce",
+     "seller": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+     "cumulativeDrops": "300000",
+     "nonce": "3",
+     "expiry": 1792876129,
+     "certificateDigest": "0x9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda"
+    },
+    "signature": "0xc892b58ffbc92fa4cc7ea6169dd45361b4c1db7e19c51c31097c80c087334ad55fcf946b7e65a12ee4d89a7ee5350ed4f711b190945d16c9074c6f702aad04231c"
+   }
+  ],
+  "createdAt": "2026-10-24T20:08:57.170Z",
+  "batchDigest": "af4b144f717f4455a12ccb0c124cab8748fd4f21acc17aebef9a0fd3e6f208b0"
+ },
+ "receiptDigest": "6d28d560476be55d0500754ec09779b7d07d53d10f21d4e4e4ff553ed719843b"
+}

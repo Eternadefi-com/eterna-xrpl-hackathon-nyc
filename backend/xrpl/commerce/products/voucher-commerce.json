@@ -1,0 +1,63 @@
+{
+  "id": "voucher-commerce",
+  "name": "Voucher commerce (AP4M model, simulated)",
+  "rail": "ap4m-voucher",
+  "adapter": "ap4m-voucher",
+  "assets": [
+    "XRP"
+  ],
+  "networks": [
+    "xrpl:2"
+  ],
+  "mode": "SIMULATED",
+  "can": [
+    "Answer HTTP 402 with an x402 v2-shaped requirement (scheme eterna-voucher-sim)",
+    "Have the agent sign cumulative EIP-712 vouchers, only after an Eterna governance PERMIT",
+    "Have the seller verify signature, seller binding, cumulative amount, nonce, cap and expiry; reject replays",
+    "Batch vouchers for deferred redemption and reconcile the batch against a real ledger settlement"
+  ],
+  "cannot": [
+    "Connect to Mastercard: there is no AP4M sandbox access; the vouchers are simulated locally",
+    "Settle by itself: settlement evidence must come from another rail",
+    "Use Mastercard's real EIP-712 domain or types (unknown; see MASTERCARD_REQUIREMENTS.md)",
+    "Claim VERIFIED for the voucher part: it stays SIMULATED"
+  ],
+  "proofConditions": {
+    "status": "SIMULATED",
+    "facts": [
+      {
+        "fact": "batchValid",
+        "equals": true
+      },
+      {
+        "fact": "voucherInBatch",
+        "equals": true
+      },
+      {
+        "fact": "settlementStatus",
+        "equals": "VERIFIED"
+      },
+      {
+        "fact": "settlementCoversBatch",
+        "equals": true
+      }
+    ]
+  },
+  "lifecycle": [
+    "AUTHORIZED",
+    "VOUCHER_VERIFIED",
+    "REDEEMED",
+    "SETTLED",
+    "VERIFIED",
+    "UNLOCKED"
+  ],
+  "evidence": [
+    "commerce/evidence/ap4m-voucher.devnet.json",
+    "commerce/MASTERCARD_REQUIREMENTS.md"
+  ],
+  "status": {
+    "state": "SIMULATED",
+    "evidenceStatus": "SIMULATED",
+    "reason": "Eterna local simulator of the AP4M voucher model; not Mastercard. Its redemption was reconciled against the real Devnet delegated settlement. A real AP4M connection is BLOCKED: no Early Access credentials or sandbox (see commerce/MASTERCARD_REQUIREMENTS.md)."
+  }
+}

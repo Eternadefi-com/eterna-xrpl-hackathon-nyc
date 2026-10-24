@@ -1,0 +1,62 @@
+{
+  "id": "mainnet-purchase",
+  "version": 1,
+  "status": "DRAFT · narration awaiting owner review",
+  "sponsor": {
+    "name": "Agentic Finance track",
+    "audience": "Judges and sponsors evaluating safe autonomous agent payments",
+    "confirmed": false
+  },
+  "scenario": {
+    "title": "Validated XRPL ledger report",
+    "problem": "Approve every agent purchase herself — or trust permissions she can’t check?",
+    "summary": "Rose’s AI agent buys a 0.1 XRP data report from the Ledger Data Agent, autonomously, under the authority she signed once.",
+    "merchant": "Ledger Data Agent",
+    "priceXrp": 0.1
+  },
+  "capability": {
+    "name": "Governed agent payment · XRPL payment channel",
+    "oneLiner": "Authority signed once. Every purchase checked by Eterna. Settlement verified on the ledger.",
+    "xrplFeatures": [
+      "PaymentChannelCreate",
+      "PaymentChannelClaim",
+      "Memo-anchored receipt"
+    ]
+  },
+  "network": {
+    "label": "XRPL Mainnet",
+    "realValue": true
+  },
+  "imagery": {
+    "hero": "assets/scenarios/mainnet-purchase/rose-hero.jpg",
+    "context": "Rose at her desk, end of quarter; her teams’ agents buying data and software",
+    "palette": "default"
+  },
+  "authority": {
+    "source": "PLANNED",
+    "totalXrp": 1,
+    "perPurchaseXrp": 1,
+    "merchants": "Approved merchants only",
+    "expiry": "End of demo day"
+  },
+  "evidence": {
+    "source": "mainnet-purchase",
+    "purchase": "latest",
+    "notBefore": "2026-10-24T12:30:00Z",
+    "note": "Final cut uses Rose’s live hackathon purchase. Earlier verified Mainnet purchases render as REHEARSAL."
+  },
+  "messages": {
+    "opening": "What if your AI agents could spend — but never beyond your authority?",
+    "closing": "Authorize once. Operate within limits. Verify every transaction. Eterna.AI — Own Your Agent."
+  },
+  "narration": {
+    "opening": "This is Eterna: the control layer for agents that spend real money.",
+    "problem": "Rose is a CFO. Her teams’ AI agents buy data and software every day. Today she either approves every purchase herself, or trusts permissions she can’t check.",
+    "solution": "With Eterna, Rose signs once, from her own wallet: up to one XRP in total, approved merchants only, until the end of demo day. Eterna holds the rules. It never holds her keys.",
+    "transaction": "Her agent asks to buy a validated XRPL ledger report for zero point one XRP. Eterna checks identity, merchant, amount, expiry and remaining budget — and pays, without asking Rose again.",
+    "proof": "This is XRPL Mainnet. Here is the transaction hash. Two independent ledger readers confirmed settlement before anything was delivered.",
+    "outcome": "Only then does the report unlock. Rose can view it, download it, and prove it is exactly what was paid for.",
+    "closing": "Her agents can spend. They can’t exceed her authority."
+  },
+  "durations": {}
+}

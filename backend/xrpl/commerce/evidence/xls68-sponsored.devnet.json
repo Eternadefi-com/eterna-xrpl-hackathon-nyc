@@ -1,0 +1,168 @@
+{
+  "capturedAt": "2026-10-24T20:31:51.024Z",
+  "readers": [
+    {
+      "url": "https://s.devnet.rippletest.net:51234",
+      "hostid": "FUSS",
+      "build_version": "3.4.1"
+    },
+    {
+      "url": "wss://devnet.honeycluster.io/",
+      "hostid": "abby",
+      "build_version": "3.4.1"
+    }
+  ],
+  "settlement": {
+    "adapter": "xls68-sponsored",
+    "rail": "xls68-sponsored",
+    "mode": "LIVE_CAPABLE",
+    "status": "VERIFIED",
+    "facts": {
+      "network": "xrpl:2",
+      "asset": "XRP",
+      "txType": "Payment",
+      "payer": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+      "delegate": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+      "destination": "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z",
+      "amount": "300000",
+      "sponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+      "sponsorFlags": 1,
+      "feeDrops": "12",
+      "validated": true,
+      "tesSUCCESS": true,
+      "result": "tesSUCCESS",
+      "signaturesValid": true,
+      "sponsorPaidFee": true,
+      "balanceDeltas": {
+        "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz": "-12",
+        "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1": "-300000",
+        "rfi26QyEcnhfJ56LCneWGyFwFGHqz11v4Z": "300000"
+      },
+      "memos": [
+        {
+          "type": "eterna/ap4m-sim-voucher-batch",
+          "data": "af4b144f717f4455a12ccb0c124cab8748fd4f21acc17aebef9a0fd3e6f208b0"
+        },
+        {
+          "type": "eterna/mission-certificate",
+          "data": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda"
+        }
+      ],
+      "readersAgreeing": 2,
+      "readersAsked": 2,
+      "ledgerHashesAgree": true,
+      "readers": [
+        {
+          "reader": "https://s.devnet.rippletest.net:51234",
+          "ok": true,
+          "ledgerHash": "1A9BB578B0AE8A14339D353F6680DBD66F991B7EF4C5F2F2B676C4573173B410"
+        },
+        {
+          "reader": "wss://devnet.honeycluster.io/",
+          "ok": true,
+          "ledgerHash": "1A9BB578B0AE8A14339D353F6680DBD66F991B7EF4C5F2F2B676C4573173B410"
+        }
+      ]
+    },
+    "txHash": "D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD",
+    "ledger": 6387157,
+    "txUrl": "https://devnet.xrpl.org/transactions/D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD"
+  },
+  "delegateSet": {
+    "adapter": "xls68-sponsored",
+    "rail": "xls68-sponsored",
+    "mode": "LIVE_CAPABLE",
+    "status": "VERIFIED",
+    "facts": {
+      "network": "xrpl:2",
+      "asset": "XRP",
+      "txType": "DelegateSet",
+      "payer": "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1",
+      "delegate": null,
+      "amount": null,
+      "sponsor": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+      "sponsorFlags": 3,
+      "feeDrops": "12",
+      "validated": true,
+      "tesSUCCESS": true,
+      "result": "tesSUCCESS",
+      "signaturesValid": true,
+      "sponsorPaidFee": true,
+      "balanceDeltas": {
+        "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz": "-12",
+        "rNZGy3w2p3tV5dMF4n2bE1UYnuX4mF73V1": "0"
+      },
+      "memos": [
+        {
+          "type": "eterna/mission-certificate",
+          "data": "9de2b45c4795e7cd1e0b231e10f8a108e8892df9cd4b5e095a4424d0a6a95cda"
+        }
+      ],
+      "readersAgreeing": 2,
+      "readersAsked": 2,
+      "ledgerHashesAgree": true,
+      "readers": [
+        {
+          "reader": "https://s.devnet.rippletest.net:51234",
+          "ok": true,
+          "ledgerHash": "05CD5B394A360C015DC8781D32A5F0514E15FE9D8E8E844D0D1FB3C48E4C1036"
+        },
+        {
+          "reader": "wss://devnet.honeycluster.io/",
+          "ok": true,
+          "ledgerHash": "05CD5B394A360C015DC8781D32A5F0514E15FE9D8E8E844D0D1FB3C48E4C1036"
+        }
+      ]
+    },
+    "txHash": "069C9A78292CCD7A4E98BF03151F3A1DAC53D51307B3ECAEF89FEA379E6B00A9",
+    "ledger": 6387153,
+    "txUrl": "https://devnet.xrpl.org/transactions/069C9A78292CCD7A4E98BF03151F3A1DAC53D51307B3ECAEF89FEA379E6B00A9"
+  },
+  "agentCreate": {
+    "adapter": "xls68-sponsored",
+    "rail": "xls68-sponsored",
+    "mode": "LIVE_CAPABLE",
+    "status": "VERIFIED",
+    "facts": {
+      "network": "xrpl:2",
+      "asset": "XRP",
+      "txType": "Payment",
+      "payer": "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz",
+      "delegate": null,
+      "destination": "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu",
+      "amount": "1",
+      "sponsor": null,
+      "sponsorFlags": null,
+      "feeDrops": "12",
+      "validated": true,
+      "tesSUCCESS": true,
+      "result": "tesSUCCESS",
+      "signaturesValid": true,
+      "sponsorPaidFee": false,
+      "balanceDeltas": {
+        "rPUXZbikTAFN53AUux4ctnHCSJ6nkjVRVz": "-13",
+        "rMUdn2PrnFAuPtZCxDquJsxiQaJXiBRhTu": "1"
+      },
+      "memos": [],
+      "sponsoredAccountCreate": true,
+      "readersAgreeing": 2,
+      "readersAsked": 2,
+      "ledgerHashesAgree": true,
+      "readers": [
+        {
+          "reader": "https://s.devnet.rippletest.net:51234",
+          "ok": true,
+          "ledgerHash": "290D7BE0680D93B67D565A4FE6858044ED9B854692DAE224C6A430ADD4E6C539"
+        },
+        {
+          "reader": "wss://devnet.honeycluster.io/",
+          "ok": true,
+          "ledgerHash": "290D7BE0680D93B67D565A4FE6858044ED9B854692DAE224C6A430ADD4E6C539"
+        }
+      ]
+    },
+    "txHash": "67CC1CFE9DBF75327653A25F89254ECFE035E28A45A304923F3F39A69537C622",
+    "ledger": 6387151,
+    "txUrl": "https://devnet.xrpl.org/transactions/67CC1CFE9DBF75327653A25F89254ECFE035E28A45A304923F3F39A69537C622"
+  }
+}

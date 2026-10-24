@@ -1,0 +1,71 @@
+{
+  "id": "sponsored-execution",
+  "name": "Sponsored execution (XLS-68 + XLS-75 delegation)",
+  "rail": "xls68-sponsored",
+  "adapter": "xls68-sponsored",
+  "assets": [
+    "XRP"
+  ],
+  "networks": [
+    "xrpl:2"
+  ],
+  "mode": "LIVE_CAPABLE",
+  "can": [
+    "Create an agent account with 1 drop whose reserve Eterna carries (tfSponsorCreatedAccount)",
+    "Execute an XRP Payment whose fee Eterna pays (spfSponsorFee, Eterna co-signs with the SPN prefix)",
+    "Let the agent sign for Rose through an XLS-75 Payment delegation (fee sponsorship only)",
+    "Prove each step from two Devnet readers"
+  ],
+  "cannot": [
+    "Run on Mainnet or Testnet (the Sponsor amendment is Devnet-only today)",
+    "Reserve-sponsor a delegated transaction (rippled: temINVALID)",
+    "Move tokens; XRP only",
+    "Sign or submit by itself"
+  ],
+  "proofConditions": {
+    "status": "VERIFIED",
+    "facts": [
+      {
+        "fact": "validated",
+        "equals": true
+      },
+      {
+        "fact": "tesSUCCESS",
+        "equals": true
+      },
+      {
+        "fact": "signaturesValid",
+        "equals": true
+      },
+      {
+        "fact": "sponsorPaidFee",
+        "equals": true
+      },
+      {
+        "fact": "readersAgreeing",
+        "min": 2
+      },
+      {
+        "fact": "ledgerHashesAgree",
+        "equals": true
+      }
+    ]
+  },
+  "lifecycle": [
+    "AUTHORIZED",
+    "SUBMITTED",
+    "SETTLED",
+    "VERIFIED",
+    "UNLOCKED"
+  ],
+  "evidence": [
+    "commerce/evidence/xls68-sponsored.devnet.json",
+    "unified/evidence/evidence-rose-unified-commerce.json",
+    "https://devnet.xrpl.org/transactions/D29DBDF54AA8B903775B2BFAAC5EEEFD8877A9C627E82EDBDF53B6ABD998A0DD"
+  ],
+  "status": {
+    "state": "REAL",
+    "evidenceStatus": "VERIFIED",
+    "reason": "Real XRPL Devnet transactions (unified mission, commit 4c6bba5): sponsored agent account, sponsored DelegateSet, delegated fee-sponsored settlement. Each was re-read from two Devnet readers. Devnet only: the Sponsor amendment is not on Mainnet."
+  }
+}

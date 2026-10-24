@@ -1,0 +1,256 @@
+{
+ "refusals": [
+  {
+   "provenance": {
+    "kind": "RECORDED_EVIDENCE",
+    "network": "XRPL Devnet",
+    "date": "2026-10-20",
+    "source": "docs/evidence/devnet-e2e-2026-10-20/buyer-refusal-NO_EXISTING_AUTHORITY.json"
+   },
+   "reason": "NO_EXISTING_AUTHORITY",
+   "purchaseId": "gpur_34ef9d6d78732723ce2e333585acfc1a",
+   "offer": {
+    "offerId": "indie:second-seller:devnet-snapshot",
+    "revision": 1,
+    "serviceId": "second-ledger-snapshot",
+    "serviceTitle": "XRPL Devnet ledger snapshot",
+    "priceDrops": "50000",
+    "seller": "Second seller (never authorized)",
+    "store": "http://127.0.0.1:64435/store2/offer.json"
+   },
+   "transitions": [
+    {
+     "at": "2026-10-21T00:37:58.265Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "AVAILABLE"
+     }
+    },
+    {
+     "at": "2026-10-21T00:38:04.272Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "ANCHORED"
+     }
+    }
+   ],
+   "final": {
+    "state": "REFUSED",
+    "facets": {
+     "authority": "REFUSED",
+     "execution": "NOT_STARTED",
+     "delivery": "NOT_STARTED",
+     "receipt": "ANCHORED"
+    },
+    "outcome": {
+     "payment": "NONE",
+     "delivery": "NONE",
+     "unresolved": []
+    },
+    "receiptDigest": "7dec80816d829045a1a887062cd5dbeb6695fcb866ca9f0bae66428e20e45ea0",
+    "authorization": null,
+    "redeem": null,
+    "anchor": {
+     "tx": "AD0D4184F73850510A61BC83C7D8C757A62CCFA00CB65CDD59237A087F3CA070",
+     "explorerUrl": "https://devnet.xrpl.org/transactions/AD0D4184F73850510A61BC83C7D8C757A62CCFA00CB65CDD59237A087F3CA070"
+    }
+   },
+   "paymentExecuted": false
+  },
+  {
+   "provenance": {
+    "kind": "RECORDED_EVIDENCE",
+    "network": "XRPL Devnet",
+    "date": "2026-10-20",
+    "source": "docs/evidence/devnet-e2e-2026-10-20/buyer-refusal-EXCEEDS_PER_PURCHASE_LIMIT.json"
+   },
+   "reason": "EXCEEDS_PER_PURCHASE_LIMIT",
+   "purchaseId": "gpur_dbb269def103be5a988a9e55af502c38",
+   "offer": {
+    "offerId": "indie:ledger-snapshots:devnet-snapshot",
+    "revision": 1,
+    "serviceId": "devnet-ledger-snapshot",
+    "serviceTitle": "XRPL Devnet ledger snapshot",
+    "priceDrops": "50000",
+    "seller": "Ledger Snapshots (separately hosted seller)",
+    "store": "http://127.0.0.1:64427/offer.json"
+   },
+   "transitions": [
+    {
+     "at": "2026-10-21T00:37:36.816Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "AVAILABLE"
+     }
+    },
+    {
+     "at": "2026-10-21T00:37:45.828Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "ANCHORED"
+     }
+    }
+   ],
+   "final": {
+    "state": "REFUSED",
+    "facets": {
+     "authority": "REFUSED",
+     "execution": "NOT_STARTED",
+     "delivery": "NOT_STARTED",
+     "receipt": "ANCHORED"
+    },
+    "outcome": {
+     "payment": "NONE",
+     "delivery": "NONE",
+     "unresolved": []
+    },
+    "receiptDigest": "12293669acd917287527cd47a54c1e577c15d63be373246f05d63cff6f0a195e",
+    "authorization": null,
+    "redeem": null,
+    "anchor": {
+     "tx": "1AA3A0B341FD19337DF7528F86D84CC3A3B5DEE67AF2E16F807F82B47AC672F0",
+     "explorerUrl": "https://devnet.xrpl.org/transactions/1AA3A0B341FD19337DF7528F86D84CC3A3B5DEE67AF2E16F807F82B47AC672F0"
+    }
+   },
+   "paymentExecuted": false
+  },
+  {
+   "provenance": {
+    "kind": "RECORDED_EVIDENCE",
+    "network": "XRPL Devnet",
+    "date": "2026-10-20",
+    "source": "docs/evidence/devnet-e2e-2026-10-20/buyer-refusal-AUTHORIZATION_EXPIRED.json"
+   },
+   "reason": "AUTHORIZATION_EXPIRED",
+   "purchaseId": "gpur_ccaa356ee2e67fdda795b83f52c08d99",
+   "offer": {
+    "offerId": "indie:ledger-snapshots:devnet-snapshot",
+    "revision": 1,
+    "serviceId": "devnet-ledger-snapshot",
+    "serviceTitle": "XRPL Devnet ledger snapshot",
+    "priceDrops": "50000",
+    "seller": "Ledger Snapshots (separately hosted seller)",
+    "store": "http://127.0.0.1:64427/offer.json"
+   },
+   "transitions": [
+    {
+     "at": "2026-10-21T00:53:19.194Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "AVAILABLE"
+     }
+    },
+    {
+     "at": "2026-10-21T00:53:37.220Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "ANCHORED"
+     }
+    }
+   ],
+   "final": {
+    "state": "REFUSED",
+    "facets": {
+     "authority": "REFUSED",
+     "execution": "NOT_STARTED",
+     "delivery": "NOT_STARTED",
+     "receipt": "ANCHORED"
+    },
+    "outcome": {
+     "payment": "NONE",
+     "delivery": "NONE",
+     "unresolved": []
+    },
+    "receiptDigest": "999e69048125bc3179781b96594b24d0d3b8ecf88df27d9459e99111cde86234",
+    "authorization": null,
+    "redeem": null,
+    "anchor": {
+     "tx": "675013620EFE026D1A383E33A4DA076E4FBBAD0173458F7A6FF2A4BA4ECC8ABB",
+     "explorerUrl": "https://devnet.xrpl.org/transactions/675013620EFE026D1A383E33A4DA076E4FBBAD0173458F7A6FF2A4BA4ECC8ABB"
+    }
+   },
+   "paymentExecuted": false
+  },
+  {
+   "provenance": {
+    "kind": "RECORDED_EVIDENCE",
+    "network": "XRPL Devnet",
+    "date": "2026-10-20",
+    "source": "docs/evidence/devnet-e2e-2026-10-20/buyer-refusal-PURCHASE_COUNT_EXHAUSTED.json"
+   },
+   "reason": "PURCHASE_COUNT_EXHAUSTED",
+   "purchaseId": "gpur_093272240f9f7879dd4cc664f99190ee",
+   "offer": {
+    "offerId": "indie:ledger-snapshots:devnet-snapshot",
+    "revision": 1,
+    "serviceId": "devnet-ledger-snapshot",
+    "serviceTitle": "XRPL Devnet ledger snapshot",
+    "priceDrops": "50000",
+    "seller": "Ledger Snapshots (separately hosted seller)",
+    "store": "http://127.0.0.1:64427/offer.json"
+   },
+   "transitions": [
+    {
+     "at": "2026-10-21T00:37:47.699Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "AVAILABLE"
+     }
+    },
+    {
+     "at": "2026-10-21T00:37:56.710Z",
+     "state": "REFUSED",
+     "facets": {
+      "authority": "REFUSED",
+      "execution": "NOT_STARTED",
+      "delivery": "NOT_STARTED",
+      "receipt": "ANCHORED"
+     }
+    }
+   ],
+   "final": {
+    "state": "REFUSED",
+    "facets": {
+     "authority": "REFUSED",
+     "execution": "NOT_STARTED",
+     "delivery": "NOT_STARTED",
+     "receipt": "ANCHORED"
+    },
+    "outcome": {
+     "payment": "NONE",
+     "delivery": "NONE",
+     "unresolved": []
+    },
+    "receiptDigest": "297286e85ba74528f0bb32355d875ab0a7524482d3958a70c04f0b01738723b0",
+    "authorization": null,
+    "redeem": null,
+    "anchor": {
+     "tx": "3D6A30A35C6B7C1D88C21B2BE9C3EDC546AA130ABEB37218EF333C49E5F05060",
+     "explorerUrl": "https://devnet.xrpl.org/transactions/3D6A30A35C6B7C1D88C21B2BE9C3EDC546AA130ABEB37218EF333C49E5F05060"
+    }
+   },
+   "paymentExecuted": false
+  }
+ ]
+}

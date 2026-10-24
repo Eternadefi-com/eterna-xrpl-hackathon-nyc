@@ -1,0 +1,22 @@
+{
+ "provenance": {
+  "kind": "PERSONA",
+  "note": "Rose Mitchell is a FICTIONAL demo persona. Her company, role and story are illustrative. Real Eterna evidence shown alongside her story is labelled RECORDED; her authority terms are PLANNED until the owner activates a Mainnet allowance."
+ },
+ "persona": {
+  "name": "Rose Mitchell",
+  "role": "Chief Financial Officer",
+  "company": "Mid-market company · 250 employees",
+  "objective": "Let AI agents handle routine business purchases without surrendering financial control.",
+  "question": "How do I let my AI agents spend company money without approving every transaction, while knowing they cannot exceed the authority I’ve given them?",
+  "buys": "Software subscriptions, cloud services and data services"
+ },
+ "plannedAuthority": {
+  "kind": "PLANNED",
+  "note": "Proposed terms for the Sunday Mainnet demonstration. Not active. Activates only when the owner approves and signs once.",
+  "totalXrp": 1,
+  "perPurchaseXrp": 1,
+  "merchants": "Approved merchants only",
+  "expiry": "End of demo day"
+ }
+}

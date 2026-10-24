@@ -1,0 +1,46 @@
+{
+ "provenance": {
+  "kind": "RECORDED_EVIDENCE",
+  "network": "XRPL Mainnet",
+  "copiedFrom": "hackathon-governed-a2a backend/xrpl/apps/agent-purchase/fixtures/mainnet-standing-2026-10-22.json (read-only; purchases[0].ownerView)",
+  "note": "Executed by the purchase worker, not by this adapter."
+ },
+ "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+ "state": "ANCHORED",
+ "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+ "seller": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+ "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+ "standingCertificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+ "priceDrops": "100000",
+ "execution": {
+  "readers": [
+   "A",
+   "B"
+  ],
+  "redeemTx": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+  "servedAt": "2026-10-22T06:53:44.716Z",
+  "paidDrops": "100000",
+  "claimDrops": "100000",
+  "settlement": "SETTLED",
+  "unresolved": [],
+  "redeemLedger": 107822136,
+  "deliveryDigest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231",
+  "deliveryStatus": "DELIVERED",
+  "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+ },
+ "anchor": {
+  "ledger": 107822139,
+  "signer": "ETERNA_ANCHOR_ACCOUNT",
+  "txHash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+  "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+  "readers": [
+   "A",
+   "B"
+  ],
+  "memoType": "eterna/purchase-receipt-sha256",
+  "memoDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+  "verifiedAt": "2026-10-22T06:54:02.730Z",
+  "explorerUrl": "https://livenet.xrpl.org/transactions/4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553"
+ },
+ "receiptDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9"
+}

@@ -1,0 +1,4179 @@
+{
+ "provenance": {
+  "kind": "RECORDED_EVIDENCE",
+  "network": "XRPL Mainnet",
+  "date": "2026-10-22",
+  "source": "docs/evidence/mainnet-shared-budget-2026-10-22/purchases-db-export.json",
+  "note": "Real purchases, exported from the Mainnet backend. Rendered through the backend view() — the same function the API uses."
+ },
+ "authority": {
+  "requesterView": {
+   "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+   "state": "STANDING_ACTIVE",
+   "revision": 6,
+   "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+   "requester": {
+    "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+    "label": "Coach (OpenClaw)",
+    "verified": false
+   },
+   "seller": {
+    "label": "Ledger Data Agent",
+    "agentId": "seller_ledger_data_agent",
+    "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+   },
+   "service": {
+    "id": "validated-ledger-report",
+    "title": "Validated XRPL ledger report"
+   },
+   "price": {
+    "xrp": "0.1",
+    "drops": "100000"
+   },
+   "asset": "XRP",
+   "network": "XRPL Mainnet",
+   "standing": {
+    "role": "STANDING_AUTHORIZATION",
+    "sharedBudgetOnly": true,
+    "maxPurchases": 10,
+    "maxTotalDrops": "1000000",
+    "permittedRequesters": [
+     "req_67d0f8434a4a7ecd1228509731037567"
+    ],
+    "endedAt": null
+   },
+   "pendingSignature": null,
+   "authorization": {
+    "digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "ledger": 107822030,
+    "readers": [
+     "A",
+     "B"
+    ],
+    "capDrops": "1000000",
+    "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+    "revision": 6,
+    "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+    "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+    "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "verifiedAt": "2026-10-22T06:47:05.290Z",
+    "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+   },
+   "execution": null,
+   "receiptDigest": null,
+   "anchor": null,
+   "updatedAt": "2026-10-22T06:47:05.291892+00:00",
+   "autoAnchor": null,
+   "facets": {
+    "authority": "EXPIRED",
+    "execution": "NOT_STARTED",
+    "delivery": "NOT_STARTED",
+    "receipt": "PENDING"
+   }
+  },
+  "ownerView": {
+   "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+   "state": "STANDING_ACTIVE",
+   "revision": 6,
+   "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+   "requester": {
+    "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+    "label": "Coach (OpenClaw)",
+    "verified": false
+   },
+   "seller": {
+    "label": "Ledger Data Agent",
+    "agentId": "seller_ledger_data_agent",
+    "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+   },
+   "service": {
+    "id": "validated-ledger-report",
+    "title": "Validated XRPL ledger report"
+   },
+   "price": {
+    "xrp": "0.1",
+    "drops": "100000"
+   },
+   "asset": "XRP",
+   "network": "XRPL Mainnet",
+   "standing": {
+    "role": "STANDING_AUTHORIZATION",
+    "sharedBudgetOnly": true,
+    "maxPurchases": 10,
+    "maxTotalDrops": "1000000",
+    "permittedRequesters": [
+     "req_67d0f8434a4a7ecd1228509731037567"
+    ],
+    "endedAt": null
+   },
+   "pendingSignature": null,
+   "authorization": {
+    "digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "ledger": 107822030,
+    "readers": [
+     "A",
+     "B"
+    ],
+    "capDrops": "1000000",
+    "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+    "revision": 6,
+    "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+    "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+    "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "verifiedAt": "2026-10-22T06:47:05.290Z",
+    "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+   },
+   "execution": null,
+   "receiptDigest": null,
+   "anchor": null,
+   "updatedAt": "2026-10-22T06:47:05.291892+00:00",
+   "autoAnchor": null,
+   "facets": {
+    "authority": "EXPIRED",
+    "execution": "NOT_STARTED",
+    "delivery": "NOT_STARTED",
+    "receipt": "PENDING"
+   },
+   "certificate": {
+    "asset": "XRP",
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "roles": {
+     "payer": {
+      "role": "PAYER — signs the authorization in Xaman",
+      "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "confirmed": true
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "requester": {
+      "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+      "kind": "PROVISIONAL",
+      "note": "Correlation only — not identity proof, not authority.",
+      "label": "Coach (OpenClaw)",
+      "verified": false
+     },
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "expiry": "2026-10-23T06:25:05Z",
+    "limits": {
+     "maxPurchases": 10,
+     "maxTotalDrops": "1000000",
+     "maxPerPurchaseDrops": "100000"
+    },
+    "channel": {
+     "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+     "cancelAfter": "2026-10-23T08:25:05Z",
+     "settleDelaySec": 3600
+    },
+    "network": "XRPL Mainnet",
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "delivery": {
+     "confirmed": true,
+     "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+    },
+    "revision": 6,
+    "provenance": {
+     "stated": {
+      "asset": "XRP",
+      "amount": "0.1",
+      "network": "mainnet",
+      "destination": null
+     },
+     "channel": "eterna_purchase_request",
+     "agentLabel": "Coach (OpenClaw)",
+     "agentAddress": "3bg3-ac7n-mkh6",
+     "verification": {
+      "checks": [
+       {
+        "field": "price",
+        "match": true,
+        "stated": "0.1 XRP",
+        "verified": "0.1 XRP"
+       }
+      ],
+      "mismatches": []
+     },
+     "idempotencyKey": "openclaw-mainnet-1792649960"
+    },
+    "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+    "autoConfirm": true,
+    "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+    "standingOnly": true,
+    "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+    "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+    "permittedRequesters": [
+     "req_67d0f8434a4a7ecd1228509731037567"
+    ],
+    "statedTermsAccepted": true
+   },
+   "terms": {
+    "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+    "revision": 6,
+    "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "purchasingAgent": {
+     "label": "Coach",
+     "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "amount": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "expiry": "2026-10-23T06:25:05Z",
+    "purchaseDeadline": "2026-10-23T06:25:05Z",
+    "channel": {
+     "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+     "cancelAfter": "2026-10-23T08:25:05Z",
+     "settleDelaySec": 3600
+    },
+    "limits": {
+     "maxPurchases": 10,
+     "maxTotalDrops": "1000000",
+     "maxPerPurchaseDrops": "100000"
+    },
+    "autoConfirm": true,
+    "standingOnly": true,
+    "permittedRequesters": [
+     "req_67d0f8434a4a7ecd1228509731037567"
+    ],
+    "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+    "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+    "fulfillment": null,
+    "sellerKind": "DEMONSTRATION_ADAPTER",
+    "inputs": null,
+    "offer": null,
+    "deliveryTerms": null,
+    "responseSigningKey": null,
+    "requester": {
+     "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+     "label": "Coach (OpenClaw)"
+    }
+   },
+   "confirmation": null,
+   "receipt": null,
+   "deliveredResult": null,
+   "costs": {
+    "productPriceDrops": "100000",
+    "channelFundingDrops": "1000000",
+    "ownerReserveDrops": "200000",
+    "typicalNetworkFeeDropsPerTransaction": "12",
+    "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+   }
+  },
+  "events": [
+   {
+    "event_id": 180,
+    "at": "2026-10-22T06:19:20.770962+00:00",
+    "actor": "REQUESTER",
+    "kind": "REQUEST_RECEIVED",
+    "revision": 1,
+    "certificate_digest": "51478d6e7243a6d944939ba687a23e30f5c489f5d9e89885e811dc749f8d5771",
+    "data": {
+     "label": "Coach (OpenClaw)",
+     "stated": {
+      "asset": "XRP",
+      "amount": "0.1",
+      "network": "mainnet",
+      "destination": null
+     },
+     "channel": "eterna_purchase_request",
+     "verified": false
+    }
+   },
+   {
+    "event_id": 181,
+    "at": "2026-10-22T06:19:20.773173+00:00",
+    "actor": "COACH",
+    "kind": "CERTIFICATE_DRAFTED",
+    "revision": 1,
+    "certificate_digest": "51478d6e7243a6d944939ba687a23e30f5c489f5d9e89885e811dc749f8d5771",
+    "data": {
+     "missing": [
+      "payer",
+      "expiry",
+      "limits",
+      "delivery"
+     ],
+     "verification": [
+      {
+       "field": "price",
+       "match": true,
+       "stated": "0.1 XRP",
+       "verified": "0.1 XRP"
+      }
+     ],
+     "matchedSeller": "seller_ledger_data_agent"
+    }
+   },
+   {
+    "event_id": 182,
+    "at": "2026-10-22T06:21:29.506692+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "CERTIFICATE_REVISED",
+    "revision": 2,
+    "certificate_digest": "eccb81f737855f68980f28819f3670a9b24398d571ca0c4e96e21c76e2d1fec0",
+    "data": {
+     "fields": [
+      "payer"
+     ],
+     "previous": {
+      "digest": "51478d6e7243a6d944939ba687a23e30f5c489f5d9e89885e811dc749f8d5771",
+      "revision": 1
+     },
+     "authorizationVoided": false
+    }
+   },
+   {
+    "event_id": 183,
+    "at": "2026-10-22T06:23:09.196283+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "CERTIFICATE_REVISED",
+    "revision": 3,
+    "certificate_digest": "fdda861ff8a49991d671fe565cbc311b843b7e8ad23d2b702840165fe72d5ab3",
+    "data": {
+     "fields": [
+      "delivery"
+     ],
+     "previous": {
+      "digest": "eccb81f737855f68980f28819f3670a9b24398d571ca0c4e96e21c76e2d1fec0",
+      "revision": 2
+     },
+     "authorizationVoided": false
+    }
+   },
+   {
+    "event_id": 184,
+    "at": "2026-10-22T06:25:05.470593+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "CERTIFICATE_REVISED",
+    "revision": 4,
+    "certificate_digest": "338e04b6edf941b29513b896baa9abd9b168540134700992baccdcc2f4e9eff0",
+    "data": {
+     "fields": [
+      "expiry"
+     ],
+     "previous": {
+      "digest": "fdda861ff8a49991d671fe565cbc311b843b7e8ad23d2b702840165fe72d5ab3",
+      "revision": 3
+     },
+     "authorizationVoided": false
+    }
+   },
+   {
+    "event_id": 185,
+    "at": "2026-10-22T06:25:50.817396+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "CERTIFICATE_REVISED",
+    "revision": 5,
+    "certificate_digest": "b1f4ab515d4d8ca50a16be050cb884ef8dd11c3cb48c2b74d3c563ee007bda16",
+    "data": {
+     "fields": [
+      "limits",
+      "autoConfirm",
+      "standingOnly"
+     ],
+     "previous": {
+      "digest": "338e04b6edf941b29513b896baa9abd9b168540134700992baccdcc2f4e9eff0",
+      "revision": 4
+     },
+     "authorizationVoided": false
+    }
+   },
+   {
+    "event_id": 186,
+    "at": "2026-10-22T06:30:18.132452+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "CERTIFICATE_REVISED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "fields": [
+      "permittedRequesters"
+     ],
+     "previous": {
+      "digest": "b1f4ab515d4d8ca50a16be050cb884ef8dd11c3cb48c2b74d3c563ee007bda16",
+      "revision": 5
+     },
+     "authorizationVoided": false
+    }
+   },
+   {
+    "event_id": 187,
+    "at": "2026-10-22T06:30:26.035468+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "AUTHORIZATION_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "terms": {
+      "asset": "XRP",
+      "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "amount": {
+       "xrp": "0.1",
+       "drops": "100000"
+      },
+      "expiry": "2026-10-23T06:25:05Z",
+      "limits": {
+       "maxPurchases": 10,
+       "maxTotalDrops": "1000000",
+       "maxPerPurchaseDrops": "100000"
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "channel": {
+       "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+       "cancelAfter": "2026-10-23T08:25:05Z",
+       "settleDelaySec": 3600
+      },
+      "network": "XRPL Mainnet",
+      "service": {
+       "id": "validated-ledger-report",
+       "title": "Validated XRPL ledger report"
+      },
+      "revision": 6,
+      "requester": {
+       "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+       "label": "Coach (OpenClaw)"
+      },
+      "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "autoConfirm": true,
+      "standingOnly": true,
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      },
+      "purchaseDeadline": "2026-10-23T06:25:05Z",
+      "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+      "permittedRequesters": [
+       "req_67d0f8434a4a7ecd1228509731037567"
+      ]
+     }
+    }
+   },
+   {
+    "event_id": 188,
+    "at": "2026-10-22T06:30:32.489741+00:00",
+    "actor": "PURCHASING_AGENT",
+    "kind": "AUTHORIZATION_SIGNATURE_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "xamanUrl": "https://xumm.app/sign/7aeacdd4-8a4e-49ad-85be-0acd8d59e44f"
+    }
+   },
+   {
+    "event_id": 189,
+    "at": "2026-10-22T06:30:54.342179+00:00",
+    "actor": "PURCHASING_AGENT",
+    "kind": "AUTHORIZATION_FAILED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "reason": "[\"FAILED\"]"
+    }
+   },
+   {
+    "event_id": 190,
+    "at": "2026-10-22T06:32:12.824753+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "AUTHORIZATION_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "terms": {
+      "asset": "XRP",
+      "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "amount": {
+       "xrp": "0.1",
+       "drops": "100000"
+      },
+      "expiry": "2026-10-23T06:25:05Z",
+      "limits": {
+       "maxPurchases": 10,
+       "maxTotalDrops": "1000000",
+       "maxPerPurchaseDrops": "100000"
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "channel": {
+       "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+       "cancelAfter": "2026-10-23T08:25:05Z",
+       "settleDelaySec": 3600
+      },
+      "network": "XRPL Mainnet",
+      "service": {
+       "id": "validated-ledger-report",
+       "title": "Validated XRPL ledger report"
+      },
+      "revision": 6,
+      "requester": {
+       "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+       "label": "Coach (OpenClaw)"
+      },
+      "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "autoConfirm": true,
+      "standingOnly": true,
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      },
+      "purchaseDeadline": "2026-10-23T06:25:05Z",
+      "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+      "permittedRequesters": [
+       "req_67d0f8434a4a7ecd1228509731037567"
+      ]
+     }
+    }
+   },
+   {
+    "event_id": 191,
+    "at": "2026-10-22T06:32:21.108853+00:00",
+    "actor": "PURCHASING_AGENT",
+    "kind": "AUTHORIZATION_FAILED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "reason": "[\"FAILED\"]"
+    }
+   },
+   {
+    "event_id": 192,
+    "at": "2026-10-22T06:32:26.551117+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "AUTHORIZATION_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "terms": {
+      "asset": "XRP",
+      "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "amount": {
+       "xrp": "0.1",
+       "drops": "100000"
+      },
+      "expiry": "2026-10-23T06:25:05Z",
+      "limits": {
+       "maxPurchases": 10,
+       "maxTotalDrops": "1000000",
+       "maxPerPurchaseDrops": "100000"
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "channel": {
+       "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+       "cancelAfter": "2026-10-23T08:25:05Z",
+       "settleDelaySec": 3600
+      },
+      "network": "XRPL Mainnet",
+      "service": {
+       "id": "validated-ledger-report",
+       "title": "Validated XRPL ledger report"
+      },
+      "revision": 6,
+      "requester": {
+       "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+       "label": "Coach (OpenClaw)"
+      },
+      "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "autoConfirm": true,
+      "standingOnly": true,
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      },
+      "purchaseDeadline": "2026-10-23T06:25:05Z",
+      "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+      "permittedRequesters": [
+       "req_67d0f8434a4a7ecd1228509731037567"
+      ]
+     }
+    }
+   },
+   {
+    "event_id": 193,
+    "at": "2026-10-22T06:32:37.114536+00:00",
+    "actor": "PURCHASING_AGENT",
+    "kind": "AUTHORIZATION_FAILED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "reason": "[\"FAILED\"]"
+    }
+   },
+   {
+    "event_id": 194,
+    "at": "2026-10-22T06:43:10.006402+00:00",
+    "actor": "HUMAN_AUTHORIZER",
+    "kind": "AUTHORIZATION_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "terms": {
+      "asset": "XRP",
+      "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "amount": {
+       "xrp": "0.1",
+       "drops": "100000"
+      },
+      "expiry": "2026-10-23T06:25:05Z",
+      "limits": {
+       "maxPurchases": 10,
+       "maxTotalDrops": "1000000",
+       "maxPerPurchaseDrops": "100000"
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "channel": {
+       "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+       "cancelAfter": "2026-10-23T08:25:05Z",
+       "settleDelaySec": 3600
+      },
+      "network": "XRPL Mainnet",
+      "service": {
+       "id": "validated-ledger-report",
+       "title": "Validated XRPL ledger report"
+      },
+      "revision": 6,
+      "requester": {
+       "id": "preq_bc46a817ca54de13ab409ca095b46ffa",
+       "label": "Coach (OpenClaw)"
+      },
+      "purchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "autoConfirm": true,
+      "standingOnly": true,
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      },
+      "purchaseDeadline": "2026-10-23T06:25:05Z",
+      "certificateDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+      "permittedRequesters": [
+       "req_67d0f8434a4a7ecd1228509731037567"
+      ]
+     }
+    }
+   },
+   {
+    "event_id": 195,
+    "at": "2026-10-22T06:46:17.76427+00:00",
+    "actor": "PURCHASING_AGENT",
+    "kind": "AUTHORIZATION_SIGNATURE_REQUESTED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "xamanUrl": "https://xumm.app/sign/c4f7cabc-9794-4bff-908e-60ab19313902"
+    }
+   },
+   {
+    "event_id": 196,
+    "at": "2026-10-22T06:47:05.304297+00:00",
+    "actor": "ETERNA",
+    "kind": "AUTHORIZATION_VERIFIED",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 6,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z"
+    }
+   },
+   {
+    "event_id": 197,
+    "at": "2026-10-22T06:47:05.310171+00:00",
+    "actor": "RULEBOOK",
+    "kind": "SHARED_BUDGET_ACTIVE",
+    "revision": 6,
+    "certificate_digest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+    "data": {
+     "autoConfirm": true,
+     "maxPurchases": 10,
+     "maxTotalDrops": "1000000",
+     "permittedRequesters": [
+      "req_67d0f8434a4a7ecd1228509731037567"
+     ]
+    }
+   }
+  ]
+ },
+ "purchases": [
+  {
+   "requesterView": {
+    "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+    "requester": {
+     "id": "preq_d16540d63d604947afaa5488f7d20e32",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "0",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 1,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+     "servedAt": "2026-10-22T06:53:44.716Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822136,
+     "deliveryDigest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+    },
+    "receiptDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+    "anchor": {
+     "ledger": 107822139,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+     "verifiedAt": "2026-10-22T06:54:02.730Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553"
+    },
+    "updatedAt": "2026-10-22T06:54:02.73119+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+    "requester": {
+     "id": "preq_d16540d63d604947afaa5488f7d20e32",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "0",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 1,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+     "servedAt": "2026-10-22T06:53:44.716Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822136,
+     "deliveryDigest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+    },
+    "receiptDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+    "anchor": {
+     "ledger": 107822139,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+     "verifiedAt": "2026-10-22T06:54:02.730Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553"
+    },
+    "updatedAt": "2026-10-22T06:54:02.73119+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_d16540d63d604947afaa5488f7d20e32",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "0",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 1,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022065339"
+     },
+     "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+     "revision": 1,
+     "certificateDigest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_d16540d63d604947afaa5488f7d20e32",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T06:53:40.060Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822136,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T06:53:44.716Z"
+     },
+     "requester": {
+      "id": "preq_d16540d63d604947afaa5488f7d20e32",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+     "verifiedAt": "2026-10-22T06:53:52.069Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T06:53:40.060Z",
+      "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T06:53:44.716Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626689,
+      "cumulativeDrops": "100000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822136,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 208,
+     "at": "2026-10-22T06:53:40.061691+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 209,
+     "at": "2026-10-22T06:53:40.061771+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 1,
+      "usedDropsBefore": "0"
+     }
+    },
+    {
+     "event_id": 210,
+     "at": "2026-10-22T06:53:40.06211+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T06:53:40.060Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 211,
+     "at": "2026-10-22T06:53:44.066694+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 212,
+     "at": "2026-10-22T06:53:44.272463+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-3d50dcb5ffe49ae9",
+      "notAfter": 1792652084,
+      "certNonce": "e92b1bf5-2b32-4721-86c7-38fa2f31af6a",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "212825fbaf8a74d803e639d32e43d4e20498a171aa8d13cc77de0e642d97547f",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "0"
+     }
+    },
+    {
+     "event_id": 213,
+     "at": "2026-10-22T06:53:52.08099+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "90a763ee9f6adde8fa355396fb1ff7d064a668399a6ec7b400229d280f823231"
+     }
+    },
+    {
+     "event_id": 214,
+     "at": "2026-10-22T06:53:52.084608+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9"
+     }
+    },
+    {
+     "event_id": 215,
+     "at": "2026-10-22T06:54:02.741774+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "870cf2bd819c698f363037d8a047fa1236418924fecf665fa75eec85e1ecc5f6",
+     "data": {
+      "ledger": 107822139,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9",
+      "verifiedAt": "2026-10-22T06:54:02.730Z"
+     }
+    }
+   ]
+  },
+  {
+   "requesterView": {
+    "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+    "requester": {
+     "id": "preq_762c9adf92110dc40f89b196cd5f453f",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "100000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 2,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE",
+     "servedAt": "2026-10-22T07:02:54.076Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822278,
+     "deliveryDigest": "f98bbd78ef189306af63874db8d4a5a9f957d8029885318c7827922abfb270c1",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE"
+    },
+    "receiptDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb",
+    "anchor": {
+     "ledger": 107822280,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb",
+     "verifiedAt": "2026-10-22T07:03:09.180Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4"
+    },
+    "updatedAt": "2026-10-22T07:03:09.181524+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+    "requester": {
+     "id": "preq_762c9adf92110dc40f89b196cd5f453f",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "100000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 2,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE",
+     "servedAt": "2026-10-22T07:02:54.076Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822278,
+     "deliveryDigest": "f98bbd78ef189306af63874db8d4a5a9f957d8029885318c7827922abfb270c1",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE"
+    },
+    "receiptDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb",
+    "anchor": {
+     "ledger": 107822280,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb",
+     "verifiedAt": "2026-10-22T07:03:09.180Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4"
+    },
+    "updatedAt": "2026-10-22T07:03:09.181524+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_762c9adf92110dc40f89b196cd5f453f",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "100000",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 2,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022070249"
+     },
+     "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+     "revision": 1,
+     "certificateDigest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_762c9adf92110dc40f89b196cd5f453f",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T07:02:49.784Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822278,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "f98bbd78ef189306af63874db8d4a5a9f957d8029885318c7827922abfb270c1",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T07:02:54.076Z"
+     },
+     "requester": {
+      "id": "preq_762c9adf92110dc40f89b196cd5f453f",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+     "verifiedAt": "2026-10-22T07:03:00.361Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T07:02:49.784Z",
+      "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T07:02:54.076Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626690,
+      "cumulativeDrops": "200000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822278,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 216,
+     "at": "2026-10-22T07:02:49.785553+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 217,
+     "at": "2026-10-22T07:02:49.785789+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 2,
+      "usedDropsBefore": "100000"
+     }
+    },
+    {
+     "event_id": 218,
+     "at": "2026-10-22T07:02:49.785939+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T07:02:49.784Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 219,
+     "at": "2026-10-22T07:02:53.440238+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 220,
+     "at": "2026-10-22T07:02:53.650208+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-7aaa82fb69be6a42",
+      "notAfter": 1792652633,
+      "certNonce": "96160cfd-b97c-4904-9554-b237f43e0812",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "d9dac67593079caa6cd00ccf3c261cbd77dbc824d4b5e55ada12993cbb655f53",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "100000"
+     }
+    },
+    {
+     "event_id": 227,
+     "at": "2026-10-22T07:03:00.367502+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "f98bbd78ef189306af63874db8d4a5a9f957d8029885318c7827922abfb270c1"
+     }
+    },
+    {
+     "event_id": 228,
+     "at": "2026-10-22T07:03:00.369858+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb"
+     }
+    },
+    {
+     "event_id": 238,
+     "at": "2026-10-22T07:03:09.189574+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "b5c6157e0af6526bf28a624d12544aea013a8f88faa6c29c949dfb3116e9e36e",
+     "data": {
+      "ledger": 107822280,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb",
+      "verifiedAt": "2026-10-22T07:03:09.180Z"
+     }
+    }
+   ]
+  },
+  {
+   "requesterView": {
+    "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+    "requester": {
+     "id": "preq_8170e2922441e1ea805afd5d4c913bab",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "200000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 3,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226",
+     "servedAt": "2026-10-22T07:03:01.207Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822280,
+     "deliveryDigest": "6091ba7fcbdb46cd2eaf0a878a132000dc5c24749582f093ff5b5da15de25997",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226"
+    },
+    "receiptDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083",
+    "anchor": {
+     "ledger": 107822282,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083",
+     "verifiedAt": "2026-10-22T07:03:16.123Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36"
+    },
+    "updatedAt": "2026-10-22T07:03:16.124401+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+    "requester": {
+     "id": "preq_8170e2922441e1ea805afd5d4c913bab",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "200000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 3,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226",
+     "servedAt": "2026-10-22T07:03:01.207Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822280,
+     "deliveryDigest": "6091ba7fcbdb46cd2eaf0a878a132000dc5c24749582f093ff5b5da15de25997",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226"
+    },
+    "receiptDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083",
+    "anchor": {
+     "ledger": 107822282,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083",
+     "verifiedAt": "2026-10-22T07:03:16.123Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36"
+    },
+    "updatedAt": "2026-10-22T07:03:16.124401+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_8170e2922441e1ea805afd5d4c913bab",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "200000",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 3,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022070254"
+     },
+     "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+     "revision": 1,
+     "certificateDigest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_8170e2922441e1ea805afd5d4c913bab",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T07:02:55.144Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822280,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "6091ba7fcbdb46cd2eaf0a878a132000dc5c24749582f093ff5b5da15de25997",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T07:03:01.207Z"
+     },
+     "requester": {
+      "id": "preq_8170e2922441e1ea805afd5d4c913bab",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+     "verifiedAt": "2026-10-22T07:03:08.565Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T07:02:55.144Z",
+      "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T07:03:01.207Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626691,
+      "cumulativeDrops": "300000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822280,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 221,
+     "at": "2026-10-22T07:02:55.146551+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 222,
+     "at": "2026-10-22T07:02:55.14687+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 3,
+      "usedDropsBefore": "200000"
+     }
+    },
+    {
+     "event_id": 223,
+     "at": "2026-10-22T07:02:55.147025+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T07:02:55.144Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 229,
+     "at": "2026-10-22T07:03:00.575198+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 230,
+     "at": "2026-10-22T07:03:00.776349+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-42ef96610b840608",
+      "notAfter": 1792652640,
+      "certNonce": "a8650663-9d93-41ef-be80-113a83cbbfa1",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "c309bbad985f1587f5fa68ec46dc6e6232a2a005722e970eedb502e239fff6f5",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "200000"
+     }
+    },
+    {
+     "event_id": 234,
+     "at": "2026-10-22T07:03:08.577633+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "6091ba7fcbdb46cd2eaf0a878a132000dc5c24749582f093ff5b5da15de25997"
+     }
+    },
+    {
+     "event_id": 235,
+     "at": "2026-10-22T07:03:08.591995+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083"
+     }
+    },
+    {
+     "event_id": 242,
+     "at": "2026-10-22T07:03:16.1362+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "703566582279e3a79cce1a03d09a0c66c0d9a02920db820bb01ed387997111df",
+     "data": {
+      "ledger": 107822282,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083",
+      "verifiedAt": "2026-10-22T07:03:16.123Z"
+     }
+    }
+   ]
+  },
+  {
+   "requesterView": {
+    "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+    "requester": {
+     "id": "preq_53342b1dbd7bfdeea2af453e9572890b",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "300000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 4,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4",
+     "servedAt": "2026-10-22T07:03:09.432Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822282,
+     "deliveryDigest": "d3e33fd90bcef8e96a21352b2cc456453139be8b16661bac6e55c8f0d6675a12",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4"
+    },
+    "receiptDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2",
+    "anchor": {
+     "ledger": 107822284,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2",
+     "verifiedAt": "2026-10-22T07:03:24.186Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3"
+    },
+    "updatedAt": "2026-10-22T07:03:24.18778+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+    "requester": {
+     "id": "preq_53342b1dbd7bfdeea2af453e9572890b",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "300000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 4,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4",
+     "servedAt": "2026-10-22T07:03:09.432Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822282,
+     "deliveryDigest": "d3e33fd90bcef8e96a21352b2cc456453139be8b16661bac6e55c8f0d6675a12",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4"
+    },
+    "receiptDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2",
+    "anchor": {
+     "ledger": 107822284,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2",
+     "verifiedAt": "2026-10-22T07:03:24.186Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3"
+    },
+    "updatedAt": "2026-10-22T07:03:24.18778+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_53342b1dbd7bfdeea2af453e9572890b",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "300000",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 4,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022070300"
+     },
+     "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+     "revision": 1,
+     "certificateDigest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_53342b1dbd7bfdeea2af453e9572890b",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T07:03:00.311Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822282,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "d3e33fd90bcef8e96a21352b2cc456453139be8b16661bac6e55c8f0d6675a12",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T07:03:09.432Z"
+     },
+     "requester": {
+      "id": "preq_53342b1dbd7bfdeea2af453e9572890b",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+     "verifiedAt": "2026-10-22T07:03:16.861Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T07:03:00.311Z",
+      "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T07:03:09.432Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626692,
+      "cumulativeDrops": "400000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822282,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 224,
+     "at": "2026-10-22T07:03:00.312779+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 225,
+     "at": "2026-10-22T07:03:00.313045+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 4,
+      "usedDropsBefore": "300000"
+     }
+    },
+    {
+     "event_id": 226,
+     "at": "2026-10-22T07:03:00.313531+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T07:03:00.311Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 236,
+     "at": "2026-10-22T07:03:08.788977+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 237,
+     "at": "2026-10-22T07:03:08.987828+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-48fbcb7ec5b19bf7",
+      "notAfter": 1792652648,
+      "certNonce": "7e5a03ff-935d-4fe0-a234-26a07217f086",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "6ed151e5d34b29e1a29010db3260bd8582b92b5794a7dfe6a9939544454bf8c1",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "300000"
+     }
+    },
+    {
+     "event_id": 243,
+     "at": "2026-10-22T07:03:16.870069+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "d3e33fd90bcef8e96a21352b2cc456453139be8b16661bac6e55c8f0d6675a12"
+     }
+    },
+    {
+     "event_id": 244,
+     "at": "2026-10-22T07:03:16.872832+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2"
+     }
+    },
+    {
+     "event_id": 249,
+     "at": "2026-10-22T07:03:24.192526+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "ac321876c6bb218dfe4cb1de328b9f18a63a6c346b56039e298f3c85290b6ccf",
+     "data": {
+      "ledger": 107822284,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2",
+      "verifiedAt": "2026-10-22T07:03:24.186Z"
+     }
+    }
+   ]
+  },
+  {
+   "requesterView": {
+    "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+    "requester": {
+     "id": "preq_82135a0d4652e6501660f0ab46b0b85a",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "400000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 5,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD",
+     "servedAt": "2026-10-22T07:03:17.727Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822284,
+     "deliveryDigest": "0d94e702a97f4691a5e7b240eb386a4dbbea5a3d2ad6c1a9590774d6c90659f3",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD"
+    },
+    "receiptDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169",
+    "anchor": {
+     "ledger": 107822286,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169",
+     "verifiedAt": "2026-10-22T07:03:32.150Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159"
+    },
+    "updatedAt": "2026-10-22T07:03:32.151378+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+    "requester": {
+     "id": "preq_82135a0d4652e6501660f0ab46b0b85a",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "400000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 5,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD",
+     "servedAt": "2026-10-22T07:03:17.727Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822284,
+     "deliveryDigest": "0d94e702a97f4691a5e7b240eb386a4dbbea5a3d2ad6c1a9590774d6c90659f3",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD"
+    },
+    "receiptDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169",
+    "anchor": {
+     "ledger": 107822286,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169",
+     "verifiedAt": "2026-10-22T07:03:32.150Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159"
+    },
+    "updatedAt": "2026-10-22T07:03:32.151378+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_82135a0d4652e6501660f0ab46b0b85a",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "400000",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 5,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022070305"
+     },
+     "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+     "revision": 1,
+     "certificateDigest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_82135a0d4652e6501660f0ab46b0b85a",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T07:03:05.855Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822284,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "0d94e702a97f4691a5e7b240eb386a4dbbea5a3d2ad6c1a9590774d6c90659f3",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T07:03:17.727Z"
+     },
+     "requester": {
+      "id": "preq_82135a0d4652e6501660f0ab46b0b85a",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+     "verifiedAt": "2026-10-22T07:03:24.009Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T07:03:05.855Z",
+      "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T07:03:17.727Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626693,
+      "cumulativeDrops": "500000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822284,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 231,
+     "at": "2026-10-22T07:03:05.857213+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 232,
+     "at": "2026-10-22T07:03:05.857454+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 5,
+      "usedDropsBefore": "400000"
+     }
+    },
+    {
+     "event_id": 233,
+     "at": "2026-10-22T07:03:05.857646+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T07:03:05.855Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 245,
+     "at": "2026-10-22T07:03:17.073284+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 246,
+     "at": "2026-10-22T07:03:17.285664+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-a8ec4df56f6fad1f",
+      "notAfter": 1792652657,
+      "certNonce": "37242029-c679-422d-bd61-93bee9f7ca1e",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "99f46fc63f6b246ae46f36617ce7cf1d4b2a32a6fe5dbf1251e8d2cbae97c56b",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "400000"
+     }
+    },
+    {
+     "event_id": 247,
+     "at": "2026-10-22T07:03:24.023215+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "0d94e702a97f4691a5e7b240eb386a4dbbea5a3d2ad6c1a9590774d6c90659f3"
+     }
+    },
+    {
+     "event_id": 248,
+     "at": "2026-10-22T07:03:24.028339+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169"
+     }
+    },
+    {
+     "event_id": 252,
+     "at": "2026-10-22T07:03:32.160858+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "bf2d6272fe575a5c4821316c7618dbb2ed06045d631290a94c7c92b9614e58ab",
+     "data": {
+      "ledger": 107822286,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169",
+      "verifiedAt": "2026-10-22T07:03:32.150Z"
+     }
+    }
+   ]
+  },
+  {
+   "requesterView": {
+    "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+    "requester": {
+     "id": "preq_06b78bcc872796b25795a32d240b3956",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "500000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 6,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36",
+     "servedAt": "2026-10-22T07:03:24.892Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822286,
+     "deliveryDigest": "18c5300fc554b1648dc439b75ead871ef6dc3fb948ed8a35cef25e88cf0184a1",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36"
+    },
+    "receiptDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2",
+    "anchor": {
+     "ledger": 107822288,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2",
+     "verifiedAt": "2026-10-22T07:03:39.111Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5"
+    },
+    "updatedAt": "2026-10-22T07:03:39.112196+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    }
+   },
+   "ownerView": {
+    "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+    "state": "ANCHORED",
+    "revision": 1,
+    "certificateDigest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+    "requester": {
+     "id": "preq_06b78bcc872796b25795a32d240b3956",
+     "label": "Coach (OpenClaw)",
+     "verified": true
+    },
+    "seller": {
+     "label": "Ledger Data Agent",
+     "agentId": "seller_ledger_data_agent",
+     "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+    },
+    "service": {
+     "id": "validated-ledger-report",
+     "title": "Validated XRPL ledger report"
+    },
+    "price": {
+     "xrp": "0.1",
+     "drops": "100000"
+    },
+    "asset": "XRP",
+    "network": "XRPL Mainnet",
+    "standing": {
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "usedDrops": "500000",
+     "maxPurchases": 10,
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "maxTotalDrops": "1000000",
+     "parentRevision": 6,
+     "purchaseNumber": 6,
+     "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+    },
+    "pendingSignature": null,
+    "authorization": {
+     "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "ledger": 107822030,
+     "readers": [
+      "A",
+      "B"
+     ],
+     "capDrops": "1000000",
+     "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+     "revision": 1,
+     "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+     "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "verifiedAt": "2026-10-22T06:47:05.290Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+     "inheritedFrom": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+    },
+    "execution": {
+     "readers": [
+      "A",
+      "B"
+     ],
+     "redeemTx": "1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36",
+     "servedAt": "2026-10-22T07:03:24.892Z",
+     "paidDrops": "100000",
+     "claimDrops": "100000",
+     "settlement": "SETTLED",
+     "unresolved": [],
+     "redeemLedger": 107822286,
+     "deliveryDigest": "18c5300fc554b1648dc439b75ead871ef6dc3fb948ed8a35cef25e88cf0184a1",
+     "deliveryStatus": "DELIVERED",
+     "redeemExplorerUrl": "https://livenet.xrpl.org/transactions/1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36"
+    },
+    "receiptDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2",
+    "anchor": {
+     "ledger": 107822288,
+     "signer": "ETERNA_ANCHOR_ACCOUNT",
+     "txHash": "6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5",
+     "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+     "readers": [
+      "A",
+      "B"
+     ],
+     "memoType": "eterna/purchase-receipt-sha256",
+     "memoDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2",
+     "verifiedAt": "2026-10-22T07:03:39.111Z",
+     "explorerUrl": "https://livenet.xrpl.org/transactions/6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5"
+    },
+    "updatedAt": "2026-10-22T07:03:39.112196+00:00",
+    "autoAnchor": null,
+    "facets": {
+     "authority": "CONFIRMED",
+     "execution": "SETTLED",
+     "delivery": "DELIVERED",
+     "receipt": "ANCHORED"
+    },
+    "certificate": {
+     "asset": "XRP",
+     "price": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "roles": {
+      "payer": {
+       "role": "PAYER — signs the authorization in Xaman",
+       "address": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "proposed": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+       "confirmed": true
+      },
+      "seller": {
+       "label": "Ledger Data Agent",
+       "agentId": "seller_ledger_data_agent",
+       "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+      },
+      "requester": {
+       "id": "preq_06b78bcc872796b25795a32d240b3956",
+       "kind": "AUTHENTICATED_AGENT",
+       "note": "Enrolled agent of this holder, authenticated by its credential and listed in the signed authorization.",
+       "label": "Coach (OpenClaw)",
+       "verified": true,
+       "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+      },
+      "humanAuthorizer": {
+       "role": "HUMAN_AUTHORIZER",
+       "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+      },
+      "purchasingAgent": {
+       "label": "Coach",
+       "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+      }
+     },
+     "expiry": "2026-10-23T06:25:05Z",
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "network": "XRPL Mainnet",
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "delivery": {
+      "confirmed": true,
+      "requirement": "A validated-ledger report (JSON) served by the seller agent after it verifies a payment-channel claim; the purchase completes only when the claim is redeemed on validated ledgers."
+     },
+     "revision": 1,
+     "standing": {
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "usedDrops": "500000",
+      "maxPurchases": 10,
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a",
+      "maxTotalDrops": "1000000",
+      "parentRevision": 6,
+      "purchaseNumber": 6,
+      "parentPurchaseId": "gpur_283b67ad6484f81812d55c9046c2fd6c"
+     },
+     "provenance": {
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "agentLabel": "Coach (OpenClaw)",
+      "agentAddress": "3bg3-ac7n-mkh6",
+      "verification": {
+       "checks": [
+        {
+         "field": "price",
+         "match": true,
+         "stated": "0.1 XRP",
+         "verified": "0.1 XRP"
+        }
+       ],
+       "mismatches": []
+      },
+      "idempotencyKey": "openclaw-mainnet-20261022070310"
+     },
+     "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+     "autoConfirm": true,
+     "requestText": "Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP",
+     "schemaVersion": "eterna.governed-purchase.intent-certificate.v1",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "statedTermsAccepted": true
+    },
+    "terms": {
+     "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+     "revision": 1,
+     "certificateDigest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "service": {
+      "id": "validated-ledger-report",
+      "title": "Validated XRPL ledger report"
+     },
+     "amount": {
+      "xrp": "0.1",
+      "drops": "100000"
+     },
+     "asset": "XRP",
+     "network": "XRPL Mainnet",
+     "expiry": "2026-10-23T06:25:05Z",
+     "purchaseDeadline": "2026-10-23T06:25:05Z",
+     "channel": {
+      "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+      "cancelAfter": "2026-10-23T08:25:05Z",
+      "settleDelaySec": 3600
+     },
+     "limits": {
+      "maxPurchases": 10,
+      "maxTotalDrops": "1000000",
+      "maxPerPurchaseDrops": "100000"
+     },
+     "autoConfirm": true,
+     "standingOnly": false,
+     "permittedRequesters": [],
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "sellerDestination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp",
+     "fulfillment": null,
+     "sellerKind": "DEMONSTRATION_ADAPTER",
+     "inputs": null,
+     "offer": null,
+     "deliveryTerms": null,
+     "responseSigningKey": null,
+     "requester": {
+      "id": "preq_06b78bcc872796b25795a32d240b3956",
+      "label": "Coach (OpenClaw)"
+     }
+    },
+    "confirmation": {
+     "by": "SIGNED_NO_ASK_AUTHORIZATION",
+     "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "revision": 1,
+     "confirmedAt": "2026-10-22T07:03:10.679Z",
+     "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+    },
+    "receipt": {
+     "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+     "intent": {
+      "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+      "revision": 1
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "agentId": "seller_ledger_data_agent",
+      "destination": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "payment": {
+      "ledger": 107822286,
+      "readers": [
+       "A",
+       "B"
+      ],
+      "redeemTx": "1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36",
+      "paidDrops": "100000",
+      "claimDrops": "100000",
+      "settlement": "SETTLED"
+     },
+     "delivery": {
+      "digest": "18c5300fc554b1648dc439b75ead871ef6dc3fb948ed8a35cef25e88cf0184a1",
+      "status": "DELIVERED",
+      "servedAt": "2026-10-22T07:03:24.892Z"
+     },
+     "requester": {
+      "id": "preq_06b78bcc872796b25795a32d240b3956",
+      "label": "Coach (OpenClaw)",
+      "verified": true,
+      "verifiedRequesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     },
+     "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+     "verifiedAt": "2026-10-22T07:03:32.229Z",
+     "obligations": [],
+     "confirmation": {
+      "at": "2026-10-22T07:03:10.679Z",
+      "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+      "revision": 1
+     },
+     "authorization": {
+      "ledger": 107822030,
+      "createTx": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+      "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "memoDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     },
+     "schemaVersion": "eterna.governed-purchase.receipt.v1",
+     "humanAuthorizer": {
+      "role": "HUMAN_AUTHORIZER",
+      "holderId": "urn:eterna:holder:v1:1e871f63-fbe3-4391-830e-4eaa4a83f2e8"
+     },
+     "purchasingAgent": {
+      "label": "Coach",
+      "requesterId": "req_a968962bd54ba2ccdae456314df07620"
+     }
+    },
+    "deliveredResult": {
+     "report": {
+      "kind": "validated-ledger-report",
+      "servedAt": "2026-10-22T07:03:24.892Z",
+      "paidDrops": "100000",
+      "sellerSeq": 107626694,
+      "cumulativeDrops": "600000"
+     },
+     "seller": {
+      "label": "Ledger Data Agent",
+      "account": "rhtjim3u6C2cntaZrb39YTM4rx2XNCgrXp"
+     },
+     "unlockedBundle": {
+      "readers": [
+       "A",
+       "B"
+      ],
+      "reports": "session bundle",
+      "settledLedger": 107822286,
+      "simulatedLedger": false
+     }
+    },
+    "costs": {
+     "productPriceDrops": "100000",
+     "channelFundingDrops": "1000000",
+     "ownerReserveDrops": "200000",
+     "typicalNetworkFeeDropsPerTransaction": "12",
+     "note": "The price goes to the seller. Channel funding is the cap you authorize; the owner reserve is held while the channel is open and returned when it closes; network fees are paid per transaction."
+    }
+   },
+   "facets": {
+    "authority": "CONFIRMED",
+    "execution": "SETTLED",
+    "delivery": "DELIVERED",
+    "receipt": "ANCHORED"
+   },
+   "events": [
+    {
+     "event_id": 239,
+     "at": "2026-10-22T07:03:10.680344+00:00",
+     "actor": "REQUESTER",
+     "kind": "REQUEST_RECEIVED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "label": "Coach (OpenClaw)",
+      "stated": {
+       "asset": "XRP",
+       "amount": "0.1",
+       "network": "mainnet",
+       "destination": null
+      },
+      "channel": "eterna_purchase_request",
+      "verified": true,
+      "requesterId": "req_67d0f8434a4a7ecd1228509731037567"
+     }
+    },
+    {
+     "event_id": 240,
+     "at": "2026-10-22T07:03:10.681905+00:00",
+     "actor": "COACH",
+     "kind": "COVERED_BY_STANDING_AUTHORIZATION",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "of": 10,
+      "parent": "gpur_283b67ad6484f81812d55c9046c2fd6c",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "maxTotalDrops": "1000000",
+      "purchaseNumber": 6,
+      "usedDropsBefore": "500000"
+     }
+    },
+    {
+     "event_id": 241,
+     "at": "2026-10-22T07:03:10.681958+00:00",
+     "actor": "RULEBOOK",
+     "kind": "CONFIRMED_UNDER_SIGNED_NO_ASK",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "by": "SIGNED_NO_ASK_AUTHORIZATION",
+      "digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+      "revision": 1,
+      "confirmedAt": "2026-10-22T07:03:10.679Z",
+      "parentDigest": "af3d0a9991c2a59d65d5f8ac9012e7fe6c75b6543bd8d6650c4f88fae4edec5a"
+     }
+    },
+    {
+     "event_id": 250,
+     "at": "2026-10-22T07:03:24.2453+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "EXECUTION_STARTED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "claimDrops": "100000"
+     }
+    },
+    {
+     "event_id": 251,
+     "at": "2026-10-22T07:03:24.478944+00:00",
+     "actor": "PURCHASING_AGENT",
+     "kind": "CLAIM_CERTIFICATE_ISSUED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "decision": "ISSUED",
+      "intentId": "purchase-43e6be8023d83126",
+      "notAfter": 1792652664,
+      "certNonce": "f77be30e-c8a7-4993-9706-81c1027d41b8",
+      "channelId": "3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263",
+      "deltaDrops": "100000",
+      "attestation": "SERVICE_ATTESTED_WORKER",
+      "receiptHash": "ad8925839ae4aec57945c5f21cc71e73167bd7dc6d735bf05be087978a85ed85",
+      "schemaVersion": "eterna.paychan.claim-certificate-receipt.v1",
+      "approvalDigest": "C98ECA9BE78697046D12652182D4CEEEA012D5A6FA3D5A7BDC8516AD0EC96902",
+      "gatePublicKeySha256": "74d59254e774c7a23d0d868f5ab41106bfc8d7ee5a16912f290a86ee621bcf0c",
+      "priorCumulativeDrops": "500000"
+     }
+    },
+    {
+     "event_id": 253,
+     "at": "2026-10-22T07:03:32.237946+00:00",
+     "actor": "SELLER_AGENT",
+     "kind": "SERVICE_DELIVERED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "status": "DELIVERED",
+      "deliveryDigest": "18c5300fc554b1648dc439b75ead871ef6dc3fb948ed8a35cef25e88cf0184a1"
+     }
+    },
+    {
+     "event_id": 254,
+     "at": "2026-10-22T07:03:32.241023+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ISSUED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "unresolved": [],
+      "receiptDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2"
+     }
+    },
+    {
+     "event_id": 255,
+     "at": "2026-10-22T07:03:39.120401+00:00",
+     "actor": "ETERNA",
+     "kind": "RECEIPT_ANCHORED",
+     "revision": 1,
+     "certificate_digest": "a74fde7be1b64fcce7c44aea68b3a079be2fd6a782a56d5fd8d1823f0c597e2a",
+     "data": {
+      "ledger": 107822288,
+      "signer": "ETERNA_ANCHOR_ACCOUNT",
+      "txHash": "6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5",
+      "account": "rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg",
+      "readers": [
+       "A",
+       "B"
+      ],
+      "memoType": "eterna/purchase-receipt-sha256",
+      "memoDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2",
+      "verifiedAt": "2026-10-22T07:03:39.111Z"
+     }
+    }
+   ]
+  }
+ ]
+}

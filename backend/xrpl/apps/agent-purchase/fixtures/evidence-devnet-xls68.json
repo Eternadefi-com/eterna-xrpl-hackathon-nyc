@@ -1,0 +1,4 @@
+{
+  "status": "PENDING",
+  "note": "No Devnet sponsorship transaction yet. Written by the XLS-68 verifier only after the transaction validates (tesSUCCESS) and is re-read from the ledger."
+}
