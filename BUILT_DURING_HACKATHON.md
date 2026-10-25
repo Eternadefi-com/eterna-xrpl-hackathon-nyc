@@ -11,12 +11,12 @@ The AI & Fintech XRP Ledger Hackathon (NYC) build window opened **Sat 24 Oct 202
 | Governance engine and payment adapters | `backend/xrpl/commerce/` | One certificate check, budgets, 15 refusal codes and audit receipts for four rails (XRP payment channel, RLUSD, XLS-68 sponsored, AP4M simulator) |
 | Agent purchase experience | `backend/xrpl/apps/agent-purchase/` | Storefront unlock after verified settlement, receipts, the master presentation and video system, one design system, Rose's mission UI, proof buttons (Bithomp and XRPL explorer) |
 
-## Also built during the hackathon (24–25 Oct 2026); not yet in this repository
+## Also built during the hackathon (24–25 Oct 2026); the Quicknode row is in this repository, the others are not yet
 | Area | Where | What | Status |
 |---|---|---|---|
 | Public website (later version of the agent purchase experience above) | Live at https://eterna-hackathon.pages.dev; source in Eterna's private UI repository | Public home with the real recorded Allowed vs Refused evidence; Rose's six-stage journey (authority → replay of a recorded Mainnet purchase → report unlock → recorded refusal → proof); Get started (connect your agent over MCP or HTTP, a browser-only limits **preview** that signs nothing, request access); one consistent design, desktop and mobile | LIVE (static, recorded data) |
 | Mastercard AP4M integration on the real kit | Eterna's private repository | Adapter, governed voucher signer (signs only an Eterna-permitted EIP-712 voucher), agent and merchant on XRPL EVM Testnet (chain 1449000), two-reader event verification; 12 offline tests | **Built, not yet run live**: no Testnet transaction exists yet |
-| Quicknode reader support | Eterna's private repository | Quicknode as one of the two independent XRPL readers | **Code only**: no Quicknode endpoint in use yet |
+| Quicknode as a third independent Mainnet reader | `backend/xrpl/commerce/readers.mjs`, `backend/xrpl/mainnet/quicknode-verify.mjs` | Quicknode added (never substituted) alongside s1.ripple.com and xrplcluster.com; re-verified all 45 recorded Mainnet txs (8 authorities, 18 settlements, 18 receipt anchors, 1 refusal anchor): all validated, tesSUCCESS, identical fields and ledger hashes on all three readers. Evidence: `backend/xrpl/mainnet/evidence/quicknode-mainnet-verification.json` (token-free) | **VERIFIED** (read-only, 2026-10-25) |
 | Demo film | Submission video | Narration, music, sound effects and the Rose portrait generated with ElevenLabs for presentation; every amount, hash and date shown is a real recorded XRPL record | — |
 
 ## Reused (built before the hackathon; NOT in this repository)

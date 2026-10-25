@@ -8,7 +8,7 @@ import { READ_METHODS } from '../unified/rpc.mjs';
 
 const require = createRequire(import.meta.url);
 const WebSocket = require('ws');
-const READ = new Set([...READ_METHODS, 'account_lines']); // reads only; no submit/sign method can be added here
+const READ = new Set([...READ_METHODS, 'account_lines', 'amm_info', 'book_offers']); // reads only; no submit/sign method can be added here
 
 export const NETWORKS = Object.freeze({
   'xrpl:0': { label: 'XRPL Mainnet', id: 0, explorer: (h) => `https://livenet.xrpl.org/transactions/${h}`, hosts: ['s1.ripple.com', 's2.ripple.com', 'xrplcluster.com'] },
@@ -22,9 +22,21 @@ export const DEFAULT_READERS = Object.freeze({
 });
 const net = (n) => NETWORKS[n] ?? fail('NETWORK_UNSUPPORTED', n);
 
+// Quicknode (sponsor endpoint): its URL embeds an API token, so it comes only from the environment (loaded from the
+// operator's private file by mainnet/quicknode-env.mjs — never from the repo). Only that exact host is admitted, only
+// for Mainnet, and it must still report network id 0 like any reader.
+export function quicknodeUrl() {
+  const u = process.env.QUICKNODE_XRPL_MAINNET_URL ?? null;
+  return u && /^https:\/\/[a-z0-9.-]+\.quiknode\.pro\//.test(u) ? u : null;
+}
+export const readerLabel = (url) => (/\.quiknode\.pro$/.test(new URL(url).hostname) ? 'Quicknode' : new URL(url).hostname);   // never show the token
+/** Mainnet verification readers: the two default independent nodes, plus Quicknode as a third when configured (added, never substituted). */
+export const mainnetReaders = () => [...DEFAULT_READERS['xrpl:0'], ...(quicknodeUrl() ? [quicknodeUrl()] : [])];
+
 export function readOnlyReader(url, network, { timeoutMs = 20000 } = {}) {
   const host = new URL(url).hostname;
-  if (!net(network).hosts.includes(host)) throw fail('READER_HOST_REFUSED', `${host} is not a known ${network} host`);
+  const qn = network === 'xrpl:0' && quicknodeUrl() && new URL(quicknodeUrl()).hostname === host;
+  if (!net(network).hosts.includes(host) && !qn) throw fail('READER_HOST_REFUSED', `${host} is not a known ${network} host`);
   const ws = url.startsWith('wss://');
   let sock, ready, id = 1; const pending = new Map();
   const open = () => ready ??= new Promise((res, rej) => {

@@ -1,0 +1,312 @@
+{
+ "source": "apps/agent-purchase/fixtures/mainnet-all.json (read-only export of recorded XRPL Mainnet purchases, 13–22 Oct 2026)",
+ "txs": [
+  {
+   "hash": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+   "kind": "authority",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36",
+   "kind": "settlement",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "expectType": "AccountSet",
+   "memoDigest": "644c36f498123ad7973a57e6f51c87724f79a3989fffa04d6ea8d6a1b12888b2"
+  },
+  {
+   "hash": "38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD",
+   "kind": "settlement",
+   "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+   "expectType": "AccountSet",
+   "memoDigest": "771a7e03afb239a818924d43549859d6583193c8920917729ef63bdeda488169"
+  },
+  {
+   "hash": "39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4",
+   "kind": "settlement",
+   "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+   "expectType": "AccountSet",
+   "memoDigest": "d8eedbc4fbce1ddc70df11e61a326b72fa21bfe565f33c56f4a9d726deb769a2"
+  },
+  {
+   "hash": "9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226",
+   "kind": "settlement",
+   "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+   "expectType": "AccountSet",
+   "memoDigest": "78068f457be982ed037952f694a5aafef8e1e145229f85734284d2edb2d3e083"
+  },
+  {
+   "hash": "61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE",
+   "kind": "settlement",
+   "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+   "expectType": "AccountSet",
+   "memoDigest": "bff7e7a33e1b471be5a7027f114de3c0cdd6098a7643f4108684f657af8a8dfb"
+  },
+  {
+   "hash": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+   "kind": "settlement",
+   "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+   "expectType": "AccountSet",
+   "memoDigest": "6791ac28ff17bcd2339e4daeb22edfb5392af1e43553afd4fe6bf9d3d5485de9"
+  },
+  {
+   "hash": "88333F9638433C0B400AD5CA1FE4C9C012E5E7EF35D2DB78EB19B76C4604253C",
+   "kind": "authority",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "3706D0A8ABC1C78ECC4BECB12A9990DBB884977F64670DFA0BF34C340B4421EC",
+   "kind": "settlement",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "5950F1A77DE50A6923FAC6D87B589E3BF6CF43A3A564565C1955176D37CD0C58",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "expectType": "AccountSet",
+   "memoDigest": "b5d3f1bed7d1c990a6e805954d8d024be6ef53d19a99dc5a25a82702d3cf8e7c"
+  },
+  {
+   "hash": "426FB03F90B054AF68AC5F6514C6D59A615BAE2ADDC221D67A7B92624ECED9E0",
+   "kind": "authority",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "64EB764306DAD0E778D56BC6FD279411A8939ED7A30A976C61E69B87C791C811",
+   "kind": "settlement",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "05CE7A5DF519D5FA4C1B494E45DBF10EBE9CACDDDB5E142B9D84B5038D05A987",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "expectType": "AccountSet",
+   "memoDigest": "c388ebda52d2afd2f8c9e18f5276f6838f8312cb82077a705925cb892710cffa"
+  },
+  {
+   "hash": "5CCE397AE3188D8A25A920FF4342B48417614DE0169FF0C15F4847CA39340AC9",
+   "kind": "authority",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "1AE378D31D9C5D38B31CD0E1BD28E1B1C7721267AF1FC46533FF5025DAB13284",
+   "kind": "settlement",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "A730229EC565CE5D7A48CA4F6B8AA7D992D719791E5EC17380970B6E0B3084EA",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "expectType": "AccountSet",
+   "memoDigest": "00ced60e1ed37c26014731be5b8235e2cf4a86fb12bd1d23abe2a33c804b32db"
+  },
+  {
+   "hash": "F8A40D9B0D1AA95D39C704DAE5E98235066B6A7F99BF56B486DD9686343EB1CE",
+   "kind": "authority",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "683818B4FA2FEEE7842C3EEB0BE806831E0712658FB5EFA19F55B46531424D48",
+   "kind": "settlement",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "855735544EE4985DBDD667E87ADBC6975E79D11084107F9583125BD6563A129C",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "expectType": "AccountSet",
+   "memoDigest": "5ed376994301b632ac0040254752ff3a14f0a9394d14927ba2cab8498ca678ff"
+  },
+  {
+   "hash": "56F4EFEC8235F29D3C1234C27A140CFFA7405A2471B9C4834E2AC3007DA09945",
+   "kind": "refusal-anchor",
+   "purchaseId": "gpur_99330b67a3a60a6ce794b799320f2e43",
+   "expectType": "AccountSet",
+   "memoDigest": "e5da33f7c7d1f0227a1857eab6d0b28bb05e9ac7754c8188881b4e8ed7cfb11f"
+  },
+  {
+   "hash": "028120945BBEB1364448CB2564E48E8783F2ABBE4D9386F9AD3E3A3AA099D13E",
+   "kind": "authority",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "3FB2A99297F53C84EFD1DF826AC7472291993B99EAAC6D3F529F09828E9FBCFB",
+   "kind": "settlement",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "88E4B028B44E0F15EF11BED2782D84448A0711E20BD9EC95C7288FE3F745A79F",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "expectType": "AccountSet",
+   "memoDigest": "e72ec3d122fbbcb7ecde71b60582f9da9138a8ba37bb36d8922b542d95008c5a"
+  },
+  {
+   "hash": "E978EBC0033D57A81C7E3ABC246A35B7FB0010D2A64198E46B9C5D697EC71A58",
+   "kind": "settlement",
+   "purchaseId": "gpur_a9b3107d901d5cb8e47bab34cd01137e",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "9B40CE5D5133782D1C9E380E9CBE48CA26A35224BF757D965F1B89BB589F21FF",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_a9b3107d901d5cb8e47bab34cd01137e",
+   "expectType": "AccountSet",
+   "memoDigest": "189ada9949140d5eeedeca2caa1efd26d99816dad64be40f2583ac543c16545f"
+  },
+  {
+   "hash": "8C04F011D44D80ECC67793169247877EF640D2F87736A48DEF9C8B3CC28EF905",
+   "kind": "settlement",
+   "purchaseId": "gpur_a0e76e2ec8398d5a46d979febd2e5453",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "E8B4B48DC94A92D9C9B634D15D659B13630EA3003006DAD923F5B0F3620CE9CC",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_a0e76e2ec8398d5a46d979febd2e5453",
+   "expectType": "AccountSet",
+   "memoDigest": "bfb29115265d395529c6c12b0125d15342bf5d3a4ebbbdaabc765def6dd7ea15"
+  },
+  {
+   "hash": "CF27DEC3B54BFBFCF13E19AD30E1609E4CC536A8DA0CECFE208E64C2210DEC57",
+   "kind": "settlement",
+   "purchaseId": "gpur_ca7795b7bb77db980dd5ffd30c20867d",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "CBDADDB4BE2422A211ED32B418A4661A5780E137198338B3D4B3E89371F5E76D",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_ca7795b7bb77db980dd5ffd30c20867d",
+   "expectType": "AccountSet",
+   "memoDigest": "74bad27575b107439bbbbf063de158e3c4ab767d9755284ad15c8c9e1556b486"
+  },
+  {
+   "hash": "D12D90BE9358FFC8EA4BDA7A0AD99E12F76BEB0574DFA986A803AC4B78169D2F",
+   "kind": "settlement",
+   "purchaseId": "gpur_44f7d184d3999d8b184db966f944b269",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "AD760C0EEE3B6D920B311F301BDBBC2634B8E507BB1835B171007D3218AFC777",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_44f7d184d3999d8b184db966f944b269",
+   "expectType": "AccountSet",
+   "memoDigest": "bcda415511395175727dca05738f72bea416f51f4ca74f71653d5598726078e2"
+  },
+  {
+   "hash": "2ABD17FE3874E7B52FCFA871DBA56358DC990E52300FABE2A31EEE37D75E97F7",
+   "kind": "settlement",
+   "purchaseId": "gpur_0419ae9a45575da8c242f5b5b3257a2c",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "F92631AE1CA7BDF7677A306358CFE96073415BA92DA700FF3408AC91BCF81A83",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_0419ae9a45575da8c242f5b5b3257a2c",
+   "expectType": "AccountSet",
+   "memoDigest": "beec68d1679b35795e351975bc57ba520e668154ca20277f4e455340a2f87a09"
+  },
+  {
+   "hash": "95F79E6D43FA0C798C3C4D7E3F4E546BD53D9D101D436B054D860740D597EFF3",
+   "kind": "authority",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "269AA74D8D640457469E561611CBF7BC0FA11E7BE7380DB07CD1BE31CDA8BCAC",
+   "kind": "settlement",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "72F7D86457BFBD5604E56639CDAE2AC853868BA0310788353306671CAE5E2AAB",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "expectType": "AccountSet",
+   "memoDigest": "642cc272e6ce331d59a82325950945b1daa1ae6bfbc38194fbc95beaffd4114a"
+  },
+  {
+   "hash": "806AAB5C240AD180216B22ACBAA1D519A62BB9A92F6018B594719426C810D93D",
+   "kind": "authority",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "expectType": "PaymentChannelCreate"
+  },
+  {
+   "hash": "9F0D6F080E0F1E60275C89887A7F28E9F5AD240B113FFF630CF8D5D7D1943A69",
+   "kind": "settlement",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "expectType": "PaymentChannelClaim",
+   "paidDrops": "100000"
+  },
+  {
+   "hash": "6772D3A0B11E209152DA884B2A00837AAB917D54E20D49552C87399EC900C569",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "expectType": "AccountSet",
+   "memoDigest": "f8e44718f63fca66672486fde79b2699e20750e3eb1aca5b18d5436863ce5811"
+  }
+ ]
+}

@@ -1,0 +1,1540 @@
+{
+ "generatedAt": "2026-10-25T13:20:50.558Z",
+ "network": "XRPL Mainnet",
+ "mode": "read-only (tx, ledger, server_info only)",
+ "quicknodeIncluded": true,
+ "servers": [
+  {
+   "reader": "s1.ripple.com",
+   "hostid": null,
+   "ms": 266
+  },
+  {
+   "reader": "xrplcluster.com",
+   "build": "3.4.1",
+   "hostid": "DORTHA",
+   "ms": 465
+  },
+  {
+   "reader": "Quicknode",
+   "hostid": null,
+   "ms": 305
+  }
+ ],
+ "summary": {
+  "transactions": 45,
+  "verifiedOnAllReaders": 45,
+  "quicknodeConfirmed": 45,
+  "readers": [
+   "s1.ripple.com",
+   "xrplcluster.com",
+   "Quicknode"
+  ],
+  "byKind": {
+   "authority": {
+    "total": 8,
+    "verified": 8
+   },
+   "settlement": {
+    "total": 18,
+    "verified": 18
+   },
+   "receipt-anchor": {
+    "total": 18,
+    "verified": 18
+   },
+   "refusal-anchor": {
+    "total": 1,
+    "verified": 1
+   }
+  },
+  "typeMismatches": []
+ },
+ "results": [
+  {
+   "hash": "8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577",
+   "kind": "authority",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107822030,
+   "ledgerHash": "BED47CB90BEB2B2EFE1E3FC69E7B45010C7407E3164C22B73E7BF7A92EC5690F",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 228
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 3962
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 359
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577"
+  },
+  {
+   "hash": "1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36",
+   "kind": "settlement",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822286,
+   "ledgerHash": "75E19873F3FCE19A748D530A21F0B5F192F37627854F6C8A661D44C3593AA790",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 320
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 708
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 168
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/1D92503BFB2FF4D5E71E8D643AF90234894BC402BD1CFE22CAF0ADF8AFFF7C36"
+  },
+  {
+   "hash": "6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_ce3bdb4623d9a17543e6be8023d83126",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822288,
+   "ledgerHash": "33554AE084C344D81E2875842C92048947BB3AE17055A1D20E1814280DA713D2",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 90
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 745
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 341
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/6EA7D4B6C837191FBCB566A0801BE6B6966698735B621FD4F4E59B8DB8ACF5E5"
+  },
+  {
+   "hash": "38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD",
+   "kind": "settlement",
+   "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822284,
+   "ledgerHash": "47B67D4520CD013D27CA8552311C7BD36744BB40F67A2CC7020B2915C19FD313",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 90
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 772
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 165
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/38C30BF2FC574A357C82768F5C489AF2278F11B47B5A6C3385A8C1A79F54D7CD"
+  },
+  {
+   "hash": "61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_7f66b8722499bb23a8ec4df56f6fad1f",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822286,
+   "ledgerHash": "75E19873F3FCE19A748D530A21F0B5F192F37627854F6C8A661D44C3593AA790",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 89
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 720
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 178
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/61B20DFFA396F54C64488BEBAC53CE440429F64209210FAF158DA2F579918159"
+  },
+  {
+   "hash": "39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4",
+   "kind": "settlement",
+   "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822282,
+   "ledgerHash": "90C30113DF6E1609745ECFD16E15B63414CC8AE0AA86E21C5D5BB929B50BBCCE",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 88
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 783
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 167
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/39C2FBDF8741282A9D1CFB6902EE9FE77E85239710654950C2BF8446D05645F4"
+  },
+  {
+   "hash": "490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_812b0db7beafdf3948fbcb7ec5b19bf7",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822284,
+   "ledgerHash": "47B67D4520CD013D27CA8552311C7BD36744BB40F67A2CC7020B2915C19FD313",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 86
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 737
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 158
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/490F90935F415516BA14ED99B8BEB1126007D7E49C1B251C26B2389B6CE6DEC3"
+  },
+  {
+   "hash": "9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226",
+   "kind": "settlement",
+   "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822280,
+   "ledgerHash": "92EC652261D20B33F6826462D21BDE23B209C25FAFE20556C06BA8DC699546FB",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 93
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 825
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 173
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/9D8F640A186594DEEF86499E9290E876028F9D2D14F6C3BBAC8EF414E4FE4226"
+  },
+  {
+   "hash": "AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_65223b133bf439bb42ef96610b840608",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822282,
+   "ledgerHash": "90C30113DF6E1609745ECFD16E15B63414CC8AE0AA86E21C5D5BB929B50BBCCE",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 88
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 760
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 168
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/AB8DC2556154B68A48E6FBA8B344503FBFDB2F171E85CF88DE5575235AFB6D36"
+  },
+  {
+   "hash": "61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE",
+   "kind": "settlement",
+   "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822278,
+   "ledgerHash": "5A564C75FEA17529D8F0A86CB84D5057A867B689ECAA5109951D937FA1E34F44",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 97
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 727
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 167
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/61B1A1610EC07A21B3861456018E46441A5C64B41A1882DBA8594FC6F5F28BDE"
+  },
+  {
+   "hash": "59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_9e0decca6fef402f7aaa82fb69be6a42",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822280,
+   "ledgerHash": "92EC652261D20B33F6826462D21BDE23B209C25FAFE20556C06BA8DC699546FB",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 73
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 737
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 178
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/59A013669ED73B5D05D3AF57A4942B003B1B426B37446658C816B208A00769B4"
+  },
+  {
+   "hash": "7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971",
+   "kind": "settlement",
+   "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107822136,
+   "ledgerHash": "B003FDA5A19B1A3F1CE7244F5738411D515AEE0327B69CCCE5E4EB44377964F5",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 101
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 752
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 165
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/7CC6078F4B1FA2C98A89BF8151569F0E90079F451FB7975C254B9907BA91D971"
+  },
+  {
+   "hash": "4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_3d0ff7ba0de7c7363d50dcb5ffe49ae9",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107822139,
+   "ledgerHash": "214A85367BF9AE0150F58EE20889E39026A36FA7F9CA9CF59CC801729675EFFC",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 80
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 743
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 167
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/4121C778007E654DC9AEFD99E938B23CA9352E20CF28F6A3A8CAC1B4E91FC553"
+  },
+  {
+   "hash": "88333F9638433C0B400AD5CA1FE4C9C012E5E7EF35D2DB78EB19B76C4604253C",
+   "kind": "authority",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107817888,
+   "ledgerHash": "2D33E4D2114AE4E56F40A09C5D4086267853D54F909536ACCE8EE797C345C1F7",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 82
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 718
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 171
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/88333F9638433C0B400AD5CA1FE4C9C012E5E7EF35D2DB78EB19B76C4604253C"
+  },
+  {
+   "hash": "3706D0A8ABC1C78ECC4BECB12A9990DBB884977F64670DFA0BF34C340B4421EC",
+   "kind": "settlement",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107817897,
+   "ledgerHash": "7A4BA15B7915CB920768665496CEC7C05B86D944833A2907FBBC6AA1847D3B1E",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 88
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 970
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 161
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/3706D0A8ABC1C78ECC4BECB12A9990DBB884977F64670DFA0BF34C340B4421EC"
+  },
+  {
+   "hash": "5950F1A77DE50A6923FAC6D87B589E3BF6CF43A3A564565C1955176D37CD0C58",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_1e466dfd6e2fc3c494c1e904b26945f4",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107817899,
+   "ledgerHash": "0185FE9E9D1EE34F41F3DA3859B5B27EADA331D58BA3452C4DCB48A2E4936CC1",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 84
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 984
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 172
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/5950F1A77DE50A6923FAC6D87B589E3BF6CF43A3A564565C1955176D37CD0C58"
+  },
+  {
+   "hash": "426FB03F90B054AF68AC5F6514C6D59A615BAE2ADDC221D67A7B92624ECED9E0",
+   "kind": "authority",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107778362,
+   "ledgerHash": "4464FA8E5B7EBE6E4B377DEA98037620E7EB7478050CC86EACD098E4D2E8BA41",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 85
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 774
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 170
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/426FB03F90B054AF68AC5F6514C6D59A615BAE2ADDC221D67A7B92624ECED9E0"
+  },
+  {
+   "hash": "64EB764306DAD0E778D56BC6FD279411A8939ED7A30A976C61E69B87C791C811",
+   "kind": "settlement",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107778386,
+   "ledgerHash": "BF30403682F58D582562B93A778CA300B1E0DA65191D84D953BB630F6825F371",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 86
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 756
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 153
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/64EB764306DAD0E778D56BC6FD279411A8939ED7A30A976C61E69B87C791C811"
+  },
+  {
+   "hash": "05CE7A5DF519D5FA4C1B494E45DBF10EBE9CACDDDB5E142B9D84B5038D05A987",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_7e9e9253aea523cdc8dfc45c0ebf8f63",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107778388,
+   "ledgerHash": "D3A7032F3578E1A5E7291CB90C55D8804C2A6036DE80944679161A2C1C2D2350",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 84
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 742
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 178
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/05CE7A5DF519D5FA4C1B494E45DBF10EBE9CACDDDB5E142B9D84B5038D05A987"
+  },
+  {
+   "hash": "5CCE397AE3188D8A25A920FF4342B48417614DE0169FF0C15F4847CA39340AC9",
+   "kind": "authority",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107757376,
+   "ledgerHash": "DDBC80BDE1D2D7C8804B9E57C2369D5A79B19CAA3D497E766C0A99FD1F005BFC",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 83
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 740
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 168
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/5CCE397AE3188D8A25A920FF4342B48417614DE0169FF0C15F4847CA39340AC9"
+  },
+  {
+   "hash": "1AE378D31D9C5D38B31CD0E1BD28E1B1C7721267AF1FC46533FF5025DAB13284",
+   "kind": "settlement",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107757400,
+   "ledgerHash": "BA953F09987FFD95B7DBD63A6FEE5F452A7BC95D309F5D7356E641ABC346DE14",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 83
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 749
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 166
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/1AE378D31D9C5D38B31CD0E1BD28E1B1C7721267AF1FC46533FF5025DAB13284"
+  },
+  {
+   "hash": "A730229EC565CE5D7A48CA4F6B8AA7D992D719791E5EC17380970B6E0B3084EA",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_9dc6c8fb6ac737e32022dc633b6420f1",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107757402,
+   "ledgerHash": "1B0967956E3047EEA2810CCA5E5B0CB640A70464F878C45D7CA8648DEF5F6220",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 84
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 734
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 155
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/A730229EC565CE5D7A48CA4F6B8AA7D992D719791E5EC17380970B6E0B3084EA"
+  },
+  {
+   "hash": "F8A40D9B0D1AA95D39C704DAE5E98235066B6A7F99BF56B486DD9686343EB1CE",
+   "kind": "authority",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107745449,
+   "ledgerHash": "FE3447A00430DD7B5DCDEE8D84D9E5CCFBE94F6A19DFBDC258C455E5BF5B077F",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 83
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 739
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 158
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/F8A40D9B0D1AA95D39C704DAE5E98235066B6A7F99BF56B486DD9686343EB1CE"
+  },
+  {
+   "hash": "683818B4FA2FEEE7842C3EEB0BE806831E0712658FB5EFA19F55B46531424D48",
+   "kind": "settlement",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107745510,
+   "ledgerHash": "A092EF2EAFAE3A617B75E62F903346A93A0E2025B1CAB46D6091A2A3D19C6744",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 96
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 1015
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 166
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/683818B4FA2FEEE7842C3EEB0BE806831E0712658FB5EFA19F55B46531424D48"
+  },
+  {
+   "hash": "855735544EE4985DBDD667E87ADBC6975E79D11084107F9583125BD6563A129C",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_0ff60351e4e26ba1037826200d0d7e56",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107745512,
+   "ledgerHash": "1EADAE0195982F73F28B139E19029EB5D33F6B81184FF8F3DB5BA3F5BC827671",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 96
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 757
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 160
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/855735544EE4985DBDD667E87ADBC6975E79D11084107F9583125BD6563A129C"
+  },
+  {
+   "hash": "56F4EFEC8235F29D3C1234C27A140CFFA7405A2471B9C4834E2AC3007DA09945",
+   "kind": "refusal-anchor",
+   "purchaseId": "gpur_99330b67a3a60a6ce794b799320f2e43",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107689310,
+   "ledgerHash": "FEC09D96E129344DF9B5C4E634A8BE74F85478F60C9631266D02962E32DCACD7",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 75
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 723
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 166
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/56F4EFEC8235F29D3C1234C27A140CFFA7405A2471B9C4834E2AC3007DA09945"
+  },
+  {
+   "hash": "028120945BBEB1364448CB2564E48E8783F2ABBE4D9386F9AD3E3A3AA099D13E",
+   "kind": "authority",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107678077,
+   "ledgerHash": "69D0C80886A2056D7D9DB0B9F0C30A971641A3BD6A9254C48BA426C03BDBE042",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 80
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 756
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 168
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/028120945BBEB1364448CB2564E48E8783F2ABBE4D9386F9AD3E3A3AA099D13E"
+  },
+  {
+   "hash": "3FB2A99297F53C84EFD1DF826AC7472291993B99EAAC6D3F529F09828E9FBCFB",
+   "kind": "settlement",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107679796,
+   "ledgerHash": "919750B833EF72D1EC51A7181866C142FD3DEC42F253803BCF3FD1C7B462FE14",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 80
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 716
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 172
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/3FB2A99297F53C84EFD1DF826AC7472291993B99EAAC6D3F529F09828E9FBCFB"
+  },
+  {
+   "hash": "88E4B028B44E0F15EF11BED2782D84448A0711E20BD9EC95C7288FE3F745A79F",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_8a57924702b083e059f62b0b49142654",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107679799,
+   "ledgerHash": "4FD38B2D5A9AF8E132C895CFF9D3D455E18DFE661A5BBDF98FB13E118883FABF",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 90
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 737
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 167
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/88E4B028B44E0F15EF11BED2782D84448A0711E20BD9EC95C7288FE3F745A79F"
+  },
+  {
+   "hash": "E978EBC0033D57A81C7E3ABC246A35B7FB0010D2A64198E46B9C5D697EC71A58",
+   "kind": "settlement",
+   "purchaseId": "gpur_a9b3107d901d5cb8e47bab34cd01137e",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107679740,
+   "ledgerHash": "01F14DEBEC82C406381447A4BA7E111651492DE511001F4A8D2AC271D1F84E65",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 83
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 727
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 163
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/E978EBC0033D57A81C7E3ABC246A35B7FB0010D2A64198E46B9C5D697EC71A58"
+  },
+  {
+   "hash": "9B40CE5D5133782D1C9E380E9CBE48CA26A35224BF757D965F1B89BB589F21FF",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_a9b3107d901d5cb8e47bab34cd01137e",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107679743,
+   "ledgerHash": "5F3E34979F6BFC99ED4A050B3D0C1717D985CAF8000BAB51FCE7BB8B522D0536",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 75
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 754
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 161
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/9B40CE5D5133782D1C9E380E9CBE48CA26A35224BF757D965F1B89BB589F21FF"
+  },
+  {
+   "hash": "8C04F011D44D80ECC67793169247877EF640D2F87736A48DEF9C8B3CC28EF905",
+   "kind": "settlement",
+   "purchaseId": "gpur_a0e76e2ec8398d5a46d979febd2e5453",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107679536,
+   "ledgerHash": "F40736AE6FB27A6A8A28F4F4517057916F85EA51B003324BC34FD4508D13D565",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 84
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 763
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 173
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/8C04F011D44D80ECC67793169247877EF640D2F87736A48DEF9C8B3CC28EF905"
+  },
+  {
+   "hash": "E8B4B48DC94A92D9C9B634D15D659B13630EA3003006DAD923F5B0F3620CE9CC",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_a0e76e2ec8398d5a46d979febd2e5453",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107679538,
+   "ledgerHash": "48543BB4801397006237A8C90664D38B20795070AB7FCD27E71F4530A356512F",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 88
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 716
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 163
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/E8B4B48DC94A92D9C9B634D15D659B13630EA3003006DAD923F5B0F3620CE9CC"
+  },
+  {
+   "hash": "CF27DEC3B54BFBFCF13E19AD30E1609E4CC536A8DA0CECFE208E64C2210DEC57",
+   "kind": "settlement",
+   "purchaseId": "gpur_ca7795b7bb77db980dd5ffd30c20867d",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107679067,
+   "ledgerHash": "588978C32BA83FEECB07405C7CB9FB5A32EE212189A6E110D07397F95EFD8436",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 79
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 725
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 166
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/CF27DEC3B54BFBFCF13E19AD30E1609E4CC536A8DA0CECFE208E64C2210DEC57"
+  },
+  {
+   "hash": "CBDADDB4BE2422A211ED32B418A4661A5780E137198338B3D4B3E89371F5E76D",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_ca7795b7bb77db980dd5ffd30c20867d",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107679069,
+   "ledgerHash": "C160FCE7630A8CD55AAD8B59DF3D9C30F2CC626320E820116DF96DA094CB5EE0",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 95
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 779
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 164
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/CBDADDB4BE2422A211ED32B418A4661A5780E137198338B3D4B3E89371F5E76D"
+  },
+  {
+   "hash": "D12D90BE9358FFC8EA4BDA7A0AD99E12F76BEB0574DFA986A803AC4B78169D2F",
+   "kind": "settlement",
+   "purchaseId": "gpur_44f7d184d3999d8b184db966f944b269",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107678158,
+   "ledgerHash": "7A66D742EAC59FE3961E4B96D54DBE27332020D9E2C734CAAD41FBCBFB5ABCBC",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 87
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 753
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 171
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/D12D90BE9358FFC8EA4BDA7A0AD99E12F76BEB0574DFA986A803AC4B78169D2F"
+  },
+  {
+   "hash": "AD760C0EEE3B6D920B311F301BDBBC2634B8E507BB1835B171007D3218AFC777",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_44f7d184d3999d8b184db966f944b269",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107678160,
+   "ledgerHash": "FAEC83B4EFDA066C686D49948B23395E1AFAF22C9C4853B4CFEA2DAF4FDA24AA",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 82
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 779
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 160
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/AD760C0EEE3B6D920B311F301BDBBC2634B8E507BB1835B171007D3218AFC777"
+  },
+  {
+   "hash": "2ABD17FE3874E7B52FCFA871DBA56358DC990E52300FABE2A31EEE37D75E97F7",
+   "kind": "settlement",
+   "purchaseId": "gpur_0419ae9a45575da8c242f5b5b3257a2c",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107678080,
+   "ledgerHash": "705AE279DEBC50CDD8CB6FE790D223742102B043AE634C156D6A62D60EE8A2EE",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 92
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 716
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 162
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/2ABD17FE3874E7B52FCFA871DBA56358DC990E52300FABE2A31EEE37D75E97F7"
+  },
+  {
+   "hash": "F92631AE1CA7BDF7677A306358CFE96073415BA92DA700FF3408AC91BCF81A83",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_0419ae9a45575da8c242f5b5b3257a2c",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107678082,
+   "ledgerHash": "D7791F5F01F2D79AD2D84D1B551188D49C86A59E68588317BE3B9A4EB11B1AA5",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 79
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 747
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 165
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/F92631AE1CA7BDF7677A306358CFE96073415BA92DA700FF3408AC91BCF81A83"
+  },
+  {
+   "hash": "95F79E6D43FA0C798C3C4D7E3F4E546BD53D9D101D436B054D860740D597EFF3",
+   "kind": "authority",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107676924,
+   "ledgerHash": "F82B610681313B0B7BF3BD83271D113B2104578CA79080B46E8771CE36F1DC43",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 84
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 787
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 161
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/95F79E6D43FA0C798C3C4D7E3F4E546BD53D9D101D436B054D860740D597EFF3"
+  },
+  {
+   "hash": "269AA74D8D640457469E561611CBF7BC0FA11E7BE7380DB07CD1BE31CDA8BCAC",
+   "kind": "settlement",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107676960,
+   "ledgerHash": "AF3A06019D6B495092A5C8C3493CAA815EACB738E99BA93C921F9576A1F76B55",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 78
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 735
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 173
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/269AA74D8D640457469E561611CBF7BC0FA11E7BE7380DB07CD1BE31CDA8BCAC"
+  },
+  {
+   "hash": "72F7D86457BFBD5604E56639CDAE2AC853868BA0310788353306671CAE5E2AAB",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_07a468d8cfddd1e3a29f72cca0814f80",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107677144,
+   "ledgerHash": "E3218441B0846508EB8E789D8C198F01315F7DC42CC0BD9711CB24FE4A7ADA95",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 85
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 738
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 157
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/72F7D86457BFBD5604E56639CDAE2AC853868BA0310788353306671CAE5E2AAB"
+  },
+  {
+   "hash": "806AAB5C240AD180216B22ACBAA1D519A62BB9A92F6018B594719426C810D93D",
+   "kind": "authority",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "type": "PaymentChannelCreate",
+   "expectedType": "PaymentChannelCreate",
+   "typeMatches": true,
+   "ledgerIndex": 107676197,
+   "ledgerHash": "F98B9D283309B3834C8DE66820989539D45D1AB0089A516BAF17F5822BBD92D4",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 78
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 751
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 157
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/806AAB5C240AD180216B22ACBAA1D519A62BB9A92F6018B594719426C810D93D"
+  },
+  {
+   "hash": "9F0D6F080E0F1E60275C89887A7F28E9F5AD240B113FFF630CF8D5D7D1943A69",
+   "kind": "settlement",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107676324,
+   "ledgerHash": "92B282DE62EC5C9C5991D16EF2BA9A29D410ABC69807CB75822DC6418E077586",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 79
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 725
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 162
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/9F0D6F080E0F1E60275C89887A7F28E9F5AD240B113FFF630CF8D5D7D1943A69"
+  },
+  {
+   "hash": "6772D3A0B11E209152DA884B2A00837AAB917D54E20D49552C87399EC900C569",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_64554fbbb5a24e8f65e7ae55c3d1511d",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107676454,
+   "ledgerHash": "AAECB776B16E5273A0F4B36A5AD680C197FFBF764C88C24941DB1F17A39D2A6D",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 86
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 739
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 160
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/6772D3A0B11E209152DA884B2A00837AAB917D54E20D49552C87399EC900C569"
+  }
+ ]
+}
