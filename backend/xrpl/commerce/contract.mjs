@@ -1,5 +1,5 @@
 // The adapter contract: every payment capability plugs into the one governance engine through this shape.
-//   { id, rail, assets[], networks[], mode: 'LIVE_CAPABLE'|'SIMULATED',
+//   { id, rail, assets[], networks[] (xrpl:<id>, or eip155:<chainId> for the AP4M kit on XRPL EVM), mode: 'LIVE_CAPABLE'|'SIMULATED',
 //     describe() -> { can[], cannot[], proofConditions, lifecycle[] },
 //     challenge(offer) -> HTTP 402 payment request (x402 v2-shaped where it makes sense),
 //     prepare(decision, ctx) -> UNSIGNED transaction or voucher draft (signing happens outside the adapter),
@@ -19,7 +19,7 @@ export function assertAdapter(a) {
   if (!a || typeof a !== 'object') throw fail('ADAPTER_INVALID', 'not an object');
   for (const k of ['id', 'rail']) if (typeof a[k] !== 'string' || !/^[a-z0-9-]+$/.test(a[k])) bad.push(`${k} must be a kebab-case string`);
   if (!nonEmptyStrings(a.assets)) bad.push('assets[] required');
-  if (!nonEmptyStrings(a.networks) || !a.networks.every((n) => /^xrpl:\d+$/.test(n))) bad.push('networks[] must be xrpl:<id>');
+  if (!nonEmptyStrings(a.networks) || !a.networks.every((n) => /^(xrpl|eip155):\d+$/.test(n))) bad.push('networks[] must be xrpl:<id> or eip155:<chainId>');
   if (!MODES.includes(a.mode)) bad.push(`mode must be one of ${MODES}`);
   for (const m of METHODS) if (typeof a[m] !== 'function') bad.push(`${m}() missing`);
   if (typeof a.describe === 'function') {

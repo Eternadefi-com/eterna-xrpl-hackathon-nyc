@@ -24,6 +24,28 @@ Every transaction above was re-verified, read-only, on **three independent reade
 cd backend/xrpl && npm install && node mainnet/quicknode-verify.mjs   # uses s1 + xrplcluster; add QUICKNODE_XRPL_MAINNET_URL for the third reader
 ```
 
+## Mastercard AP4M: a governed agent purchase on XRPL EVM **Testnet** (25 Oct 2026)
+
+This is a separate network from the Mainnet run above: XRPL EVM Testnet, chain 1449000, using **test RLUSD**. Code: [`backend/xrpl/ap4m/`](backend/xrpl/ap4m/). It runs on the unmodified AP4M hackathon kit; the kit itself is not redistributed, and `vendor/fetch-kit.sh` downloads it and checks it against hashes.
+
+1. The agent receives the merchant's HTTP 402 challenge from the kit's own `createX402Merchant`.
+2. Eterna issues a permit within the funded spend limit (per transaction 0.5 RLUSD; channel cap 1 RLUSD).
+3. The agent signs the EIP-712 Voucher and the x402 resource binding **only** under that permit. The signer refuses anything else and cannot send transactions.
+4. The merchant redeems on chain, AP4M pays the merchant and records the settlement, and the product is delivered.
+
+| Event | XRPL EVM Testnet transaction |
+|---|---|
+| Merchant registered | `0x44161e3f30d27f71ccc8d2d0acf6633bf7eee3472841390cec1404f11822d151` |
+| **VoucherRedeemed** | `0x6d22cf7926e3cf0aa6e5b687de5ec0f83c926e92c193a0fa4bbc710f08958838` |
+| **ClaimPaid** | `0x8d6f0f247d07e04dd8cec2bad44947b1b0bd0752ed1a630cfe7364706c6ba191` |
+| **SettlementRecorded** | `0xac4ba92a45dab805979109a03c7e8dc892b3eba3ca117cc9b718b6da9da47800` |
+
+- The merchant payout's balance went from 0 to **0.25 test RLUSD**.
+- Each transaction was confirmed on two readers (the public RPC and Blockscout) with matching block hashes.
+- Evidence: [`backend/xrpl/ap4m/evidence/live-testnet-2026-10-25.json`](backend/xrpl/ap4m/evidence/live-testnet-2026-10-25.json).
+- During the run, Eterna's signer correctly **refused** a resource binding whose digest did not match its permit. The digest was then fixed to match the kit byte for byte (`ap4m/voucher.mjs`).
+- **Not shown live on this rail:** an over-limit refusal. The kit merchant cannot quote above the channel cap. It is covered by `ap4m/ap4m.test.mjs` and, on Mainnet, by the live refusal above.
+
 **How an agent asks.** This is the call OpenClaw makes; the credential is the agent's own and never appears in a conversation:
 
 ```bash

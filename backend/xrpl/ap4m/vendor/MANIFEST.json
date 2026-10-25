@@ -1,0 +1,18 @@
+{
+  "what": "Mastercard AP4M hackathon kit, as published by the AP4M hackathon service. Vendored UNMODIFIED into vendor/kit/ by fetch-kit.sh, which checks every SHA-256 below.",
+  "terms": "The kit says: 'For the Mastercard XRPL Hackathon only. This SDK and guide are not production libraries and must not be used outside of the hackathon context.' vendor/kit/ is git-ignored: the kit files are NOT committed and must NOT be published to any public repository.",
+  "source": "https://hackathon.ap4m.build/sdk/",
+  "fetchedAt": "2026-10-24",
+  "files": {
+    "AGENTS.md": "b44dd0088439697824b534270fa91d0f3aa078471aed7cc94ca21d62c10f409f",
+    "README.md": "7f1c8fa24359a573bf71550c17d9b1522f8cc62abca4049a721c6de69108abb9",
+    "ap4m-hackathon-sdk.js": "b2ca93acdd7e4f957845748a5fa0b893ce8ed50a0cfc0cd00d6b950cc2662bf7",
+    "ap4m-x402.mjs": "ec4ed75def98673df75a736f6a2514b74ba1ddd26c16faad5c37160246435ce6",
+    "example-x402-agent.mjs": "5bcfe019161adda1da8c19517b131d1fb8e4fd9c62d7052644b28f85055e15b9",
+    "example-x402-merchant.mjs": "0a0c656137340fda75976e606c3511b29cbcfab037d7198b3ae9711eca4b4e17",
+    "verify-receipt.mjs": "09d6562bd7f10dd3b51f440d0ed0db9ab77314e2025f2aaa04054d0632e15dab",
+    "ap4m-sdk.tgz": "6d8859978997533f48335ac020635c0f9118aeb5fb1c1b59c3d5062c54a2e632"
+  },
+  "sdkPackage": { "name": "@ap4m/sdk", "version": "0.10.1", "dependency": "ethers 6.17.0", "node": ">= 22.13 (node:sqlite)" },
+  "notFetched": ["ap4m-hackathon-sdk.cjs (same file as .js, for type:module projects)", "example-agent.js (pre-filled per team; portal login)", "/docs/*.md and /llms.txt (portal login: HTTP 401 without a session)"]
+}

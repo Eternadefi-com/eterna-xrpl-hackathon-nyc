@@ -1,0 +1,19 @@
+{
+  "_note": "Copy to ~/eterna-private/ap4m/live-config.json (0600) and fill in from the participant portal (My setup). No keys in this file.",
+  "teamName": "<registered team name>",
+  "requester": "agent:eterna-ap4m",
+  "principalName": "Brent (owner)",
+  "missionId": "ap4m-nyc-1",
+  "task": "buy per-call governed data resources over x402 within an Eterna spending certificate (AP4M kit, XRPL EVM Testnet)",
+  "perTxRlusd": "0.5",
+  "totalRlusd": "1",
+  "maxTransactions": 5,
+  "issuedAt": "2026-10-25T00:00:00Z",
+  "expiry": "2026-10-25T23:00:00Z",
+  "fundingWallet": "<funding wallet 0x..., if different from the agent>",
+  "merchantId": "<Merchant ID from My setup / GET /public/participant/me>",
+  "merchantPayout": "<payout 0x...: must differ from the agent 0x8559...7e36 and the funding wallet>",
+  "channelId": "<0x... from request-channel>",
+  "merchantResourceUrl": "http://127.0.0.1:4308/resource",
+  "overCapResourceUrl": "http://127.0.0.1:4309/resource"
+}

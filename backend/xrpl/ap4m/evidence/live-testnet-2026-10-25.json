@@ -1,0 +1,23 @@
+{
+ "title": "Mastercard AP4M: governed agent purchase on XRPL EVM Testnet (chain 1449000), 25 Oct 2026",
+ "team": "EternaAI",
+ "agent": "0x8559285aa94E04C3a6F689546276A47Bd8Ea7e36",
+ "merchantPayout": "0xbD9298e760d57dA82aec2f936ebCca1Cd48D53d7",
+ "merchantId": "0xf8958f961a178c67bc15692d1c018e4ab5a42da6b19e7965d5a42be704863de3",
+ "channel": "0x98c127b186e15b8a0046c2dfcc17ca66f8d999b8f99bc39c2b7737fcef781087",
+ "channelCapRLUSD": "1",
+ "purchaseRLUSD": "0.25",
+ "eternaPermit": "agent signed the EIP-712 voucher and the x402 resource binding only under an Eterna permit (per-tx cap 0.5 RLUSD)",
+ "transactions": {
+  "merchantRegistration": "0x44161e3f30d27f71ccc8d2d0acf6633bf7eee3472841390cec1404f11822d151",
+  "gasTopUp": "0x037e7e11f359222ed6913d4716d81f89dc83c066345c4be7a6e942423c45ff42",
+  "VoucherRedeemed": "0x6d22cf7926e3cf0aa6e5b687de5ec0f83c926e92c193a0fa4bbc710f08958838",
+  "ClaimPaid": "0x8d6f0f247d07e04dd8cec2bad44947b1b0bd0752ed1a630cfe7364706c6ba191",
+  "SettlementRecorded": "0xac4ba92a45dab805979109a03c7e8dc892b3eba3ca117cc9b718b6da9da47800"
+ },
+ "verification": "each tx success on rpc.testnet.xrplevm.org and the Blockscout RPC, identical block hashes",
+ "merchantRLUSDBalanceAfter": "0.25 (both readers)",
+ "ap4mReceiptAvailable": true,
+ "capturedAt": "2026-10-25T16:58:25.056Z",
+ "network": "XRPL EVM Testnet (chain 1449000): test RLUSD, not XRPL Mainnet"
+}

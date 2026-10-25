@@ -1,0 +1,32 @@
+{
+  "type": "eterna.ap4m-evidence-manifest.v1",
+  "network": { "name": "XRPL EVM Testnet", "chainId": 1449000, "explorer": "https://explorer.testnet.xrplevm.org" },
+  "deployment": { "service": "https://hackathon.ap4m.build", "paymentLedger": "0xcAB42800A5ECF0D253Fa2581Bb3334B4DAEfaE91", "pooledEscrowVault": "0x83DD9cD010eb46e96eceF8F7eB0a18f7845AaBC0", "participantRegistry": "0x4cF27435FE56161aa9b1cffdD87784aa68b7D1E8", "rlusd": "0x27b57a9D0b8d24EB97259c4E2279e45255e016f3" },
+  "kit": { "sdk": "@ap4m/sdk 0.10.1", "manifest": "ap4m/vendor/MANIFEST.json", "hashesVerified": null },
+  "wallets": { "agent": "0x8559285aa94E04C3a6F689546276A47Bd8Ea7e36", "merchantPayout": null, "funding": null, "distinct": null },
+  "control": {
+    "pspAttestedIdentities": { "real": false, "agentParticipantRecordedTx": null, "merchantParticipantRecordedTx": null, "authorityAttestationId": null, "merchantAttestationId": null, "merchantPspSigner": null, "source": "AP4M service test PSPs (not Eterna)" },
+    "fundedAuthorizedSpendLimit": { "real": false, "depositTx": null, "allocationId": null, "allocationCapRlusd": null, "channelCapRlusd": null },
+    "eternaCertificate": { "certificateDigest": null, "perTxRlusd": null, "totalRlusd": null, "label": "Eterna governance evidence (not KYA, not PSP certification)" },
+    "overCapRefusal": { "real": false, "refusalCode": "PER_TX_EXCEEDED", "refusalReceiptDigest": null, "signed": false, "evidenceFile": null }
+  },
+  "payment": {
+    "http402": { "real": false, "resourceUrl": null, "paymentRequiredHeaderSha256": null, "amountRlusd": null },
+    "voucher": { "real": false, "decisionId": null, "permitDigest": null, "voucherDigest": null, "cumulativeAmountWei": null, "signerLogKinds": ["Voucher", "X402ResourceBinding"] },
+    "resourceDelivered": { "real": false, "resourceSha256": null }
+  },
+  "proof": {
+    "channelOpenedTx": null,
+    "voucherRedeemedTx": null,
+    "claimId": null,
+    "claimPaidTx": null,
+    "rlusdTransferToPayout": null,
+    "settlementRecordedTx": null,
+    "settlementDigest": null,
+    "ap4mReceiptUrl": null,
+    "kitVerifyReceiptOutput": null,
+    "eternaVerification": { "status": null, "readers": ["https://rpc.testnet.xrplevm.org", "https://explorer.testnet.xrplevm.org/api/eth-rpc"], "readersAgreeing": null, "blockHashesAgree": null, "eternaReceiptDigest": null, "unlocked": null },
+    "payoutBalanceBeforeAfter": [null, null]
+  },
+  "notReal": ["fixtures/public-tape.json is a third-party public payment used only for parser tests", "test-support.mjs STUB_* objects are synthetic"]
+}
