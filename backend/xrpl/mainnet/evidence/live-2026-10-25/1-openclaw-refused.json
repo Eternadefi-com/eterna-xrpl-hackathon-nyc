@@ -1,0 +1,55 @@
+{
+ "title": "Live OpenClaw Mainnet request refused (no active authority) — during the event",
+ "capturedAt": "2026-10-25T15:15:27.445Z",
+ "record": {
+  "id": "gpur_c2af10e630561b29575cb099038b3bb2",
+  "state": "REFUSED",
+  "requester": {
+   "id": "preq_801114a7c1947da9bced01a3d695702e",
+   "label": "Coach (OpenClaw)",
+   "verified": true
+  },
+  "service": "Validated XRPL ledger report",
+  "price": {
+   "xrp": "0.1",
+   "drops": "100000"
+  },
+  "reason": "AUTHORIZATION_EXPIRED",
+  "outcome": "REFUSED_BY_RULEBOOK",
+  "paymentExecuted": false,
+  "claimCreated": false,
+  "refusal": {
+   "rule": "expiry",
+   "detail": "The shared budget expired at 2026-10-23T06:25:05Z."
+  },
+  "anchor": {
+   "tx": "1F2C8B8E033544541D7DF24C6D922B5E5ABA4E53602A190CF60E17253381F0CE",
+   "ledger": 107895780,
+   "memo": "37ef7f07fc8d8d34d08035ecaf91027fc0c2f81258a68f7972ef6c91b0f02c0d",
+   "readers": [
+    "A",
+    "B"
+   ]
+  },
+  "receiptDigest": "37ef7f07fc8d8d34d08035ecaf91027fc0c2f81258a68f7972ef6c91b0f02c0d"
+ },
+ "auditTrail": [
+  "2026-10-25T15:12:35.606Z REQUESTER REQUEST_RECEIVED {\"label\":\"Coach (OpenClaw)\",\"stated\":{\"asset\":\"XRP\",\"amount\":\"0.1\",\"network\":\"mainnet\",\"destination\":null},\"channel\":\"eterna_purchase_request\",\"verified\":true,\"requesterId\":\"req_67d0f8434a4a7ecd1228509731037567\",\"existingAuthorityOnly\":false}",
+  "2026-10-25T15:12:35.612Z RULEBOOK REQUEST_REFUSED {\"rule\":\"expiry\",\"grant\":{\"used\":{\"count\":6,\"drops\":\"600000\"},\"createTx\":\"8B7678E10C297A87BAFA5750EDF454FB46D0D33C88CEB78737ACFFBD59639577\",\"deadline\":\"2026-10-23T06:25:05Z\",\"channelId\":\"3DB30DBC034DAFE2692EB22D09697EFEC11E490F7421996174D23E0F2A3C2263\",\"purcha",
+  "2026-10-25T15:12:35.614Z ETERNA REFUSAL_RECEIPT_ISSUED {\"anchoring\":\"AUTOMATIC\",\"receiptDigest\":\"37ef7f07fc8d8d34d08035ecaf91027fc0c2f81258a68f7972ef6c91b0f02c0d\"}",
+  "2026-10-25T15:12:42.942Z ETERNA REFUSAL_RECEIPT_ANCHORED {\"ledger\":107895780,\"signer\":\"ETERNA_ANCHOR_ACCOUNT\",\"txHash\":\"1F2C8B8E033544541D7DF24C6D922B5E5ABA4E53602A190CF60E17253381F0CE\",\"account\":\"rwVvfWW2SuSj4kcy8VP7cPNhe5C7Q6b8rg\",\"readers\":[\"A\",\"B\"],\"memoType\":\"eterna/purchase-receipt-sha256\",\"memoDigest\":\"37ef7f"
+ ],
+ "threeReaderVerification": {
+  "tx": "1F2C8B8E033544541D7DF24C6D922B5E5ABA4E53602A190CF60E17253381F0CE",
+  "ledger": 107895780,
+  "verified": true,
+  "readers": [
+   "s1.ripple.com",
+   "xrplcluster.com",
+   "Quicknode"
+  ],
+  "memoEqualsReceiptDigest": true
+ },
+ "explorer": "https://livenet.xrpl.org/transactions/1F2C8B8E033544541D7DF24C6D922B5E5ABA4E53602A190CF60E17253381F0CE",
+ "origin": "OpenClaw runtime (Docker container \"openclaw\" on the Mac Studio), Eterna skill section 2 (HTTP + X-Eterna-C56-Requester-Credential), prompted by the owner in Discord; verified requester req_67d0f8434a4a7ecd1228509731037567"
+}

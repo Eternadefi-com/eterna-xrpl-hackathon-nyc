@@ -1,0 +1,113 @@
+{
+ "generatedAt": "2026-10-25T16:05:37.203Z",
+ "network": "XRPL Mainnet",
+ "mode": "read-only (tx, ledger, server_info only)",
+ "quicknodeIncluded": true,
+ "servers": [
+  {
+   "reader": "s1.ripple.com",
+   "hostid": null,
+   "ms": 242
+  },
+  {
+   "reader": "xrplcluster.com",
+   "build": "3.4.1",
+   "hostid": "DORTHA",
+   "ms": 602
+  },
+  {
+   "reader": "Quicknode",
+   "hostid": null,
+   "ms": 316
+  }
+ ],
+ "summary": {
+  "transactions": 2,
+  "verifiedOnAllReaders": 2,
+  "quicknodeConfirmed": 2,
+  "readers": [
+   "s1.ripple.com",
+   "xrplcluster.com",
+   "Quicknode"
+  ],
+  "byKind": {
+   "settlement": {
+    "total": 1,
+    "verified": 1
+   },
+   "receipt-anchor": {
+    "total": 1,
+    "verified": 1
+   }
+  },
+  "typeMismatches": []
+ },
+ "results": [
+  {
+   "hash": "852AB69BB32EF5FD74736A181AAB9D3C79966BEE683B2A14856283984445D8B0",
+   "kind": "settlement",
+   "purchaseId": "gpur_c04a46dc783fa29c053d9bc7569fe2f7",
+   "type": "PaymentChannelClaim",
+   "expectedType": "PaymentChannelClaim",
+   "typeMatches": true,
+   "ledgerIndex": 107896573,
+   "ledgerHash": "E66E8A5D6C6F6441B50206482471795A4596600EDD3A2DC7F66FF5D9E81BCB0E",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 245
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 754
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 178
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/852AB69BB32EF5FD74736A181AAB9D3C79966BEE683B2A14856283984445D8B0"
+  },
+  {
+   "hash": "20CA4D19F763A67B4F1AC68D207EFB69043BDA54375E132E8E094AFDE5066DB4",
+   "kind": "receipt-anchor",
+   "purchaseId": "gpur_c04a46dc783fa29c053d9bc7569fe2f7",
+   "type": "AccountSet",
+   "expectedType": "AccountSet",
+   "typeMatches": true,
+   "ledgerIndex": 107896576,
+   "ledgerHash": "54D21F65994B3A103F938266606AA2AACB5F071AFC0AB5AE2A6312F4E4447223",
+   "verified": true,
+   "readersAgree": true,
+   "per": [
+    {
+     "reader": "s1.ripple.com",
+     "ok": true,
+     "problems": [],
+     "ms": 95
+    },
+    {
+     "reader": "xrplcluster.com",
+     "ok": true,
+     "problems": [],
+     "ms": 708
+    },
+    {
+     "reader": "Quicknode",
+     "ok": true,
+     "problems": [],
+     "ms": 338
+    }
+   ],
+   "explorer": "https://livenet.xrpl.org/transactions/20CA4D19F763A67B4F1AC68D207EFB69043BDA54375E132E8E094AFDE5066DB4"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "title": "Owner standing authority signed in Xaman, active on XRPL Mainnet (during the event)",
+ "capturedAt": "2026-10-25T15:27:13.374Z",
+ "purchaseId": "gpur_8a671412c89e443638b0fb7c45d32fd5",
+ "activeAt": "2026-10-25T15:25:04.971Z",
+ "state": "STANDING_ACTIVE",
+ "rev": 6,
+ "payer": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+ "expiry": "2026-10-26T15:24:21Z",
+ "limits": {
+  "maxPurchases": 10,
+  "maxTotalDrops": "1000000",
+  "maxPerPurchaseDrops": "100000"
+ },
+ "permitted": [
+  "req_67d0f8434a4a7ecd1228509731037567"
+ ],
+ "autoConfirm": true,
+ "standing": {
+  "role": "STANDING_AUTHORIZATION",
+  "sharedBudgetOnly": true,
+  "maxPurchases": 10,
+  "maxTotalDrops": "1000000",
+  "permittedRequesters": [
+   "req_67d0f8434a4a7ecd1228509731037567"
+  ],
+  "endedAt": null
+ },
+ "authorization": {
+  "createTx": "F8093F73D0F86C5406C89EC4FC6E086ED0EEDB3093FE85ECE1EBF0EA73919DF2",
+  "ledger": 107895970,
+  "signedBy": "raDbcteM6oxQSxQSXpQkcauRtHm5UCyoiT",
+  "capDrops": "1000000",
+  "channelId": "9862BBFF4FA98E3C4B249FDC7D8F4815A074C2D6DDCB441001EBD9BF9EE1F208",
+  "readers": [
+   "A",
+   "B"
+  ],
+  "memoDigest": "5b7c4a4e79c432019b2b01170d8bad0209b82b37e6279444337dd16e81d7796e",
+  "digest": "5b7c4a4e79c432019b2b01170d8bad0209b82b37e6279444337dd16e81d7796e"
+ },
+ "channel": {
+  "note": "Purchase deadline governs the agent. Channel expiry/closure only returns unused funds to the payer.",
+  "cancelAfter": "2026-10-26T17:24:21Z",
+  "settleDelaySec": 3600
+ },
+ "threeReaderVerification": {
+  "tx": "F8093F73D0F86C5406C89EC4FC6E086ED0EEDB3093FE85ECE1EBF0EA73919DF2",
+  "verified": true,
+  "readers": [
+   "s1.ripple.com",
+   "xrplcluster.com",
+   "Quicknode"
+  ]
+ },
+ "explorer": "https://livenet.xrpl.org/transactions/F8093F73D0F86C5406C89EC4FC6E086ED0EEDB3093FE85ECE1EBF0EA73919DF2",
+ "noteExpiry": "Signed expiry is 2026-10-26T15:24:21Z (24 h), not the planned 21:00 UTC today."
+}

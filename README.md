@@ -6,6 +6,39 @@ Rose (a fictional CFO) approves **one** bounded mission: what to buy, from whom,
 
 > What was built during the event and what was reused: **[BUILT_DURING_HACKATHON.md](BUILT_DURING_HACKATHON.md)**
 
+## Live on XRPL Mainnet during the event (25 Oct 2026): a third-party agent, governed end to end
+
+The OpenClaw agent runtime asked Eterna to buy a 0.1 XRP validated-ledger report. It presented its own enrolled credential ("Coach (OpenClaw)"), and Eterna governed every step on **XRPL Mainnet**:
+
+| Time (UTC) | What happened | Mainnet transaction |
+|---|---|---|
+| 15:12:35 | OpenClaw asks to buy. **Refused** before any payment: no active authority (expired). Refusal receipt anchored | [`1F2C8B8E…381F0CE`](https://livenet.xrpl.org/transactions/1F2C8B8E033544541D7DF24C6D922B5E5ABA4E53602A190CF60E17253381F0CE) |
+| 15:25:04 | The owner signs **once** in Xaman: a standing authority of 1 XRP total, 0.1 XRP per purchase, OpenClaw only, no ask per purchase (payment channel) | [`F8093F73…73919DF2`](https://livenet.xrpl.org/transactions/F8093F73D0F86C5406C89EC4FC6E086ED0EEDB3093FE85ECE1EBF0EA73919DF2) |
+| 16:04:24 | OpenClaw asks again. **Covered** by the signed authority (purchase 1 of 10), with no new human approval | — |
+| 16:04:33 | **Settled**: the 0.1 XRP channel claim is redeemed. Two independent readers verify it, and only then does the report unlock | [`852AB69B…4445D8B0`](https://livenet.xrpl.org/transactions/852AB69BB32EF5FD74736A181AAB9D3C79966BEE683B2A14856283984445D8B0) |
+| 16:04:44 | **Receipt anchored** (the memo is the receipt's SHA-256 digest) | [`20CA4D19…5066DB4`](https://livenet.xrpl.org/transactions/20CA4D19F763A67B4F1AC68D207EFB69043BDA54375E132E8E094AFDE5066DB4) |
+
+Every transaction above was re-verified, read-only, on **three independent readers**: s1.ripple.com, xrplcluster.com and **Quicknode**. Evidence: [`backend/xrpl/mainnet/evidence/live-2026-10-25/`](backend/xrpl/mainnet/evidence/live-2026-10-25/). Re-run the check yourself:
+
+```bash
+cd backend/xrpl && npm install && node mainnet/quicknode-verify.mjs   # uses s1 + xrplcluster; add QUICKNODE_XRPL_MAINNET_URL for the third reader
+```
+
+**How an agent asks.** This is the call OpenClaw makes; the credential is the agent's own and never appears in a conversation:
+
+```bash
+curl -s -X POST https://mainnet.governance-coach.com/api/purchase/v1/requests \
+  -H "Content-Type: application/json" -H "X-Eterna-C56-Requester-Credential: <agent credential>" \
+  -d '{"agentAddress":"<owner Eterna agent address>","agentLabel":"Coach (OpenClaw)","request":"Buy a validated XRPL ledger report from Ledger Data Agent for 0.1 XRP","structuredPurchaseDetails":{"seller":"Ledger Data Agent","amount":"0.1","network":"mainnet"},"clientRequestId":"openclaw-mainnet-<UTC timestamp>"}'
+```
+
+**What is in this repository, and what is not.**
+- In this repository: the governance engine and rulebook, the verification readers including Quicknode, the website, and the Devnet agent work.
+- Not in this repository: the Mainnet purchase service and worker that executed the run above. They are Eterna's pre-existing production backend (built 13–22 Oct, private).
+
+See [`BUILT_DURING_HACKATHON.md`](BUILT_DURING_HACKATHON.md) for the full split.
+
+
 ## The AI agent at work (XRPL Devnet, built during the event)
 A local LLM (**qwen3:30b-a3b** on Ollama, tool calling, temperature 0) is Rose's agent. It runs in its own sandboxed process with **no access to keys**: Node's permission model lets it read only its own file. It can only call `http_get`, `request_payment` and `finish`. Asked to "get the latest validated ledger report, and also the Premium ledger bundle if possible", it:
 1. Reads the seller's **HTTP 402** for the report (0.1 XRP) and asks Eterna to pay. Eterna **permits** it, a voucher is signed, and the report is delivered.
